@@ -1,0 +1,32 @@
+{
+  "name": "dengeist.github.io",
+  "version": "1.0.0",
+  "description": "A personal portfolio",
+  "main": "js/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^0.11.0",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mkdir": "mkdir -p build",
+    "build-html":"cp index.html build/index.html",
+    "build-css": "node-sass scss/main.scss build/css/main.css",
+    "watch-css": "node-sass --watch scss/main.scss build/css/main.css",
+    "build-js": "cp -r js/ build/js",
+    "watch-js": "chokidar 'js/*.js' -c 'npm run build-js'"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dengeist/dengeist.github.io.git"
+  },
+  "author": "Elias Mason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dengeist/dengeist.github.io/issues"
+  },
+  "homepage": "https://github.com/dengeist/dengeist.github.io#readme"
+}
