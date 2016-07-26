@@ -68,6 +68,9 @@
   .project {
     text-align: center;
   }
+  .project figure {
+    display: inline;
+  }
   .questions-section h2 {
     font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 1.2rem;
@@ -94,4 +97,8 @@
   .credits {
     font-size: 0.8em;
   }
+}
+
+.masthead-heading {
+  font-size: 4em;
 }
