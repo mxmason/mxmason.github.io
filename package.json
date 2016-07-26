@@ -15,16 +15,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "mkdir": "mkdir -p build",
     "clean": "rm -rf build",
-    "build-html": "ditto index.html build/index.html",
-    "watch-html":"chokidar './*.html' -c 'npm run build-html'",
-    "build-css": "node-sass scss/main.scss build/css/main.css",
-    "watch-css": "node-sass --watch scss/main.scss build/css/main.css",
-    "build-js": "ditto js/ build/js",
-    "watch-js": "chokidar 'js/*.js' -c 'npm run build-js'",
-    "build": "npm run build-html && npm run build-css && npm run build-js",
-    "watch": "npm run build && npm run watch-html & npm run watch-css & npm run watch-js",
-    "serve": "webpack-dev-server --content-base build/",
-    "start": "npm run watch & npm run serve"
+    "build-css": "node-sass scss/main.scss css/main.css",
+    "watch-css": "node-sass --watch scss/main.scss css/main.css",
+    "build": "npm run build-css",
+    "watch": "npm run build && npm run watch-css",
+    "serve": "webpack-dev-server --content-base build",
+    "start": "npm run watch & npm run serve",
+    "stage": "npm run mkdir && cp -r css js build/"
   },
   "repository": {
     "type": "git",
