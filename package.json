@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mkdir": "mkdir -p build",
+    "mkdir": "mkdir -p dist",
     "clean": "rm -rf build",
     "build-css": "node-sass scss/main.scss css/main.css",
     "watch-css": "node-sass --watch scss/main.scss css/main.css",
@@ -21,8 +21,7 @@
     "watch": "npm run build && npm run watch-css",
     "serve": "webpack-dev-server --content-base build",
     "start": "npm run watch & npm run serve",
-    "stage": "npm run mkdir && cp -r index.html css js dist/",
-    "deploy": "gh-pages -d build"
+    "stage": "npm run mkdir && cp -r index.html css js dist/"
   },
   "repository": {
     "type": "git",
