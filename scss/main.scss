@@ -71,6 +71,9 @@ section {
 
 .project {
     text-align: center;
+    figure {
+        display: inline;
+    }
 }
 
 .questions-section h2 {
@@ -99,5 +102,8 @@ section {
 .credits {
     font-size: 0.8em;
 }
+}
 
+.masthead-heading {
+    font-size: 4em;
 }
