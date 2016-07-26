@@ -7,17 +7,20 @@
   "devDependencies": {
     "gh-pages": "^0.11.0",
     "node-sass": "^3.8.0",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mkdir": "mkdir -p build",
-    "build-html":"cp index.html build/index.html",
+    "build-html": "ditto index.html build/index.html",
     "build-css": "node-sass scss/main.scss build/css/main.css",
     "watch-css": "node-sass --watch scss/main.scss build/css/main.css",
-    "build-js": "cp -r js/ build/js",
-    "watch-js": "chokidar 'js/*.js' -c 'npm run build-js'"
-
+    "build-js": "ditto js/ build/js",
+    "watch-js": "chokidar 'js/*.js' -c 'npm run build-js'",
+    "build": "npm run build-html && npm run build-css && npm run build-js",
+    "serve": "webpack-dev-server --content-base build/"
   },
   "repository": {
     "type": "git",
