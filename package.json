@@ -21,7 +21,7 @@
     "watch": "npm run build && npm run watch-css",
     "serve": "webpack-dev-server --content-base build",
     "start": "npm run watch & npm run serve",
-    "stage": "npm run mkdir && cp -r css js build/",
+    "stage": "npm run mkdir && cp -r index.html css js dist/",
     "deploy": "gh-pages -d build"
   },
   "repository": {
