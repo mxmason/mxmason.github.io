@@ -1,6 +1,4 @@
 /* Media queries for responsive behavior */
-@media only screen and (min-width: 400px) {
-
 * {
     box-sizing: border-box;
 }
@@ -40,13 +38,11 @@ section {
     border-top: solid 1em #598C7D;
     width: 100%;
 }
-
 .masthead-portrait {
     display: block;
     border-radius: 50%;
     margin: 1em auto;
 }
-
 .masthead-intro {
     margin-bottom: 0.1em;
     font-family: "Gentium Book Basic", Georgia, serif;
@@ -58,7 +54,7 @@ section {
     margin-bottom: 0;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
-    font-size: 6em;
+    font-size: 8em;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #22583D;
@@ -68,14 +64,12 @@ section {
     @extend .masthead-intro;
     margin-top: -.5rem;
 }
-
 .project {
     text-align: center;
     figure {
         display: inline;
     }
 }
-
 .questions-section h2 {
     font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 1.2rem;
@@ -102,8 +96,7 @@ section {
 .credits {
     font-size: 0.8em;
 }
-}
 
-.masthead-heading {
-    font-size: 4em;
+@media only screen and (min-width: 320px) {
+
 }
