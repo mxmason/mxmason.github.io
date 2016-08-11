@@ -21,7 +21,7 @@
     "watch": "npm run build && npm run watch-css",
     "serve": "webpack-dev-server --content-base build",
     "start": "npm run watch & npm run serve",
-    "stage": "npm run mkdir && cp -r index.html css js dist/ && git add -f dist",
+    "stage": "npm run mkdir && cp -r CNAME index.html css js dist/ && git add -f dist",
     "deploy": "git subtree push --prefix dist origin master"
   },
   "repository": {
