@@ -64,9 +64,20 @@ section {
     @extend .masthead-intro;
     margin-top: -.5rem;
 }
+
+.work-section {
+    .row {
+        margin-bottom: 3.5rem;
+    }
+}
+
 .project {
     display: block;
     text-align: center;
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
     .project-name {
         margin-bottom: 0;
     }
@@ -74,7 +85,8 @@ section {
         display: inline-block;
         margin: 0 .2em;
     }
-}
+
+    }
 
 .social li {
     font-size: 2em;
@@ -95,6 +107,8 @@ section {
 .credits {
     font-size: 0.8em;
 }
+
+.js .project-desc {display:none}
 
 @media only screen and (min-width: 320px) {
 
