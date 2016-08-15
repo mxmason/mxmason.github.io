@@ -67,6 +67,13 @@ section {
 .project {
     display: block;
     text-align: center;
+    .project-name {
+        margin-bottom: 0;
+    }
+    li {
+        display: inline-block;
+        margin: 0 .2em;
+    }
 }
 .questions-section h2 {
     font-family: "Gentium Book Basic", Georgia, serif;
