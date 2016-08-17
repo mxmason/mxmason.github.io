@@ -10,7 +10,11 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
 }
 
 a {
@@ -80,27 +84,40 @@ section p {
   margin-top: -.5rem;
 }
 
+.work-section #projects {
+  margin-bottom: 2.5rem;
+}
+
 .work-section .row {
   margin-bottom: 3.5rem;
 }
 
-.project {
-  display: block;
+.work-section .project {
   text-align: center;
 }
 
-.project .project-img {
+.work-section .project .project-img {
   width: 100%;
   height: auto;
 }
 
-.project .project-name {
+.work-section .project .project-name {
   margin-bottom: 0;
 }
 
-.project li {
+.work-section .project li {
   display: inline-block;
-  margin: 0 .2em;
+  margin: 0 0.2em;
+}
+
+.work-section .project .project-desc {
+  height: auto;
+}
+
+.work-section .project .project-desc p {
+  display: block;
+  text-align: right;
+  vertical-align: middle;
 }
 
 .social li {
@@ -125,10 +142,6 @@ section p {
 
 .credits {
   font-size: 0.8em;
-}
-
-.js .project-desc {
-  display: none;
 }
 
 .browserupgrade {
