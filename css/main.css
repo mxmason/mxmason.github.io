@@ -148,7 +148,7 @@ section p {
   .project {
     position: relative;
   }
-  .project .project-desc {
+  .project .project-info-wrap {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -160,7 +160,7 @@ section p {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .project .project-desc:hover {
+  .project .project-info-wrap:hover {
     opacity: 1;
   }
 }
