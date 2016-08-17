@@ -23,7 +23,6 @@ a {
 }
 
 section {
-  max-width: 49em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
@@ -63,7 +62,7 @@ section p {
 .masthead-intro, .masthead-subheading {
   margin-bottom: 0.1em;
   font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -72,11 +71,10 @@ section p {
   margin-bottom: 0;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  font-size: 8em;
+  font-size: 6em;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #22583D;
-  text-shadow: 3px 1px 2px #616c82;
+  color: white;
 }
 
 .masthead-subheading {
@@ -129,6 +127,7 @@ section p {
   margin-top: 5em;
   padding: 2em 0;
   background-color: #23593C;
+  background-size: cover;
 }
 
 .content-footer a {
@@ -141,6 +140,15 @@ section p {
 
 .credits {
   font-size: 0.8em;
+}
+
+@media only screen and (min-width: 420px) {
+  .masthead-intro, .masthead-subheading {
+    font-size: 2.5em;
+  }
+  .masthead-heading {
+    font-size: 8em;
+  }
 }
 
 @media only screen and (min-width: 820px) {
