@@ -98,10 +98,13 @@ section {
         }
     }
 }
-.social li {
-    font-size: 2em;
-    display: inline-block;
-    margin: 0 0.5rem;
+.contact {
+    a {
+        display: inline-block;
+    }
+    object {
+        pointer-events: none;
+    }
 }
 .content-footer {
     margin-top: 5em;
@@ -148,6 +151,13 @@ section {
             &:hover {
                 opacity: 1;
             }
+        }
+    }
+    .contact {
+        width: 80%;
+        margin: 0 auto;
+        #linkedin-link {
+            margin-top: -10px;
         }
     }
 }
