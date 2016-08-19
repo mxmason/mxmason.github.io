@@ -1,4 +1,3 @@
-/* Media queries for responsive behavior */
 * {
     box-sizing: border-box;
 }
@@ -98,11 +97,6 @@ section {
         }
     }
 }
-.social li {
-    font-size: 2em;
-    display: inline-block;
-    margin: 0 0.5rem;
-}
 .content-footer {
     margin-top: 5em;
     padding: 2em 0;
@@ -114,9 +108,24 @@ section {
     p {
         color: white;
     }
-}
-.credits {
-    font-size: 0.8em;
+    .call-to-action {
+        font-size: 1.3em;
+    }
+    .contact {
+        a {
+            display: inline-block;
+        }
+        object {
+            pointer-events: none;
+        }
+    }
+    .credits {
+        margin-top: 1.5em;
+        font-size: 0.8em;
+        p {
+            margin: .5em;
+        }
+    }
 }
 
 @media only screen and (min-width: 420px) {
@@ -148,6 +157,13 @@ section {
             &:hover {
                 opacity: 1;
             }
+        }
+    }
+    .contact {
+        width: 80%;
+        margin: 0 auto;
+        #linkedin-link {
+            margin-top: -10px;
         }
     }
 }

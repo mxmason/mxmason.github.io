@@ -1,4 +1,3 @@
-/* Media queries for responsive behavior */
 * {
   box-sizing: border-box;
 }
@@ -114,12 +113,6 @@ section p {
   vertical-align: middle;
 }
 
-.social li {
-  font-size: 2em;
-  display: inline-block;
-  margin: 0 0.5rem;
-}
-
 .content-footer {
   margin-top: 5em;
   padding: 2em 0;
@@ -135,8 +128,25 @@ section p {
   color: white;
 }
 
-.credits {
+.content-footer .call-to-action {
+  font-size: 1.3em;
+}
+
+.content-footer .contact a {
+  display: inline-block;
+}
+
+.content-footer .contact object {
+  pointer-events: none;
+}
+
+.content-footer .credits {
+  margin-top: 1.5em;
   font-size: 0.8em;
+}
+
+.content-footer .credits p {
+  margin: .5em;
 }
 
 @media only screen and (min-width: 420px) {
@@ -168,6 +178,13 @@ section p {
   }
   .project .project-info-wrap:hover {
     opacity: 1;
+  }
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact #linkedin-link {
+    margin-top: -10px;
   }
 }
 
