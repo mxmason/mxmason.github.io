@@ -114,10 +114,12 @@ section p {
   vertical-align: middle;
 }
 
-.social li {
-  font-size: 2em;
+.contact a {
   display: inline-block;
-  margin: 0 0.5rem;
+}
+
+.contact object {
+  pointer-events: none;
 }
 
 .content-footer {
@@ -168,6 +170,13 @@ section p {
   }
   .project .project-info-wrap:hover {
     opacity: 1;
+  }
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact #linkedin-link {
+    margin-top: -10px;
   }
 }
 
