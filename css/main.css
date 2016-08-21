@@ -172,15 +172,15 @@ section p {
   width: 80%;
 }
 
-.close {
+.btn-close-settings {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.btn-close-settings:hover,
+.btn-close-settings:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
