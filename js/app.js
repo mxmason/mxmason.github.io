@@ -2,10 +2,10 @@ function setPrefs() {
     var contrastPref = localStorage.getItem('isHighContrast');
 
     if (contrastPref === "yes") {
-        $('input[name="high-contrast"][value="yes"]').attr('checked', 'checked');
+        $('input[name="high-contrast"][value="on"]').attr('checked', 'checked');
         $('body').addClass('high-contrast');
     } else {
-        $('input[name="high-contrast"][value="no"]').attr('checked', 'checked');
+        $('input[name="high-contrast"][value="off"]').attr('checked', 'checked');
         $('body').removeClass('high-contrast');
     }
 }
