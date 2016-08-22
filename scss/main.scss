@@ -159,8 +159,9 @@ section {
 
 .btn-open-prefs {
     float:  right;
-    margin-right: -23.5rem;
-    margin-top: -3rem;
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
 }
 
 .btn-close-prefs {
