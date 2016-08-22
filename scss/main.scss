@@ -5,6 +5,7 @@ $link-color: #23593C;
 * {
     box-sizing: border-box;
 }
+
 body {
     color: #222222;
     background-color: $main-bg;
@@ -33,6 +34,7 @@ section {
         letter-spacing: 0.05em;
     }
 }
+
 .content-footer,
 .masthead-heading,
 .masthead-intro {
@@ -153,6 +155,12 @@ section {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+}
+
+.btn-open-prefs {
+    float:  right;
+    margin-right: -23.5rem;
+    margin-top: -3rem;
 }
 
 .btn-close-prefs {
