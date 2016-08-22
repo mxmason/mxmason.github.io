@@ -20,6 +20,9 @@
     <header class="masthead">
         <div class="container">
             <div class="row">
+                <a href="#user-prefs" class="button button-primary btn-open-prefs" id="settings-btn" role="button">
+                    User Preferences
+                </a>
                 <p class="masthead-intro">Hi, I'm</p>
                 <h1 class="masthead-heading">ELIAS!</h1>
                 <p class="masthead-subheading">and I make websites.</p>
@@ -28,6 +31,26 @@
     </header>
     <main class="container">
         <section class="introduction-section">
+        <aside class="prefs" hidden>
+            <div class="prefs-content">
+                <div class="prefs-header row">
+                    <span class="btn-close-prefs">×</span>
+                    <h4>User settings modal</h4>
+                </div>
+                <div class="prefs-body">
+                    <form class="prefs-form">
+                        <fieldset class="row">
+                            <legend>Enable high contrast</legend>
+                            <label><input type="radio" name="high-contrast" value="no"> No</label>
+                            <label><input type="radio" name="high-contrast" value="yes"> Yes</label>
+                        </fieldset>
+                        <div class="row">
+                            <button type="submit" class="button-primary">Update Preferences</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </aside>
             <h1 id="intro">More specifically</h1>
             <p>
                 I'm a full-stack web developer who is passionate about accessibility and the impact technology has on everyday life. When I don't have my tech nerd hat on, you'll find me studying foreign languages, buying stacks of used sci-fi books, or taking myself
@@ -43,8 +66,8 @@
                     <div class="project-info-wrap">
                         <h5 class="project-name">CozyFi</h5>
                         <ul class="project-links">
-                            <li><a href="cozyfi-963e1.firebaseapp.com">Live</a></li> •
-                            <li><a href="https://github.com/lotusgraham/cozyfi">Github</a></li>
+                            <li><a class="button button-primary" role="button"  href="cozyfi-963e1.firebaseapp.com">Live</a></li>
+                            <li><a class="button button-primary" role="button"  href="https://github.com/lotusgraham/cozyfi">Github</a></li>
                         </ul>
                         <p class="project-desc">Built with a dev community in mind, this app uses Google's Maps API in a React frontend powered by Google's Firebase this app to help users find and save information about great places to work.</p>
                     </div>
@@ -54,8 +77,8 @@
                     <div class="project-info-wrap">
                         <h5 class="project-name">D3 Intro</h5>
                         <ul class="project-links">
-                            <li><a href="http://ejmason.com/d3-intro">Live</a></li> •
-                            <li><a href="https://github.com/dengeist/d3-intro">Github</a></li>
+                            <li><a class="button button-primary" role="button"  href="http://ejmason.com/d3-intro">Live</a></li>
+                            <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/d3-intro">Github</a></li>
                         </ul>
                         <p class="project-desc">This app is a companion to a brief presentation on D3, the data visualization library for JavaScript. Huge thanks to <a href="https://github.com/curran">Curran Kelleher</a> for the inspiration.</p>
                     </div>
@@ -67,8 +90,8 @@
                     <div class="project-info-wrap">
                         <h5 class="project-name">Spacing Quiz</h5>
                         <ul class="project-links">
-                            <li><a href="https://github.com/dengeist/spacing-quiz">Github</a></li>
-                            <li><a href="https://spacing-quiz.herokuapp.com/">Live</a></li>
+                            <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/spacing-quiz">Github</a></li>
+                            <li><a class="button button-primary" role="button"  href="https://spacing-quiz.herokuapp.com/">Live</a></li>
                         </ul>
                         <p class="project-desc">This React app tests users' knowledge of some German terms. Users log in with their Google IDs and a Mongo database stores our terms, while a simple algorithm decides which term to show the user next.</p>
                     </div>
@@ -78,8 +101,8 @@
                     <div class="project-info-wrap">
                         <h5 class="project-name">Flickr PhotoMap</h5>
                         <ul class="project-links">
-                            <li><a href="http://ejmason.com/flickr-map">Live</a></li>
-                            <li><a href="https://github.com/dengeist/flickr-map">Github</a></li> •
+                            <li><a class="button button-primary" role="button"  href="http://ejmason.com/flickr-map">Live</a></li>
+                            <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/flickr-map">Github</a></li>
                         </ul>
                         <p class="project-desc">This is a simple, fun mashup of the Flickr and Google Maps APIs which displays Flickr images on a Google Maps canvas. RequireJS ensures the right dependencies are loaded.</p>
                     </div>
