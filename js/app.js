@@ -1,9 +1,8 @@
 function handlePrefsModal() {
-    $('.btn-open-settings').on('click', function(){
-
+    $('.btn-open-prefs').on('click', function(){
         $('.prefs').show();
     });
-    $('.btn-close-settings').on('click', function(){
+    $('.btn-close-prefs').on('click', function(){
         $('.prefs').hide();
     });
 }
