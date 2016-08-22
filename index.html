@@ -36,7 +36,16 @@
                     <h4>User settings modal</h4>
                 </div>
                 <div class="prefs-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <form class="prefs-form">
+                        <fieldset class="row">
+                            <legend>Enable high contrast</legend>
+                            <label><input type="radio" name="high-contrast" value="no"> No</label>
+                            <label><input type="radio" name="high-contrast" value="yes"> Yes</label>
+                        </fieldset>
+                        <div class="row">
+                            <button type="submit" class="button-primary">Update Preferences</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </aside>
