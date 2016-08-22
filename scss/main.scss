@@ -169,6 +169,23 @@ section {
     cursor: pointer;
 }
 
+body.high-contrast {
+    background-color: black !important;
+    color: white !important;
+    .project-info-wrap, .prefs, .prefs-content, footer {
+        background-color: black !important;
+        color: white !important;
+    }
+    main a{
+        color: white !important;
+        font-weight: bold !important;
+    }
+    .masthead {
+        background-image: none !important;
+        // background-color: $main-accent !important;
+    }
+}
+
 @media only screen and (min-width: 420px) {
     .masthead-intro {
         font-size: 2.5em;
@@ -176,9 +193,7 @@ section {
     .masthead-heading {
         font-size: 8em;
     }
-
 }
-// .js .project-desc {display:none}
 @media only screen and (min-width: 820px) {
     .project {
         position: relative;
