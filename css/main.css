@@ -186,6 +186,25 @@ section p {
   cursor: pointer;
 }
 
+body.high-contrast {
+  background-color: black !important;
+  color: white !important;
+}
+
+body.high-contrast .project-info-wrap, body.high-contrast .prefs, body.high-contrast .prefs-content, body.high-contrast footer {
+  background-color: black !important;
+  color: white !important;
+}
+
+body.high-contrast main a {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+body.high-contrast .masthead {
+  background-image: none !important;
+}
+
 @media only screen and (min-width: 420px) {
   .masthead-intro, .masthead-subheading {
     font-size: 2.5em;
