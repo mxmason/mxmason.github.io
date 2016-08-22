@@ -5,6 +5,7 @@ $link-color: #23593C;
 * {
     box-sizing: border-box;
 }
+
 body {
     color: #222222;
     background-color: $main-bg;
@@ -33,6 +34,7 @@ section {
         letter-spacing: 0.05em;
     }
 }
+
 .content-footer,
 .masthead-heading,
 .masthead-intro {
@@ -134,6 +136,64 @@ section {
     }
 }
 
+.prefs {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.prefs-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.btn-open-prefs {
+    float:  right;
+    margin-right: -23.5rem;
+    margin-top: -3rem;
+}
+
+.btn-close-prefs {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.btn-close-prefs:hover,
+.btn-close-prefs:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body.high-contrast {
+    background-color: black !important;
+    color: white !important;
+    .project-info-wrap, .prefs, .prefs-content, footer {
+        background-color: black !important;
+        color: white !important;
+    }
+    main a{
+        color: white !important;
+        font-weight: bold !important;
+    }
+    .masthead {
+        background-image: none !important;
+        // background-color: $main-accent !important;
+    }
+}
+
 @media only screen and (min-width: 420px) {
     .masthead-intro {
         font-size: 2.5em;
@@ -141,9 +201,7 @@ section {
     .masthead-heading {
         font-size: 8em;
     }
-
 }
-// .js .project-desc {display:none}
 @media only screen and (min-width: 820px) {
     .project {
         position: relative;
