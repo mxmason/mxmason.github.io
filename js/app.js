@@ -1,6 +1,6 @@
 function populateStorage() {
-    var checkedContrastOp = (typeof $('input[name="high-contrast"]:checked').val() === 'undefined') ? "no" : checkedContrastOp;
-    localStorage.setItem('isHighContrast', checkedContrastOp);
+    var checkedContrastVal = (typeof $('input[name="high-contrast"]:checked').val() === 'undefined') ? "no" :  $('input[name="high-contrast"]:checked').val() ;
+    localStorage.setItem('isHighContrast', checkedContrastVal);
 
     setPrefs();
 }
