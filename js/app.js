@@ -1,12 +1,3 @@
-function handleStorage() {
-    if (!localStorage.getItem('isHighContrast')) {
-        populateStorage();
-    } else {
-        setPrefs();
-    }
-
-}
-
 function populateStorage() {
     var checkedContrastOp = (typeof $('input[name="high-contrast"]:checked').val() === 'undefined') ? "no" : checkedContrastOp;
     localStorage.setItem('isHighContrast', checkedContrastOp);
@@ -16,7 +7,6 @@ function populateStorage() {
 
 function setPrefs() {
     var contrastPref = localStorage.getItem('isHighContrast');
-    console.log(contrastPref)
 
     if (contrastPref === "yes") {
         $('input[name="high-contrast"][value="yes"]').attr('checked', 'checked');
@@ -24,6 +14,14 @@ function setPrefs() {
     } else {
         $('input[name="high-contrast"][value="no"]').attr('checked', 'checked');
         $('body').removeClass('high-contrast');
+    }
+}
+
+function handleStorage() {
+    if (!localStorage.getItem('isHighContrast')) {
+        populateStorage();
+    } else {
+        setPrefs();
     }
 }
 
