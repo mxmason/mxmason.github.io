@@ -126,12 +126,8 @@ section p {
   font-weight: bold;
 }
 
-.content-footer p {
+.content-footer p, .content-footer h1 {
   color: #f7f7f7;
-}
-
-.content-footer .call-to-action {
-  font-size: 1.3em;
 }
 
 .content-footer .contact a {
