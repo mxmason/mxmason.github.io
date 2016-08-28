@@ -22,6 +22,16 @@ a {
     text-decoration: none;
     color: $link-color;
 }
+
+ul {
+    list-style: disc outside none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+li {
+    padding-left: .1em;
+}
+
 section {
     margin-left: auto;
     margin-right: auto;
