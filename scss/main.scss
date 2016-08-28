@@ -113,11 +113,8 @@ section {
         color:white;
         font-weight: bold;
     }
-    p {
+    p,h1 {
         color: $main-bg;
-    }
-    .call-to-action {
-        font-size: 1.3em;
     }
     .contact {
         a {
