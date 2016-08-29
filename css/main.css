@@ -8,6 +8,15 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+nav {
+  display: block;
+  width: 100%;
+}
+
+nav a.button {
+  display: none;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -45,50 +54,6 @@ section h1 {
 section p {
   font-weight: 300;
   letter-spacing: 0.05em;
-}
-
-.content-footer,
-.masthead-heading,
-.masthead-intro,
-.masthead-subheading {
-  text-align: center;
-}
-
-.masthead {
-  padding: 3em 0;
-  background-image: url("https://images.unsplash.com/photo-1446071103084-c257b5f70672?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1525");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top: solid 1em #598C7D;
-  width: 100%;
-}
-
-.masthead-portrait {
-  display: block;
-  border-radius: 50%;
-  margin: 1em auto;
-}
-
-.masthead-intro, .masthead-subheading {
-  margin-bottom: 0.1em;
-  font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 1.5em;
-  color: white;
-}
-
-.masthead-heading {
-  margin-top: -.2em;
-  margin-bottom: 0;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 6em;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: white;
-}
-
-.masthead-subheading {
-  margin-top: -.5rem;
 }
 
 .work-section #projects {
@@ -231,7 +196,7 @@ body.high-contrast .masthead {
 }
 
 @media only screen and (min-width: 420px) {
-  .masthead-intro, .masthead-subheading {
+  .masthead-intro {
     font-size: 2.5em;
   }
   .masthead-heading {
@@ -240,6 +205,21 @@ body.high-contrast .masthead {
 }
 
 @media only screen and (min-width: 820px) {
+  nav {
+    background-color: #eee;
+    height: 5rem;
+  }
+  nav .button {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    border-left: 1px solid #aaa;
+    border-radius: 0;
+  }
+  nav .button.name {
+    cursor: default;
+  }
   .project {
     position: relative;
   }
