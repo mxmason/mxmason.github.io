@@ -8,21 +8,43 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-nav {
-  display: block;
-  width: 100%;
+header {
+  position: relative;
+  background-color: #eee;
+  height: 5rem;
 }
 
-nav a.button {
+header nav {
+  height: 100%;
+  width: auto;
+  overflow: auto;
+}
+
+header nav .menu-wrap {
   display: none;
+  position: absolute;
+  right: 0;
 }
 
-h1 {
-  font-size: 3rem;
+header nav .button {
+  display: block;
+  text-align: right;
 }
 
-h5 {
-  font-size: 2rem;
+header .row {
+  height: 100%;
+}
+
+header .button {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+}
+
+header p.button {
+  cursor: default;
 }
 
 a {
@@ -37,23 +59,8 @@ ul {
   padding-left: 1em;
 }
 
-li {
+ul li {
   padding-left: .1em;
-}
-
-section {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-}
-
-section h1 {
-  margin-top: 2em;
-}
-
-section p {
-  font-weight: 300;
-  letter-spacing: 0.05em;
 }
 
 .work-section #projects {
@@ -195,31 +202,14 @@ body.high-contrast .masthead {
   background-image: none !important;
 }
 
-@media only screen and (min-width: 420px) {
-  .masthead-intro {
-    font-size: 2.5em;
-  }
-  .masthead-heading {
-    font-size: 8em;
+@media only screen and (min-width: 870px) {
+  header .button {
+    display: inline-flex;
+    width: auto !important;
   }
 }
 
 @media only screen and (min-width: 820px) {
-  nav {
-    background-color: #eee;
-    height: 5rem;
-  }
-  nav .button {
-    height: 100%;
-    display: inline-flex;
-    align-items: center;
-    border: none;
-    border-left: 1px solid #aaa;
-    border-radius: 0;
-  }
-  nav .button.name {
-    cursor: default;
-  }
   .project {
     position: relative;
   }
