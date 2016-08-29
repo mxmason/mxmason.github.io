@@ -197,14 +197,19 @@ body.high-contrast {
     }
 }
 
-@media only screen and (min-width: 870px) {
+@media only screen and (min-width: 740px) {
     header {
-        .button {
-            display: inline-flex;
-            width: auto !important;
+        nav {
+            .menu-wrap, .button {
+                display: inline-flex;
+                height: 100%;
+            }
         }
+        button {display: none !important;}
     }
-}
+
+
+    }
 
 @media only screen and (min-width: 820px) {
     .project {

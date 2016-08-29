@@ -202,10 +202,13 @@ body.high-contrast .masthead {
   background-image: none !important;
 }
 
-@media only screen and (min-width: 870px) {
-  header .button {
+@media only screen and (min-width: 740px) {
+  header nav .menu-wrap, header nav .button {
     display: inline-flex;
-    width: auto !important;
+    height: 100%;
+  }
+  header button {
+    display: none !important;
   }
 }
 
