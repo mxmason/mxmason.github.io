@@ -13,34 +13,26 @@
 </head>
 
 <body>
-    <header class="container">
-            <nav role="navigation" class="row">
-                <p class="name">Elias Mason</p>
-                <ul>
-                    <a href="#intro" role="button" class="button">About</a>
-                    <a href="#projects" role="button" class="button">Coding</a>
-                    <a href="#advocacy" role="button" class="button">Advocacy</a>
-                    <a href="#contact" role="button" class="button">Contact</a>
-                </ul>
-                <a href="#user-prefs" class="button button-primary btn-open-prefs" id="settings-btn" role="button" aria-hidden="true">
-                    Appearance
-                </a>
-            </nav>
-
-            <!-- <div class="row">
-                <p class="masthead-intro">Hi, I'm</p>
-                <h1 class="masthead-heading">ELIAS!</h1>
-                <p class="masthead-subheading">and I make websites.</p>
-            </div> -->
-    </header>
+    <nav role="navigation" class="row">
+        <p class="name button u-pull-left">Elias Mason</p>
+            <a href="#intro" role="button" class="button">About</a>
+            <a href="#projects" role="button" class="button">Coding</a>
+            <a href="#advocacy" role="button" class="button">Advocacy</a>
+            <a href="#contact" role="button" class="button">Contact</a>
+        <a href="#user-prefs" id="settings-btn" class="button button-primary u-pull-right" role="button" aria-hidden="true">
+            Appearance
+        </a>
+    </nav>
     <main class="container">
-        <section class="introduction-section">
+        <section class="introduction-section row">
             <h1 id="intro">More specifically</h1>
             <p>I'm a developer and mentor who is passionate about accessibility and the impact technology has on everyday life. When I'm not coding or teaching, you'll find me studying foreign languages, buying stacks of used sci-fi books, or taking myself out to the theatre.</p>
 
         </section>
         <section class="work-section">
-            <h1 id="projects">Some of my projects</h1>
+            <div class="row">
+                <h1 id="projects">Some of my projects</h1>
+            </div>
             <div class="row">
                 <div class="project six columns">
                     <img class="project-img" src="img/cozyfi.png" alt="Screenshot of CozyFi" />
