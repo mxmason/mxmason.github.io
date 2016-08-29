@@ -27,7 +27,7 @@ function handleStorage() {
 
 function handlePrefsModal() {
     var $prefsModal = $('.prefs');
-    $('.btn-open-prefs').on('click', function(){
+    $('#prefs-btn').on('click', function(){
         $prefsModal.show();
     });
     $('.btn-close-prefs').on('click', function(){
