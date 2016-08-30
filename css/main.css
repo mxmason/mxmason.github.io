@@ -1,5 +1,5 @@
 body {
-  color: #222222;
+  color: #3d3d3d;
   background-color: #f7f7f7;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -53,37 +53,64 @@ header nav .menu-wrap li {
 
 main {
   position: relative;
-  top: 5em;
+  top: 5rem;
 }
 
-.work-section #projects {
+section {
+  height: 45em;
+}
+
+section .u-cvert {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.introduction h1 {
+  display: inline-block;
+  font-weight: 700;
+  color: #242424;
+  margin-right: .45em;
+}
+
+.introduction p {
+  font-size: 1.7em;
+  margin-bottom: .5em;
+}
+
+.introduction .sub-one {
+  font-size: 1.95em;
+  display: inline-block;
+}
+
+.work #projects {
   margin-bottom: 2.5rem;
 }
 
-.work-section .project {
+.work .project {
   text-align: center;
   margin-bottom: 2.5rem;
 }
 
-.work-section .project .project-img {
+.work .project .project-img {
   width: 100%;
   height: auto;
 }
 
-.work-section .project .project-name {
+.work .project .project-name {
   margin-bottom: 0;
 }
 
-.work-section .project li {
+.work .project li {
   display: inline-block;
   margin: 0 0.2em;
 }
 
-.work-section .project .project-desc {
+.work .project .project-desc {
   height: auto;
 }
 
-.work-section .project .project-desc p {
+.work .project .project-desc p {
   display: block;
   text-align: right;
   vertical-align: middle;
@@ -101,8 +128,7 @@ main {
   font-weight: bold;
 }
 
-.content-footer h1,
-.content-footer p {
+.content-footer h1, .content-footer p {
   color: #f7f7f7;
 }
 
@@ -150,13 +176,6 @@ main {
 
 .js .btn-open-prefs {
   display: inline-block;
-  float: right;
-  position: absolute;
-  right: 2rem;
-  top: 3rem;
-}
-
-.btn-open-prefs {
   float: right;
   position: absolute;
   right: 2rem;

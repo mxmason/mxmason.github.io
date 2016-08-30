@@ -1,11 +1,12 @@
 $main-bg: darken(white, 3.25%);
 $header-bg: darken($main-bg, 10.5%);
 $nav-hover: darken($header-bg, 5%);
-$main-accent: #598C7D;
+$main-color: #3d3d3d;
 $link-color: #23593C;
+$main-accent: #598C7D;
 
 body {
-    color: #222222;
+    color: $main-color;
     background-color: $main-bg;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -59,10 +60,35 @@ header {
 
 main {
     position: relative;
-    top: 5em;
+    top: 5rem;
+
+}
+section {
+    height: 45em;
+    .u-cvert {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.introduction {
+    h1 {
+        display: inline-block;
+        font-weight: 700;
+        color: darken($main-color, 10%);;
+        margin-right: .45em;
+    }
+    p  {
+        font-size: 1.7em;
+        margin-bottom: .5em;
+    }
+    .sub-one{
+        font-size: 1.95em;
+        display: inline-block;
+    }
 }
 
-.work-section {
+.work {
     #projects {
         margin-bottom: 2.5rem;
     }
@@ -108,8 +134,7 @@ main {
         font-weight: bold;
     }
 
-    h1,
-    p {
+    h1, p {
         color: $main-bg;
     }
 
@@ -166,13 +191,6 @@ main {
     top: 3rem;
 }
 
-.btn-open-prefs {
-    float: right;
-    position: absolute;
-    right: 2rem;
-    top: 3rem;
-}
-
 .btn-close-prefs {
     color: #aaa;
     float: right;
@@ -213,7 +231,6 @@ body.high-contrast {
         nav {
             padding-right: 2rem;
             width: auto;
-
             .menu-wrap {
                 position: static;
                 display: inline-flex;
@@ -231,7 +248,6 @@ body.high-contrast {
                 }
             }
         }
-
         button {
             display: none !important;
         }
