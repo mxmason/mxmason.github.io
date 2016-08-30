@@ -1,50 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   color: #222222;
   background-color: #f7f7f7;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-header {
-  position: relative;
-  background-color: #eee;
-  height: 5rem;
-}
-
-header nav {
-  height: 100%;
-  width: auto;
-  overflow: auto;
-}
-
-header nav .menu-wrap {
-  display: none;
-  position: absolute;
-  right: 0;
-}
-
-header nav .button {
-  display: block;
-  text-align: right;
-}
-
-header .row {
-  height: 100%;
-}
-
-header .button {
-  height: 100%;
-  display: inline-flex;
-  align-items: center;
-  border: none;
-  border-radius: 0;
-}
-
-header p.button {
-  cursor: default;
 }
 
 a {
@@ -53,14 +10,52 @@ a {
   color: #23593C;
 }
 
-ul {
-  list-style: disc outside none;
-  margin-left: 0;
-  padding-left: 1em;
+header {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  background-color: gainsboro;
+  height: 5rem;
 }
 
-ul li {
-  padding-left: .1em;
+header #name {
+  cursor: default;
+  font-size: 18px;
+  width: auto;
+}
+
+header .button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0;
+  width: 110px;
+}
+
+header nav {
+  height: 100%;
+}
+
+header nav .menu-wrap {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: gainsboro;
+}
+
+header nav .menu-wrap li {
+  height: 5rem;
+  margin-bottom: 0;
+}
+
+main {
+  position: relative;
+  top: 5em;
 }
 
 .work-section #projects {
@@ -196,10 +191,6 @@ body.high-contrast .project-info-wrap, body.high-contrast .prefs, body.high-cont
 body.high-contrast main a {
   color: white !important;
   font-weight: bold !important;
-}
-
-body.high-contrast .masthead {
-  background-image: none !important;
 }
 
 @media only screen and (min-width: 740px) {
