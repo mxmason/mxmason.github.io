@@ -1,10 +1,8 @@
 $main-bg: darken(white, 3.25%);
+$header-bg: darken($main-bg, 10.5%);
+$nav-hover: darken($header-bg, 5%);
 $main-accent: #598C7D;
 $link-color: #23593C;
-
-* {
-    box-sizing: border-box;
-}
 
 body {
     color: #222222;
@@ -12,59 +10,55 @@ body {
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-header {
-    position: relative;
-    background-color: #eee;
-    height: 5rem;
-
-
-
-    nav{
-        height: 100%;
-        width: auto;
-        overflow: auto;
-        .menu-wrap {
-            display: none;
-            position: absolute;
-            right: 0;
-        }
-        .button {
-            display: block;
-            text-align: right;
-
-
-        }
-    }
-    .row {height: 100%}
-
-    .button {
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-        border: none;
-        border-radius: 0;
-    }
-    p.button {
-        cursor: default;
-    }
-}
-
-
 a {
     font-weight: bold;
     text-decoration: none;
     color: $link-color;
 }
 
-ul {
-    list-style: disc outside none;
-    margin-left: 0;
-    padding-left: 1em;
-    li {
-        padding-left: .1em;
+header {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    background-color: $header-bg;
+    height: 5rem;
+    #name {
+        cursor: default;
+        font-size: 18px;
+        width: auto;
+    }
+    .button {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 0;
+        width: 110px;
+    }
+    nav {
+        height: 100%;
+        .menu-wrap {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background-color: $header-bg;
+            li {
+                height: 5rem;
+                margin-bottom: 0;
+
+            }
+        }
     }
 }
 
+main {
+    position: relative;
+    top: 5em;
+}
 
 .work-section {
     #projects {
@@ -190,10 +184,6 @@ body.high-contrast {
     main a{
         color: white !important;
         font-weight: bold !important;
-    }
-    .masthead {
-        background-image: none !important;
-        // background-color: $main-accent !important;
     }
 }
 
