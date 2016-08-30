@@ -12,8 +12,8 @@ a {
 
 header {
   display: block;
-  position: fixed;
-  z-index: 1000;
+  position: absolute;
+  z-index: 10;
   background-color: gainsboro;
   height: 5rem;
 }
@@ -26,7 +26,7 @@ header #name {
 
 header .button {
   height: 100%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border: none;
@@ -40,8 +40,6 @@ header nav {
 
 header nav .menu-wrap {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
   position: absolute;
   right: 0;
   top: 100%;
@@ -103,7 +101,8 @@ main {
   font-weight: bold;
 }
 
-.content-footer p, .content-footer h1 {
+.content-footer h1,
+.content-footer p {
   color: #f7f7f7;
 }
 
@@ -121,7 +120,7 @@ main {
 }
 
 .content-footer .credits p {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .prefs {
@@ -171,8 +170,8 @@ main {
   font-weight: bold;
 }
 
-.btn-close-prefs:hover,
-.btn-close-prefs:focus {
+.btn-close-prefs:focus,
+.btn-close-prefs:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -183,7 +182,10 @@ body.high-contrast {
   color: white !important;
 }
 
-body.high-contrast .project-info-wrap, body.high-contrast .prefs, body.high-contrast .prefs-content, body.high-contrast footer {
+body.high-contrast .prefs,
+body.high-contrast .prefs-content,
+body.high-contrast .project-info-wrap,
+body.high-contrast footer {
   background-color: black !important;
   color: white !important;
 }
@@ -193,10 +195,27 @@ body.high-contrast main a {
   font-weight: bold !important;
 }
 
-@media only screen and (min-width: 740px) {
-  header nav .menu-wrap, header nav .button {
+@media only screen and (min-width: 750px) {
+  header #name {
+    padding-right: 0;
+  }
+  header nav {
+    padding-right: 2rem;
+    width: auto;
+  }
+  header nav .menu-wrap {
+    position: static;
     display: inline-flex;
-    height: 100%;
+    flex-direction: row;
+  }
+  header nav .menu-wrap .button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav .menu-wrap .button li {
+    width: 105px;
   }
   header button {
     display: none !important;
@@ -222,7 +241,7 @@ body.high-contrast main a {
     transition: all 0.5s ease;
   }
   .project .project-info-wrap:hover {
-    opacity: .875;
+    opacity: 0.875;
   }
   .contact {
     width: 80%;

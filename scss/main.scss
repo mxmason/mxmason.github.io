@@ -18,38 +18,40 @@ a {
 
 header {
     display: block;
-    position: fixed;
-    z-index: 1000;
+    position: absolute;
+    z-index: 10;
     background-color: $header-bg;
     height: 5rem;
+
     #name {
         cursor: default;
         font-size: 18px;
         width: auto;
     }
+
     .button {
         height: 100%;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         border: none;
         border-radius: 0;
         width: 110px;
     }
+
     nav {
         height: 100%;
+
         .menu-wrap {
             list-style-type: none;
-            display: flex;
-            flex-direction: column;
             position: absolute;
             right: 0;
             top: 100%;
             background-color: $header-bg;
+
             li {
                 height: 5rem;
                 margin-bottom: 0;
-
             }
         }
     }
@@ -64,6 +66,7 @@ main {
     #projects {
         margin-bottom: 2.5rem;
     }
+
     .project {
         text-align: center;
         margin-bottom: 2.5rem;
@@ -72,15 +75,19 @@ main {
             width: 100%;
             height: auto;
         }
+
         .project-name {
             margin-bottom: 0;
         }
+
         li {
             display: inline-block;
             margin: 0 0.2em;
         }
+
         .project-desc {
             height: auto;
+
             p {
                 display: block;
                 text-align: right;
@@ -89,31 +96,39 @@ main {
         }
     }
 }
+
 .content-footer {
     margin-top: 5em;
     padding: 2em 0;
     background-color: $main-accent;
     background-size: cover;
+
     a {
-        color:white;
+        color: white;
         font-weight: bold;
     }
-    p,h1 {
+
+    h1,
+    p {
         color: $main-bg;
     }
+
     .contact {
         a {
             display: inline-block;
         }
+
         object {
             pointer-events: none;
         }
     }
+
     .credits {
         margin-top: 1.5em;
         font-size: 0.8em;
+
         p {
-            margin: .5em;
+            margin: 0.5em;
         }
     }
 }
@@ -143,18 +158,16 @@ main {
     display: none;
 }
 
-
 .js .btn-open-prefs {
     display: inline-block;
-    float:  right;
+    float: right;
     position: absolute;
     right: 2rem;
     top: 3rem;
 }
 
-
 .btn-open-prefs {
-    float:  right;
+    float: right;
     position: absolute;
     right: 2rem;
     top: 3rem;
@@ -167,8 +180,8 @@ main {
     font-weight: bold;
 }
 
-.btn-close-prefs:hover,
-.btn-close-prefs:focus {
+.btn-close-prefs:focus,
+.btn-close-prefs:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -177,33 +190,57 @@ main {
 body.high-contrast {
     background-color: black !important;
     color: white !important;
-    .project-info-wrap, .prefs, .prefs-content, footer {
+
+    .prefs,
+    .prefs-content,
+    .project-info-wrap,
+    footer {
         background-color: black !important;
         color: white !important;
     }
-    main a{
+
+    main a {
         color: white !important;
         font-weight: bold !important;
     }
 }
-
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 750px) {
     header {
+        #name {
+            padding-right: 0;
+        }
+
         nav {
-            .menu-wrap, .button {
+            padding-right: 2rem;
+            width: auto;
+
+            .menu-wrap {
+                position: static;
                 display: inline-flex;
-                height: 100%;
+                flex-direction: row;
+
+                .button {
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    li {
+                        width: 105px;
+                    }
+                }
             }
         }
-        button {display: none !important;}
+
+        button {
+            display: none !important;
+        }
     }
-
-
-    }
-
+}
 @media only screen and (min-width: 820px) {
     .project {
         position: relative;
+
         .project-info-wrap {
             position: absolute;
             opacity: 0;
@@ -217,19 +254,23 @@ body.high-contrast {
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
+
             &:hover {
-                opacity: .875;
+                opacity: 0.875;
             }
         }
     }
+
     .contact {
         width: 80%;
         margin: 0 auto;
+
         #linkedin-link {
             margin-top: -10px;
         }
     }
 }
+
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
