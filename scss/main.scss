@@ -67,11 +67,14 @@ header {
     }
 }
 
-main {
+main, footer {
     position: relative;
     top: 5rem;
 
 
+}
+section {
+    height: auto;
 }
 
 .introduction {
@@ -158,20 +161,45 @@ main {
     }
 }
 
-.content-footer {
+.advocacy {
+    height: calc(#{$ht-def} - 5rem);
+
+}
+
+
+.advocacy-wrap {
+    height: 100%
+}
+
+
+    article {
+        height:100%;
+}
+
+footer {
+    position: relative;
+    height: 4rem;
     background-color: $main-accent;
     background-size: cover;
-    margin-top: 5em;
-    padding: 2em 0;
-    height: $ht-def;
+    h1, ul, li, p {
+        display: inline-block;
+        color: lighten($main-bg, 1%);
+        font-size: 1.25rem;
+    }
+    h1 {
+        text-align: center;
 
+    }
+    p {
+        margin-right: 2em;
+    }
     a {
         color: white;
         font-weight: bold;
     }
 
-
     .contact {
+        height: $ht-def;
         a {
             display: inline-block;
         }
@@ -180,13 +208,13 @@ main {
             pointer-events: none;
         }
     }
+    .credits-wrap {
+        position: absolute;
+        bottom: 0;
+        right: 3rem;
+        p,ul {
+            margin: 0;
 
-    .credits {
-        margin-top: 1.5em;
-        font-size: 0.8em;
-
-        p {
-            margin: 0.5em;
         }
     }
 }

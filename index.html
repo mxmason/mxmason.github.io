@@ -40,8 +40,8 @@
             </div>
         </section>
         <section class="work">
-            <div class="row">
-                <h1 id="projects" class="u-offscreen">Some of my projects</h1>
+            <div class="row u-offscreen">
+                <h1 id="projects">Some of my projects</h1>
             </div>
                 <div id="cozyFi" class="project">
                     <div class="project-info-wrap container">
@@ -53,11 +53,10 @@
                         </ul>
                     </div>
                 </div>
-
                 <div id="d3Intro" class="project">
                     <div class="project-info-wrap container">
-                        <h2 class="project-name">D3 Intro</h2>
-                        <p class="project-desc">This app is a companion to a brief presentation on D3, the data visualization library for JavaScript. Huge thanks to <a href="https://github.com/curran">Curran Kelleher</a> for the inspiration.</p>
+                        <h2 class="project-name ">D3 Intro</h2>
+                        <p class="project-desc ">This app is a companion to a brief presentation on D3, the data visualization library for JavaScript. Huge thanks to <a href="https://github.com/curran">Curran Kelleher</a> for the inspiration.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="http://ejmason.com/d3-intro">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/d3-intro">Github</a></li>
@@ -66,8 +65,8 @@
                 </div>
                 <div id="spacingQuiz" class="project">
                     <div class="project-info-wrap container">
-                        <h2 class="project-name">Spacing Quiz</h2>
-                        <p class="project-desc">This React app tests users' knowledge of some German terms. Users log in with their Google IDs and a Mongo database stores our terms, while a simple algorithm decides which term to show the user next.</p>
+                        <h2 class="project-name row">Spacing Quiz</h2>
+                        <p class="project-desc row">This React app tests users' knowledge of some German terms. Users log in with their Google IDs and a Mongo database stores our terms, while a simple algorithm decides which term to show the user next.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="https://spacing-quiz.herokuapp.com/">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/spacing-quiz">Github</a></li>
@@ -76,8 +75,8 @@
                 </div>
                 <div id="flickrMap" class="project">
                     <div class="project-info-wrap container">
-                        <h2 class="project-name">Flickr PhotoMap</h2>
-                        <p class="project-desc">This is a simple, fun mashup of the Flickr and Google Maps APIs which displays Flickr images on a Google Maps canvas. RequireJS ensures the right dependencies are loaded.</p>
+                        <h2 class="project-name row">Flickr PhotoMap</h2>
+                        <p class="project-desc row">This is a simple, fun mashup of the Flickr and Google Maps APIs which displays Flickr images on a Google Maps canvas. RequireJS ensures the right dependencies are loaded.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="http://ejmason.com/flickr-map">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/flickr-map">Github</a></li>
@@ -85,14 +84,20 @@
                     </div>
                 </div>
         </section>
-        <section class="advocacy">
+        <section class="advocacy u-full-width">
             <div class="advocacy-wrap container">
                 <h1 id="advocacy" class="u-offscreen">Some of my advocacy work</h1>
-                <ul>
-                    <li><a href="https://www.youtube.com/watch?v=vMfYg87izjI" name="Thinkful Podcast #3063">Thinkful Podcast #3063</a>: A podcast I led with Thinkful staff concerning the realities of disabled people in the American workforce and how techology
-                        can and should include disabled workers.</li>
-                    <li><a href="https://github.com/jpdevries/webguidelines" name="Web guidelines">Guidelines for an Accessible Web</a>: An in-progress collaboration outlining the how and why of accessibility best-practices for the web.</li>
-                </ul>
+                <div class="row">
+                    <article class="project six columns">
+                        <h2 id="thinkful-podcast"><a href="https://www.youtube.com/watch?v=vMfYg87izjI" name="Thinkful Podcast #3063">Thinkful Podcast #3063</a></h2>
+                        <p> A podcast I led with Thinkful staff concerning the realities of disabled people in the American workforce and how techology
+                            can and should include disabled workers.</p>
+                    </article>
+                    <article class="project six columns">
+                        <h2 id="web-guidelines"><a href="https://github.com/jpdevries/webguidelines" name="Web guidelines">Guidelines for an Accessible Web</a></h2>
+                        <p>An in-progress collaboration outlining the how and why of accessibility best-practices for the web.</p>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
@@ -116,43 +121,14 @@
             </div>
         </div>
     </aside>
-    <footer class="content-footer" role="contentinfo">
-        <div class="container">
-            <div class="row">
-                <h1 id="contact" class="call-to-action u-offscreen">
-                    Get in touch with me!
-                </h1>
-            </div>
-                    <div class="contact row">
-                        <a href="mailto:eliasjmason@gmail.com" aria-label="email Elias" class="three columns">
-                            <object data="img/email-icn.svg" type="image/svg+xml">
-                                <img src="img/email-icn.svg" alt="email icon">
-                            </object>
-                        </a>
-                        <a href="http://www.github.com/dengeist" aria-label="Link to GitHub" class="three columns">
-                            <object data="img/github-icn.svg" type="image/svg+xml">
-                                <img src="img/github-icn.svg" alt="Github">
-                            </object>
-                        </a>
-                        <a href="http://www.twitter.com/codeability" aria-label="Link to Twitter" class="three columns">
-                            <object data="img/twitter-icn.svg" type="image/svg+xml">
-                                <img src="img/twitter-icn.svg" alt="Twitter">
-                            </object>
-                        </a>
-                        <a id="linkedin-link" href="https://www.linkedin.com/in/elias-mason-aa8729102?tr" aria-label="Link to LinkedIn" class="three columns">
-                            <object data="img/linkedin-icn.svg" type="image/svg+xml">
-                                <img src="img/linkedin-icn.svg" alt="LinkedIn icon">
-                            </object>
-                        </a>
-                    </div>
-            <div class="credits row">
-                <p>Cover image via <a href="https://unsplash.com/fableandfolk">Annie Spratt</a> at <a href="http://usplash.com">Usplash</a></p>
-                <p>Email SVG via <a href="https://www.iconfinder.com/tmthymllr">Timothy Miller</a></p>
-                <p>Github SVG via <a href="https://www.iconfinder.com/HovyTech">Alexander Hovy</a></p>
-                <p>Twitter and LinkedIn SVGs via <a href="https://www.iconfinder.com/lastspark">Last Spark</a></p>
-                <p>All SVGs licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> and modified by me for use with this site.</p>
-
-            </div>
+    <footer class="content-footer u-full-width" role="contentinfo">
+        <div class="credits-wrap">
+            <p id="creditslabel">SVG credits:</p>
+            <ul aria-describedby="creditsLabel">
+                <li><a href="https://www.iconfinder.com/tmthymllr">Email</a></li> •
+                <li><a href="https://www.iconfinder.com/HovyTech">Github</a></li> •
+                <li><a href="https://www.iconfinder.com/lastspark">Twitter and LinkedIn</a></li>
+            </ul>
         </div>
     </footer>
     <script src="js/vendor/modernizr.min.js"></script>

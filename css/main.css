@@ -59,9 +59,13 @@ header nav .menu-wrap li {
   margin-bottom: 0;
 }
 
-main {
+main, footer {
   position: relative;
   top: 5rem;
+}
+
+section {
+  height: auto;
 }
 
 .introduction {
@@ -158,34 +162,64 @@ main {
   border-color: #4067A4;
 }
 
-.content-footer {
-  background-color: #598C7D;
-  background-size: cover;
-  margin-top: 5em;
-  padding: 2em 0;
-  height: 45em;
+.advocacy {
+  height: calc(45em - 5rem);
 }
 
-.content-footer a {
+.advocacy-wrap {
+  height: 100%;
+}
+
+article {
+  height: 100%;
+}
+
+footer {
+  position: relative;
+  height: 4rem;
+  background-color: #598C7D;
+  background-size: cover;
+}
+
+footer h1, footer ul, footer li, footer p {
+  display: inline-block;
+  color: #f9f9f9;
+  font-size: 1.25rem;
+}
+
+footer h1 {
+  text-align: center;
+}
+
+footer p {
+  margin-right: 2em;
+}
+
+footer a {
   color: white;
   font-weight: bold;
 }
 
-.content-footer .contact a {
+footer .contact {
+  height: 45em;
+}
+
+footer .contact a {
   display: inline-block;
 }
 
-.content-footer .contact object {
+footer .contact object {
   pointer-events: none;
 }
 
-.content-footer .credits {
-  margin-top: 1.5em;
-  font-size: 0.8em;
+footer .credits-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
 }
 
-.content-footer .credits p {
-  margin: 0.5em;
+footer .credits-wrap p, footer .credits-wrap ul {
+  margin: 0;
 }
 
 .prefs {
