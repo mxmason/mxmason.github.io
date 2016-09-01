@@ -5,8 +5,7 @@ body {
 }
 
 p {
-  font-size: 1.7em;
-  margin-bottom: .5em;
+  font-size: 1.5em;
 }
 
 a {
@@ -32,6 +31,7 @@ header #name {
   cursor: default;
   font-size: 18px;
   width: auto;
+  padding-right: 0;
 }
 
 header .button {
@@ -224,10 +224,13 @@ body.high-contrast main a {
   font-weight: bold !important;
 }
 
-@media only screen and (min-width: 750px) {
-  header #name {
-    padding-right: 0;
+@media only screen and (min-width: 320px) {
+  p {
+    font-size: 1.7em;
   }
+}
+
+@media only screen and (min-width: 750px) {
   header nav {
     padding-right: 2rem;
     width: auto;
