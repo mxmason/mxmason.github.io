@@ -4,7 +4,7 @@ $nav-hover: darken($header-bg, 5%);
 $main-color: #3d3d3d;
 $link-color: #23593C;
 $main-accent: #598C7D;
-$ht-def: 48em;
+$ht-def: 45em;
 
 body {
     color: $main-color;
@@ -107,7 +107,12 @@ main {
     }
 
     .project-info-wrap {
-        padding: 3em;
+        width: 90%;
+        padding-top: 3em;
+        p {
+            width: 85%;
+            margin: 0 auto;
+        }
     }
 
     .project-links {
@@ -166,9 +171,6 @@ main {
         font-weight: bold;
     }
 
-    project-info-wrap container, p {
-        color: $main-bg;
-    }
 
     .contact {
         a {
