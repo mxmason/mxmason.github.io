@@ -148,6 +148,11 @@ main {
   background-position: 0 300px;
 }
 
+.work #d3Intro .button-primary {
+  background-color: #5D97F1;
+  border-color: #4067A4;
+}
+
 .content-footer {
   background-color: #598C7D;
   background-size: cover;
@@ -161,7 +166,7 @@ main {
   font-weight: bold;
 }
 
-.content-footer h1, .content-footer p {
+.content-footer project-info-wrap container, .content-footer p {
   color: #f7f7f7;
 }
 

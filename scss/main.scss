@@ -147,6 +147,10 @@ main {
         background-image: url('../img/d3-cover.png');
         background-repeat: no-repeat;
         background-position: 0 300px;
+        .button-primary {
+            background-color: #5D97F1;
+            border-color: #4067A4;
+        }
     }
 }
 
@@ -162,7 +166,7 @@ main {
         font-weight: bold;
     }
 
-    h1, p {
+    project-info-wrap container, p {
         color: $main-bg;
     }
 
