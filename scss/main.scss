@@ -95,11 +95,22 @@ section {
     }
 }
 
-.work {
+.info-wrap {
+    padding-top: 2em;
+    height: auto;
+    p {
+        margin: 0 auto;
+        font-size: 1.3em;
+    }
+}
+
+.code {
     h2 {
         text-align: center;
     }
     .project {
+        padding-top: 3em;
+        padding-bottom: 3em;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -108,12 +119,10 @@ section {
 
     }
 
-    .project-info-wrap {
+    .info-wrap {
         width: 90%;
-        padding-top: 3em;
         p {
-            width: 85%;
-            margin: 0 auto;
+            width: 90%;
         }
     }
 
@@ -142,8 +151,12 @@ section {
         background-color: rgb(0, 188, 212);
         background-image: url('../img/cozyfi-cover.png');
         background-repeat: no-repeat;
-        .project-info-wrap {
-            background-color: white;        }
+        .info-wrap {
+            background-color: white;
+            -webkit-box-shadow: -7px 7px 5px 0px rgba(50, 50, 50, 0.4s5);
+            -moz-box-shadow:    -7px 7px 5px 0px rgba(50, 50, 50, 0.4s5);
+            box-shadow:         -7px 7px 5px 0px rgba(50, 50, 50, 0.4s5);
+        }
         .button-primary {
             background-color: rgb(255, 64, 129);
             border-color: rgb(255, 64, 129);
@@ -164,16 +177,31 @@ section {
 .advocacy {
     height: calc(#{$ht-def} - 5rem);
 
-}
+
+    .info-wrap {
+        height: 100%;
 
 
-.advocacy-wrap {
-    height: 100%
-}
-
-
+    }
     article {
-        height:100%;
+            margin: 1em auto;
+    }
+}
+
+.contact {
+    color: lighten($main-bg, 1%);
+    background-color: $main-accent;
+    height: calc(#{$ht-def} - 18em);
+    h1 {
+        text-align: center
+    }
+    a {
+        display: inline-block;
+    }
+
+    object {
+        pointer-events: none;
+    }
 }
 
 footer {
@@ -198,16 +226,6 @@ footer {
         font-weight: bold;
     }
 
-    .contact {
-        height: $ht-def;
-        a {
-            display: inline-block;
-        }
-
-        object {
-            pointer-events: none;
-        }
-    }
     .credits-wrap {
         position: absolute;
         bottom: 0;
@@ -272,7 +290,7 @@ body.high-contrast {
 
     .prefs,
     .prefs-content,
-    .project-info-wrap,
+    info-wrap,
     footer {
         background-color: black !important;
         color: white !important;
@@ -285,7 +303,7 @@ body.high-contrast {
 }
 
 @media only screen and (min-width: 320px) {
-    p {font-size: 1.7em}
+    p {font-size: 1.5em}
 }
 
 @media only screen and (min-width: 750px) {
@@ -319,7 +337,7 @@ body.high-contrast {
     // .project {
     //     position: relative;
     //
-    //     .project-info-wrap {
+    //     info-wrap {
     //         position: absolute;
     //         opacity: 0;
     //         top: 0;

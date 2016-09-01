@@ -89,11 +89,23 @@ section {
   display: inline-block;
 }
 
-.work h2 {
+.info-wrap {
+  padding-top: 2em;
+  height: auto;
+}
+
+.info-wrap p {
+  margin: 0 auto;
+  font-size: 1.3em;
+}
+
+.code h2 {
   text-align: center;
 }
 
-.work .project {
+.code .project {
+  padding-top: 3em;
+  padding-bottom: 3em;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -101,17 +113,15 @@ section {
   height: calc(45em - 5rem);
 }
 
-.work .project-info-wrap {
+.code .info-wrap {
   width: 90%;
-  padding-top: 3em;
 }
 
-.work .project-info-wrap p {
-  width: 85%;
-  margin: 0 auto;
+.code .info-wrap p {
+  width: 90%;
 }
 
-.work .project-links {
+.code .project-links {
   display: flex;
   flex: 0 1 auto;
   justify-content: center;
@@ -121,7 +131,7 @@ section {
   margin: 8rem auto;
 }
 
-.work .project-links li {
+.code .project-links li {
   display: flex;
   flex: 0 1 auto;
   flex-basis: fit-content;
@@ -129,35 +139,38 @@ section {
   height: auto;
 }
 
-.work .project-links li .button {
+.code .project-links li .button {
   display: block;
   width: 110px;
   margin: 0 auto;
 }
 
-.work #cozyFi {
+.code #cozyFi {
   background-color: #00bcd4;
   background-image: url("../img/cozyfi-cover.png");
   background-repeat: no-repeat;
 }
 
-.work #cozyFi .project-info-wrap {
+.code #cozyFi .info-wrap {
   background-color: white;
+  -webkit-box-shadow: -7px 7px 5px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: -7px 7px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: -7px 7px 5px 0px rgba(50, 50, 50, 0.4);
 }
 
-.work #cozyFi .button-primary {
+.code #cozyFi .button-primary {
   background-color: #ff4081;
   border-color: #ff4081;
 }
 
-.work #d3Intro {
+.code #d3Intro {
   background-color: #eee;
   background-image: url("../img/d3-cover.png");
   background-repeat: no-repeat;
   background-position: 0 300px;
 }
 
-.work #d3Intro .button-primary {
+.code #d3Intro .button-primary {
   background-color: #5D97F1;
   border-color: #4067A4;
 }
@@ -166,12 +179,30 @@ section {
   height: calc(45em - 5rem);
 }
 
-.advocacy-wrap {
+.advocacy .info-wrap {
   height: 100%;
 }
 
-article {
-  height: 100%;
+.advocacy article {
+  margin: 1em auto;
+}
+
+.contact {
+  color: #f9f9f9;
+  background-color: #598C7D;
+  height: calc(45em - 18em);
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+.contact a {
+  display: inline-block;
+}
+
+.contact object {
+  pointer-events: none;
 }
 
 footer {
@@ -198,18 +229,6 @@ footer p {
 footer a {
   color: white;
   font-weight: bold;
-}
-
-footer .contact {
-  height: 45em;
-}
-
-footer .contact a {
-  display: inline-block;
-}
-
-footer .contact object {
-  pointer-events: none;
 }
 
 footer .credits-wrap {
@@ -276,7 +295,7 @@ body.high-contrast {
 
 body.high-contrast .prefs,
 body.high-contrast .prefs-content,
-body.high-contrast .project-info-wrap,
+body.high-contrast info-wrap,
 body.high-contrast footer {
   background-color: black !important;
   color: white !important;
@@ -289,7 +308,7 @@ body.high-contrast main a {
 
 @media only screen and (min-width: 320px) {
   p {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 }
 
