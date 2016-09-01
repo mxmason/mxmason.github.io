@@ -27,8 +27,8 @@
             </nav>
 
     </header>
-    <main role="main" class="container">
-        <section class="introduction">
+    <main role="main" class="u-full-width">
+        <section class="introduction container">
             <div class="u-cvert">
                 <div class="row">
                     <h1>Hello!</h1><p class="sub-one"> I'm Elias Mason. Call me E.J.</p>
@@ -39,67 +39,61 @@
                 </div>
             </div>
         </section>
-        <section class="work">
+        <section class="work u-cf">
             <div class="row">
-                <h1 id="projects">Some of my projects</h1>
+                <h1 id="projects" class="u-offscreen">Some of my projects</h1>
             </div>
-            <div class="row">
-                <div class="project six columns">
-                    <img class="project-img" src="img/cozyfi.png" alt="Screenshot of CozyFi" />
-                    <div class="project-info-wrap">
-                        <h5 class="project-name">CozyFi</h5>
+                <div id="cozyFi" class="project twelve columns">
+                    <div class="project-info-wrap container">
+                        <h2 class="project-name row">CozyFi</h2>
+                        <p class="project-desc row">Built with a dev community in mind, this app uses Google's Maps API in a React frontend powered by Google's Firebase to help users find and save information about great places to work.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="http://cozyfi-963e1.firebaseapp.com">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/lotusgraham/cozyfi">Github</a></li>
                         </ul>
-                        <p class="project-desc">Built with a dev community in mind, this app uses Google's Maps API in a React frontend powered by Google's Firebase to help users find and save information about great places to work.</p>
                     </div>
                 </div>
-                <div class="project six columns">
-                    <img class="project-img" src="img/d3_intro.png" alt="Screenshot of D3 Intro" />
-                    <div class="project-info-wrap">
-                        <h5 class="project-name">D3 Intro</h5>
+
+                <div id="d3Intro" class="project twelve columns">
+                    <div class="project-info-wrap container">
+                        <h2 class="project-name">D3 Intro</h2>
+                        <p class="project-desc">This app is a companion to a brief presentation on D3, the data visualization library for JavaScript. Huge thanks to <a href="https://github.com/curran">Curran Kelleher</a> for the inspiration.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="http://ejmason.com/d3-intro">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/d3-intro">Github</a></li>
                         </ul>
-                        <p class="project-desc">This app is a companion to a brief presentation on D3, the data visualization library for JavaScript. Huge thanks to <a href="https://github.com/curran">Curran Kelleher</a> for the inspiration.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="project six columns">
-                    <img class="project-img" src="img/spacing-quiz.png" alt="Screenshot of Soacing Quiz" />
-                    <div class="project-info-wrap">
-                        <h5 class="project-name">Spacing Quiz</h5>
+                <div id="spacingQuiz" class="project twelve columns">
+                    <div class="project-info-wrap container">
+                        <h2 class="project-name">Spacing Quiz</h2>
+                        <p class="project-desc">This React app tests users' knowledge of some German terms. Users log in with their Google IDs and a Mongo database stores our terms, while a simple algorithm decides which term to show the user next.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="https://spacing-quiz.herokuapp.com/">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/spacing-quiz">Github</a></li>
                         </ul>
-                        <p class="project-desc">This React app tests users' knowledge of some German terms. Users log in with their Google IDs and a Mongo database stores our terms, while a simple algorithm decides which term to show the user next.</p>
                     </div>
                 </div>
-                <div class="project six columns">
-                    <img class="project-img" src="img/flickr-map.png" alt="Screenshot of Flickr Map" />
-                    <div class="project-info-wrap">
-                        <h5 class="project-name">Flickr PhotoMap</h5>
+                <div id="flickrMap" class="project twelve columns">
+                    <div class="project-info-wrap container">
+                        <h2 class="project-name">Flickr PhotoMap</h2>
+                        <p class="project-desc">This is a simple, fun mashup of the Flickr and Google Maps APIs which displays Flickr images on a Google Maps canvas. RequireJS ensures the right dependencies are loaded.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="http://ejmason.com/flickr-map">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/flickr-map">Github</a></li>
                         </ul>
-                        <p class="project-desc">This is a simple, fun mashup of the Flickr and Google Maps APIs which displays Flickr images on a Google Maps canvas. RequireJS ensures the right dependencies are loaded.</p>
                     </div>
                 </div>
+            <div class="advocacy-wrap container">
+                <h1 id="advocacy">Some of my advocacy work</h1>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=vMfYg87izjI" name="Thinkful Podcast #3063">Thinkful Podcast #3063</a>: A podcast I led with Thinkful staff concerning the realities of disabled people in the American workforce and how techology
+                        can and should include disabled workers.</li>
+                    <li><a href="https://github.com/jpdevries/webguidelines" name="Web guidelines">Guidelines for an Accessible Web</a>: An in-progress collaboration outlining the how and why of accessibility best-practices for the web.</li>
+                </ul>
             </div>
         </section>
-        <section>
-            <h1 id="advocacy">Some of my advocacy work</h1>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=vMfYg87izjI" name="Thinkful Podcast #3063">Thinkful Podcast #3063</a>: A podcast I led with Thinkful staff concerning the realities of disabled people in the American workforce and how techology
-                    can and should include disabled workers.</li>
-                <li><a href="https://github.com/jpdevries/webguidelines" name="Web guidelines">Guidelines for an Accessible Web</a>: An in-progress collaboration outlining the how and why of accessibility best-practices for the web.</li>
-            </ul>
-        </section>
+
     </main>
     <aside class="prefs" aria-hidden="true" hidden>
         <div class="prefs-content">
