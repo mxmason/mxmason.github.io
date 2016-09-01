@@ -90,16 +90,16 @@ main {
   text-align: center;
 }
 
-.work #cozyFi {
-  background: teal;
-}
-
 .work .project {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   height: calc(48em - 5rem);
+}
+
+.work .project-info-wrap {
+  padding: 3em;
 }
 
 .work .project-links {
@@ -109,7 +109,7 @@ main {
   align-items: center;
   margin: 0 auto;
   max-width: 690px;
-  height: 8rem;
+  margin: 8rem auto;
 }
 
 .work .project-links li {
@@ -117,12 +117,35 @@ main {
   flex: 0 1 auto;
   flex-basis: fit-content;
   margin: 0 4%;
+  height: auto;
 }
 
 .work .project-links li .button {
   display: block;
   width: 110px;
   margin: 0 auto;
+}
+
+.work #cozyFi {
+  background-color: #00bcd4;
+  background-image: url("../img/cozyfi-cover.png");
+  background-repeat: no-repeat;
+}
+
+.work #cozyFi .project-info-wrap {
+  background-color: white;
+}
+
+.work #cozyFi .button-primary {
+  background-color: #ff4081;
+  border-color: #ff4081;
+}
+
+.work #d3Intro {
+  background-color: #eee;
+  background-image: url("../img/d3-cover.png");
+  background-repeat: no-repeat;
+  background-position: 0 300px;
 }
 
 .content-footer {
