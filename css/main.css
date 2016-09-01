@@ -94,10 +94,6 @@ main {
   background: teal;
 }
 
-.work .project-info-wrap {
-  width: 100%;
-}
-
 .work .project {
   display: flex;
   flex-wrap: nowrap;
