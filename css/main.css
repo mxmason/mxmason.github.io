@@ -52,11 +52,16 @@ header nav .menu-wrap {
   position: absolute;
   right: 0;
   top: 100%;
+  display: none;
 }
 
 header nav .menu-wrap li {
   height: 5rem;
   margin-bottom: 0;
+}
+
+header nav #menu-btn:hover + .menu-wrap {
+  display: block;
 }
 
 main, footer {

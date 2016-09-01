@@ -58,11 +58,15 @@ header {
             position: absolute;
             right: 0;
             top: 100%;
-
+            display: none;
             li {
                 height: 5rem;
                 margin-bottom: 0;
             }
+        }
+        #menu-btn:hover + .menu-wrap{
+            display: block;
+
         }
     }
 }
