@@ -39,7 +39,6 @@ header .button {
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 0;
   height: 100%;
   width: 110px;
 }
