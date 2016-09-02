@@ -1,9 +1,12 @@
 language: node_js
 node_js:
     - "6"
- env:
- global:
+env:
+global:
      - "FTP_USER=user"
      - "FTP_PASSWORD=password"
+ matrix:
+     - USE_NETWORK=true
+     - USE_NETWORK=false
 after_success:
     "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://annihilus.dreamhost.com/"
