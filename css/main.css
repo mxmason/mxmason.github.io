@@ -1,6 +1,6 @@
 body {
   color: #3d3d3d;
-  background-color: #f7f7f7;
+  background-color: #B0C1C5;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -11,7 +11,7 @@ p {
 a {
   font-weight: bold;
   text-decoration: none;
-  color: #23593C;
+  color: #4d4d4d;
 }
 
 ul {
@@ -23,7 +23,7 @@ header {
   display: block;
   position: absolute;
   z-index: 10;
-  background-color: gainsboro;
+  background-color: #e6e6e6;
   height: 5rem;
 }
 
@@ -48,7 +48,7 @@ header nav {
 }
 
 header nav .menu-wrap {
-  background-color: gainsboro;
+  background-color: #e6e6e6;
   position: absolute;
   right: 0;
   top: 100%;
@@ -65,6 +65,7 @@ header nav #menu-btn:hover + .menu-wrap {
 }
 
 main, footer {
+  background-color: #fafbfb;
   position: relative;
   top: 5rem;
 }
@@ -154,6 +155,7 @@ section {
   background-color: #00bcd4;
   background-image: url("../img/cozyfi-cover.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .code #cozyFi .info-wrap {
@@ -181,7 +183,7 @@ section {
 }
 
 .code #spacingQuiz {
-  background-color: #B0C1C5;
+  background-color: #c7c7c7;
 }
 
 .code #spacingQuiz .button-primary {
@@ -190,7 +192,7 @@ section {
 }
 
 .code #flickrMap {
-  background-color: #868FA8;
+  background-color: #dedede;
 }
 
 .code #flickrMap .button-primary {
@@ -203,41 +205,61 @@ section {
 }
 
 .advocacy .info-wrap {
-  height: 100%;
+  height: auto;
+}
+
+.advocacy .info-wrap h2 {
+  text-align: center;
 }
 
 .advocacy article {
   margin: 1em auto;
+  height: auto;
+}
+
+.advocacy article h3 {
+  font-size: 1.4em;
+  margin-bottom: .25em;
+}
+
+.advocacy article p {
+  font-size: 1.2em;
 }
 
 .contact {
-  color: #f9f9f9;
-  background-color: #598C7D;
+  color: #3d3d3d;
+  background-color: #c2c6d3;
   height: calc(45em - 18em);
 }
 
-.contact h1 {
+.contact .row {
   text-align: center;
 }
 
-.contact a {
+.contact .row h1, .contact .row p {
   display: inline-block;
 }
 
-.contact object {
-  pointer-events: none;
+.contact .row p {
+  margin-left: .25em;
+  font-size: 3em;
+}
+
+.contact .row .sub-two {
+  display: block;
+  font-size: 1.4em;
 }
 
 footer {
   position: relative;
   height: 4rem;
-  background-color: #598C7D;
+  background-color: #c2c6d3;
   background-size: cover;
 }
 
 footer h1, footer ul, footer li, footer p {
   display: inline-block;
-  color: #f9f9f9;
+  color: #8992ab;
   font-size: 1.25rem;
 }
 
@@ -247,6 +269,7 @@ footer h1 {
 
 footer p {
   margin-right: 2em;
+  color: #3d3d3d;
 }
 
 footer a {

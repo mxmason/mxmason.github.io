@@ -1,8 +1,8 @@
-$main-bg: darken(white, 3.25%);
-$header-bg: darken($main-bg, 10.5%);
-$nav-hover: darken($header-bg, 5%);
+$main-bg: #B0C1C5;
+$header-bg: darken(white, 10%);
+$nav-hover: darken($header-bg, 60%);
 $main-color: #3d3d3d;
-$link-color: #23593C;
+$link-color: $nav-hover;
 $main-accent: #598C7D;
 $ht-def: 45em;
 
@@ -72,8 +72,10 @@ header {
 }
 
 main, footer {
+    background-color: lighten($main-bg, 25%);
     position: relative;
     top: 5rem;
+
 
 
 }
@@ -155,6 +157,8 @@ section {
         background-color: rgb(0, 188, 212);
         background-image: url('../img/cozyfi-cover.png');
         background-repeat: no-repeat;
+        background-size: cover;
+
         .info-wrap {
             background-color: white;
             -webkit-box-shadow: -7px 7px 5px 0px rgba(50, 50, 50, 0.4s5);
@@ -177,14 +181,14 @@ section {
         }
     }
     #spacingQuiz {
-        background-color: #B0C1C5;
+        background-color: darken($header-bg, 12%);
         .button-primary {
             background-color: #224E5B;
             border-color: #224E5B;
         }
     }
     #flickrMap {
-        background-color: #868FA8;
+        background-color: darken($header-bg, 3%);
         .button-primary {
             background-color: #2A3962;
             border-color: #2A3962;
@@ -196,41 +200,57 @@ section {
 .advocacy {
     height: calc(#{$ht-def} - 5rem);
 
-
     .info-wrap {
-        height: 100%;
+height: auto;
+        h2 {
+            text-align: center;
+        }
 
 
     }
     article {
-            margin: 1em auto;
+        margin: 1em auto;
+        height: auto;
+
+        h3 {
+        font-size: 1.4em;
+        margin-bottom: .25em;
+        }
+        p {
+            font-size: 1.2em;
+        }
     }
 }
 
-.contact {
-    color: lighten($main-bg, 1%);
-    background-color: $main-accent;
+.contact{
+    color: $main-color;
+    background-color: lighten(#868FA9, 20%);
     height: calc(#{$ht-def} - 18em);
-    h1 {
-        text-align: center
-    }
-    a {
-        display: inline-block;
-    }
+    .row{
+        text-align: center;
+        h1,p {
+            display: inline-block;
+        }
+        p {
+            margin-left: .25em;
+            font-size: 3em;
+        }
+        .sub-two {
 
-    object {
-        pointer-events: none;
+            display: block;
+            font-size: 1.4em;
+        }
     }
 }
 
 footer {
     position: relative;
     height: 4rem;
-    background-color: $main-accent;
+    background-color: lighten(#868FA9, 20%);
     background-size: cover;
     h1, ul, li, p {
         display: inline-block;
-        color: lighten($main-bg, 1%);
+        color: lighten(#868FA9, 1%);
         font-size: 1.25rem;
     }
     h1 {
@@ -239,6 +259,7 @@ footer {
     }
     p {
         margin-right: 2em;
+        color: $main-color;
     }
     a {
         color: white;
