@@ -205,16 +205,17 @@ section {
 }
 
 .advocacy .info-wrap {
+  width: 90%;
   height: auto;
+  margin: 0 auto;
 }
 
 .advocacy .info-wrap h2 {
   text-align: center;
 }
 
-.advocacy article {
-  margin: 1em auto;
-  height: auto;
+.advocacy article h2 {
+  margin: 1.75em;
 }
 
 .advocacy article h3 {
@@ -224,6 +225,7 @@ section {
 
 .advocacy article p {
   font-size: 1.2em;
+  text-align: justify;
 }
 
 .contact {
