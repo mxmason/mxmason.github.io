@@ -1,6 +1,6 @@
 body {
   color: #3d3d3d;
-  background-color: #B0C1C5;
+  background-color: #e6e6e6;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -11,7 +11,7 @@ p {
 a {
   font-weight: bold;
   text-decoration: none;
-  color: #4d4d4d;
+  color: #d1d1d1;
 }
 
 ul {
@@ -40,7 +40,7 @@ header .button {
   justify-content: center;
   border: none;
   height: 100%;
-  width: 110px;
+  transition: background-color .5s ease;
 }
 
 header nav {
@@ -53,6 +53,10 @@ header nav .menu-wrap {
   right: 0;
   top: 100%;
   display: none;
+}
+
+header nav .menu-wrap .button:hover {
+  background-color: #d1d1d1;
 }
 
 header nav .menu-wrap li {
@@ -201,7 +205,7 @@ section {
 }
 
 .advocacy {
-  height: calc(45em - 5rem);
+  height: calc(45em - 20rem);
 }
 
 .advocacy .info-wrap {
@@ -230,8 +234,7 @@ section {
 
 .contact {
   color: #3d3d3d;
-  background-color: #c2c6d3;
-  height: calc(45em - 18em);
+  height: 15rem;
 }
 
 .contact .row {
@@ -255,7 +258,6 @@ section {
 footer {
   position: relative;
   height: 4rem;
-  background-color: #c2c6d3;
   background-size: cover;
 }
 
@@ -275,7 +277,6 @@ footer p {
 }
 
 footer a {
-  color: white;
   font-weight: bold;
 }
 

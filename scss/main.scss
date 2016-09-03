@@ -1,6 +1,6 @@
 $main-bg: #B0C1C5;
 $header-bg: darken(white, 10%);
-$nav-hover: darken($header-bg, 60%);
+$nav-hover: darken($header-bg, 8%);
 $main-color: #3d3d3d;
 $link-color: $nav-hover;
 $main-accent: #598C7D;
@@ -8,7 +8,7 @@ $ht-def: 45em;
 
 body {
     color: $main-color;
-    background-color: $main-bg;
+     background-color: $header-bg;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 p{
@@ -41,13 +41,12 @@ header {
     }
 
     .button {
-        // TODO: Add l/r border?
         display: inline-flex;
         align-items: center;
         justify-content: center;
         border: none;
         height: 100%;
-        width: 110px;
+        transition: background-color .5s ease;
     }
 
     nav {
@@ -58,6 +57,10 @@ header {
             position: absolute;
             right: 0;
             top: 100%;
+            .button:hover {
+                background-color: $nav-hover;
+            }
+
             display: none;
             li {
                 height: 5rem;
@@ -198,7 +201,7 @@ section {
 }
 
 .advocacy {
-    height: calc(#{$ht-def} - 5rem);
+    height: calc(#{$ht-def} - 20rem);
     .info-wrap {
         width: 80%;
         height: auto;
@@ -226,8 +229,8 @@ section {
 
 .contact{
     color: $main-color;
-    background-color: lighten(#868FA9, 20%);
-    height: calc(#{$ht-def} - 18em);
+    height: 15rem;
+
     .row{
         text-align: center;
         h1,p {
@@ -247,7 +250,6 @@ section {
 footer {
     position: relative;
     height: 4rem;
-    background-color: lighten(#868FA9, 20%);
     background-size: cover;
     h1, ul, li, p {
         display: inline-block;
@@ -263,7 +265,6 @@ footer {
         color: $main-color;
     }
     a {
-        color: white;
         font-weight: bold;
     }
 
