@@ -1,9 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="eng">
+<html class="no-js" lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>EJ</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <title>Elias Mason</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet" media="screen">
     <link href="css/skeleton.css" rel="stylesheet" media="screen">
@@ -11,139 +12,119 @@
     <link href="css/main.css" rel="stylesheet" media="screen">
 </head>
 <body>
-    <header class="masthead">
-        <a href="#user-prefs" class="button button-primary btn-open-prefs" id="settings-btn" role="button" aria-hidden="true">
-            Appearance
-        </a>
-        <div class="container">
-            <div class="row">
-                <p class="masthead-intro">Hi, I'm</p>
-                <h1 class="masthead-heading">ELIAS!</h1>
-                <p class="masthead-subheading">and I make websites.</p>
-            </div>
-        </div>
-    </header>
-    <main class="container">
-        <section class="introduction-section">
-            <h1 id="intro">More specifically</h1>
-            <p>I'm a developer and mentor who is passionate about accessibility and the impact technology has on everyday life. When I'm not coding or teaching, you'll find me studying foreign languages, buying stacks of used sci-fi books, or taking myself out to the theatre.</p>
+    <header role="banner" class="u-full-width">
+            <p id="name" class="button u-pull-left">Elias Mason</p>
+            <nav role="navigation" class="u-pull-right">
+                <button id="menu-btn" class="button" role="button">Menu</button>
+                <ul class="menu-wrap upull-right">
+                    <li><a href="/" role="button" class="button">Home</a></li>
+                    <li><a href="#projects" role="button" class="button">Code</a></li>
+                    <li><a href="#advocacy" role="button" class="button">Advocacy</a></li>
+                    <li><a href="#contact" role="button" class="button">Contact</a></li>
+                    <li><a href="#user-prefs" role="button" id="prefs-btn" class="button" aria-hidden="true">UI Settings</a></li>
+                </ul>
+            </nav>
 
+    </header>
+    <main role="main" class="u-full-width">
+        <section class="introduction container">
+            <div class="u-cvert">
+                <div class="row">
+                    <h1>Hello!</h1><p class="sub-one"> I'm Elias Mason. Call me E.J.</p>
+                </div>
+                <div class="row">
+                    <p class="sub-two">I'm a developer, mentor, and disability advocate. I've built some cool stuff, taught some cool people, and given some cool talks, but I love bringing all three of these things together. And sci-fi. I love that.</p>
+                    <p>How are you?</p>
+                </div>
+            </div>
         </section>
-        <section class="work-section">
-            <h1 id="projects">Some of my projects</h1>
-            <div class="row">
-                <div class="project six columns">
-                    <img class="project-img" src="img/cozyfi.png" alt="Screenshot of CozyFi" />
-                    <div class="project-info-wrap">
-                        <h5 class="project-name">CozyFi</h5>
+        <section class="code">
+            <div class="row u-offscreen">
+                <h1 id="projects">Some of my projects</h1>
+            </div>
+                <div id="cozyFi" class="project">
+                    <div class="info-wrap container">
+                        <h2 class="project-name row">CozyFi</h2>
+                        <p class="project-desc row">Built with a dev community in mind, this app uses Google's Maps API in a React frontend powered by Google's Firebase to help users find and save information about great places to work.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="http://cozyfi-963e1.firebaseapp.com">Live</a></li>
-                            <li><a class="button button-primary" role="button"  href="https://github.com/lotusgraham/cozyfi">Github</a></li>
+                            <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/cozyfi">Github</a></li>
                         </ul>
-                        <p class="project-desc">Built with a dev community in mind, this app uses Google's Maps API in a React frontend powered by Google's Firebase to help users find and save information about great places to work.</p>
                     </div>
                 </div>
-                <div class="project six columns">
-                    <img class="project-img" src="img/d3_intro.png" alt="Screenshot of D3 Intro" />
-                    <div class="project-info-wrap">
-                        <h5 class="project-name">D3 Intro</h5>
+                <div id="d3Intro" class="project">
+                    <div class="info-wrap container">
+                        <h2 class="project-name ">D3 Intro</h2>
+                        <p class="project-desc ">This app is a companion to a brief presentation on D3, the data visualization library for JavaScript. Huge thanks to <a href="https://github.com/curran">Curran Kelleher</a> for the inspiration.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="http://ejmason.com/d3-intro">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/d3-intro">Github</a></li>
                         </ul>
-                        <p class="project-desc">This app is a companion to a brief presentation on D3, the data visualization library for JavaScript. Huge thanks to <a href="https://github.com/curran">Curran Kelleher</a> for the inspiration.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="project six columns">
-                    <img class="project-img" src="img/spacing-quiz.png" alt="Screenshot of Soacing Quiz" />
-                    <div class="project-info-wrap">
-                        <h5 class="project-name">Spacing Quiz</h5>
+                <!-- <div id="spacingQuiz" class="project" hidden>
+                    <div class="info-wrap container">
+                        <h2 class="project-name row">Spacing Quiz</h2>
+                        <p class="project-desc row">This React app tests users' knowledge of some German terms. Users log in with their Google IDs and a Mongo database stores our terms, while a simple algorithm decides which term to show the user next.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="https://spacing-quiz.herokuapp.com/">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/spacing-quiz">Github</a></li>
                         </ul>
-                        <p class="project-desc">This React app tests users' knowledge of some German terms. Users log in with their Google IDs and a Mongo database stores our terms, while a simple algorithm decides which term to show the user next.</p>
                     </div>
-                </div>
-                <div class="project six columns">
-                    <img class="project-img" src="img/flickr-map.png" alt="Screenshot of Flickr Map" />
-                    <div class="project-info-wrap">
-                        <h5 class="project-name">Flickr PhotoMap</h5>
+                </div> -->
+                <div id="flickrMap" class="project">
+                    <div class="info-wrap container">
+                        <h2 class="project-name row">Flickr PhotoMap</h2>
+                        <p class="project-desc row">This is a simple, fun mashup of the Flickr and Google Maps APIs which displays Flickr images on a Google Maps canvas. RequireJS ensures the right dependencies are loaded.</p>
                         <ul class="project-links">
                             <li><a class="button button-primary" role="button"  href="http://ejmason.com/flickr-map">Live</a></li>
                             <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/flickr-map">Github</a></li>
                         </ul>
-                        <p class="project-desc">This is a simple, fun mashup of the Flickr and Google Maps APIs which displays Flickr images on a Google Maps canvas. RequireJS ensures the right dependencies are loaded.</p>
                     </div>
                 </div>
-            </div>
-
-            <h1 id="other_work">Some of my advocacy work</h1>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=vMfYg87izjI" name="Thinkful Podcast #3063">Thinkful Podcast #3063</a>: A podcast I led with Thinkful staff concerning the realities of disabled people in the American workforce and how techology
-                    can and should include disabled workers.</li>
-                <li><a href="https://github.com/jpdevries/webguidelines" name="Web guidelines">Guidelines for an Accessible Web</a>: An in-progress collaboration outlining the how and why of accessibility best-practices for the web.</li>
-            </ul>
         </section>
-    </main>
-    <aside class="prefs" aria-hidden="true" hidden>
-        <div class="prefs-content">
-            <div class="prefs-header row">
-                <span class="btn-close-prefs">×</span>
-                <h4>Appearance preferences</h4>
-            </div>
-            <div class="prefs-body">
-                <form class="prefs-form">
-                    <fieldset class="row">
-                        <legend>High contrast mode:</legend>
-                        <label><input type="radio" name="high-contrast" value="no"> Off</label>
-                        <label><input type="radio" name="high-contrast" value="yes"> On</label>
-                    </fieldset>
-                    <div class="row">
-                        <button type="submit" class="button-primary">Update Preferences</button>
-                    </div>
-                </form>
+        <section class="advocacy u-full-width">
+        <div class="u-cvert">
+            <div class="container info-wrap">
+                <h2 id="advocacy">Some of my advocacy work</h2>
+                <div class="row">
+                    <article class="project four columns">
+                        <h3 id="thinkful-podcast"><a href="https://www.youtube.com/watch?v=vMfYg87izjI" name="Thinkful Podcast #3063">Thinkful Podcast #3063</a></h3>
+                        <p> A podcast I led with Thinkful staff concerning the realities of disabled people in the American workforce and how techology
+                            can and should include disabled workers.</p>
+                    </article>
+                    <article class="project four columns">
+                        <h3 id="accessibility-with-webstorage" name="accessibility-with-webstorage"><a href="http://output.jsbin.com/vavajor/">Accessibility With WebsSrorage</a></h3>
+                        <p>A brief write-up on how to use the WebStorage API to guve users the ability to customize how your website looks. Doing this is great for accessibility, but you can add some fun too.</p>
+                    </article>
+                    <article class="project four columns">
+                        <h3 id="web-guidelines"><a href="https://github.com/jpdevries/webguidelines" name="Web guidelines">Web Guidelines</a></h3>
+                        <p>An in-progress collaboration outlining the how and why of accessibility best-practices for the web.</p>
+                    </article>
+                </div>
             </div>
         </div>
-    </aside>
-    <footer class="content-footer" role="contentinfo">
-        <div class="container">
-            <div class="row">
-                <h1 class="call-to-action">
-                    Get in touch with me!
-                </h1>
+        </section>
+        <section class="contact u-full-width">
+            <div class="info-wrap container u-cf">
+                <div class="row">
+                    <h1>Let's get in touch.</h1>
+                    <p><a href="mailto:eliasjmason@gmail.com">Contact me!</a></p>
+                    <p class="sub-two">Or have a look at my <a href="https://www.linkedin.com/in/elias-mason-aa8729102">LinkedIn</a>.</p>
+                </div>
             </div>
-                    <div class="contact row">
-                        <a href="mailto:eliasjmason@gmail.com" aria-label="email Elias" class="three columns">
-                            <object data="img/email-icn.svg" type="image/svg+xml">
-                                <img src="img/email-icn.svg" alt="email icon">
-                            </object>
-                        </a>
-                        <a href="http://www.github.com/dengeist" aria-label="Link to GitHub" class="three columns">
-                            <object data="img/github-icn.svg" type="image/svg+xml">
-                                <img src="img/github-icn.svg" alt="Github">
-                            </object>
-                        </a>
-                        <a href="http://www.twitter.com/codeability" aria-label="Link to Twitter" class="three columns">
-                            <object data="img/twitter-icn.svg" type="image/svg+xml">
-                                <img src="img/twitter-icn.svg" alt="Twitter">
-                            </object>
-                        </a>
-                        <a id="linkedin-link" href="https://www.linkedin.com/in/elias-mason-aa8729102?tr" aria-label="Link to LinkedIn" class="three columns">
-                            <object data="img/linkedin-icn.svg" type="image/svg+xml">
-                                <img src="img/linkedin-icn.svg" alt="LinkedIn icon">
-                            </object>
-                        </a>
-                    </div>
-            <div class="credits row">
-                <p>Cover image via <a href="https://unsplash.com/fableandfolk">Annie Spratt</a> at <a href="http://usplash.com">Usplash</a></p>
-                <p>Email SVG via <a href="https://www.iconfinder.com/tmthymllr">Timothy Miller</a></p>
-                <p>Github SVG via <a href="https://www.iconfinder.com/HovyTech">Alexander Hovy</a></p>
-                <p>Twitter and LinkedIn SVGs via <a href="https://www.iconfinder.com/lastspark">Last Spark</a></p>
-                <p>All SVGs licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> and modified by me for use with this site.</p>
-            </div>
+        </section>
+    </main>
+
+
+    <footer class="content-footer u-full-width" role="contentinfo">
+        <div class="credits-wrap">
+            <p id="creditslabel">SVG credits:</p>
+            <ul aria-describedby="creditsLabel">
+                <li><a href="https://www.iconfinder.com/tmthymllr">Email</a></li> •
+                <li><a href="https://www.iconfinder.com/HovyTech">Github</a></li> •
+                <li><a href="https://www.iconfinder.com/lastspark">Twitter and LinkedIn</a></li>
+            </ul>
         </div>
     </footer>
     <script src="js/vendor/modernizr.min.js"></script>

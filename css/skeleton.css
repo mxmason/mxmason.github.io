@@ -183,7 +183,7 @@ input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box; }
@@ -360,7 +360,7 @@ form {
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
-  width: 100%;
+  width: 100% !important;
   box-sizing: border-box; }
 .u-max-full-width {
   max-width: 100%;
@@ -369,6 +369,19 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
+.u-cvert {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+.u-offscreen {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
 
 
 /* Misc
