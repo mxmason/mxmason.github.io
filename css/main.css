@@ -4,6 +4,10 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body.dyslexia-friendly {
+  font-family: "Comic Sans MS", "Chalkboard SE", serif !important;
+}
+
 p {
   font-size: 1.5em;
 }
@@ -72,6 +76,10 @@ main, footer {
   background-color: #f4f6f7;
   position: relative;
   top: 5rem;
+}
+
+main a:hover {
+  text-decoration: underline;
 }
 
 section {
@@ -297,7 +305,7 @@ footer .credits-wrap p, footer .credits-wrap ul {
   margin: 0;
 }
 
-.prefs {
+#prefsModal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -310,12 +318,32 @@ footer .credits-wrap p, footer .credits-wrap ul {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.prefs-content {
+#prefsModal .content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
+}
+
+#prefsModal form {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: auto;
+}
+
+#prefsModal form fieldset {
+  display: inline-block;
+  padding: 1em;
+  width: auto;
+  background-color: #eee;
+}
+
+#prefsModal button {
+  display: block;
+  position: relative;
+  z-index: 100;
 }
 
 .no-js .btn-open-prefs {
@@ -344,24 +372,6 @@ footer .credits-wrap p, footer .credits-wrap ul {
   cursor: pointer;
 }
 
-body.high-contrast {
-  background-color: black !important;
-  color: white !important;
-}
-
-body.high-contrast .prefs,
-body.high-contrast .prefs-content,
-body.high-contrast info-wrap,
-body.high-contrast footer {
-  background-color: black !important;
-  color: white !important;
-}
-
-body.high-contrast main a {
-  color: white !important;
-  font-weight: bold !important;
-}
-
 @media only screen and (min-width: 320px) {
   p {
     font-size: 1.5em;
@@ -387,7 +397,7 @@ body.high-contrast main a {
   header nav .menu-wrap .button li {
     width: 105px;
   }
-  header button {
+  header #menu-btn {
     display: none !important;
   }
 }

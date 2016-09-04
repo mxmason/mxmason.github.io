@@ -21,9 +21,24 @@
                     <li><a href="#projects" role="button" class="button">Code</a></li>
                     <li><a href="#advocacy" role="button" class="button">Advocacy</a></li>
                     <li><a href="#contact" role="button" class="button">Contact</a></li>
-                    <li><a href="#user-prefs" role="button" id="prefs-btn" class="button" aria-hidden="true">UI Settings</a></li>
+                    <li><a href="#user_prefs" role="button" id="openPrefs" class="button" aria-hidden="true">UI Settings</a></li>
                 </ul>
             </nav>
+            <aside id="prefsModal" aria-hidden="true">
+                <div class="content">
+                    <h2>User preferences</h2>
+                    <form action="/userprefs" method="post" role="form" id="prefsForm" class="u-cf">
+                        <fieldset class="u-pull-left">
+                            <legend>Font options</legend>
+                            <label>
+                                <input class="font-control" type="radio" name="userFont" value="dyslexiaFriendly"> Dyslexia-friendly</label>
+                            <label>
+                                <input class="font-control" type="radio" name="userFont" value="standard"> Standard</label>
+                        </fieldset>
+                        <button class="button-primary u-cf" type="submit">Close</button>
+                    </form>
+                </div>
+            </aside>
 
     </header>
     <main role="main" class="u-full-width">
