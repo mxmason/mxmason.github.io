@@ -56,7 +56,6 @@ header nav .menu-wrap {
   position: absolute;
   right: 0;
   top: 100%;
-  display: none;
 }
 
 header nav .menu-wrap .button:hover {
@@ -66,6 +65,7 @@ header nav .menu-wrap .button:hover {
 header nav .menu-wrap li {
   height: 5rem;
   margin-bottom: 0;
+  text-align: right;
 }
 
 header nav #menu-btn:hover + .menu-wrap {
@@ -75,7 +75,6 @@ header nav #menu-btn:hover + .menu-wrap {
 main, footer {
   background-color: #f4f6f7;
   position: relative;
-  top: 5rem;
 }
 
 main a:hover {
@@ -98,7 +97,7 @@ section {
 }
 
 .introduction p {
-  font-size: 1.7em;
+  font-size: 1.5em;
   margin-bottom: .5em;
 }
 
@@ -122,8 +121,7 @@ section {
 }
 
 .code .project {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: auto 1em;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -186,7 +184,7 @@ section {
   background-color: #eee;
   background-image: url("../img/d3-cover.png");
   background-repeat: no-repeat;
-  background-position: 0 375px;
+  background-position: 0 235px;
 }
 
 .code #d3Intro .button-primary {
@@ -208,7 +206,7 @@ section {
   background-color: #a3ccff;
   background-image: url("../img/flickrmap-cover.png");
   background-repeat: no-repeat;
-  background-position: 0 30px;
+  background-position: 0 -95px;
 }
 
 .code #flickrMap .button-primary {
@@ -217,20 +215,27 @@ section {
 }
 
 .advocacy {
+  margin: auto;
+  padding-top: 2em;
   height: calc(45em - 5rem);
 }
 
 .advocacy .info-wrap {
   height: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .advocacy .info-wrap h2 {
   text-align: center;
 }
 
+.advocacy article {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
 .advocacy article h2 {
-  margin: 1.75em;
+  margin: auto 1.75em;
 }
 
 .advocacy article h3 {
@@ -244,12 +249,12 @@ section {
 }
 
 .contact {
+  padding-top: 2em;
   color: #3d3d3d;
-  height: 20rem;
 }
 
-.contact info-wrap {
-  height: 100%;
+.contact .info-wrap {
+  height: auto;
 }
 
 .contact .row {
@@ -258,16 +263,18 @@ section {
 
 .contact .row h1, .contact .row p {
   display: inline-block;
+  font-size: 1.8em;
+  margin: 0 auto;
 }
 
 .contact .row p {
+  font-size: 1.5em;
   margin-left: .25em;
-  font-size: 3em;
 }
 
 .contact .row .sub-two {
   display: block;
-  font-size: 1.4em;
+  font-size: .9em;
 }
 
 footer {
@@ -372,15 +379,20 @@ footer .credits-wrap p, footer .credits-wrap ul {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 400px) {
   p {
-    font-size: 1.5em;
+    font-size: 1.7em;
+  }
+  .contact .row h1 {
+    font-size: 2em;
   }
 }
 
 @media only screen and (min-width: 750px) {
+  .contact .row h1 {
+    font-size: 2em;
+  }
   header nav {
-    padding-right: 2rem;
     width: auto;
   }
   header nav .menu-wrap {
@@ -388,14 +400,12 @@ footer .credits-wrap p, footer .credits-wrap ul {
     display: inline-flex;
     flex-direction: row;
   }
+  header nav .menu-wrap li {
+    flex: 1 1 auto;
+  }
   header nav .menu-wrap .button {
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  header nav .menu-wrap .button li {
-    width: 105px;
   }
   header #menu-btn {
     display: none !important;
