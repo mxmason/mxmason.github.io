@@ -214,7 +214,7 @@ section {
     height: calc(#{$ht-def} - 5rem);
     .info-wrap {
         height: 100%;
-        margin: 0 auto;
+        margin: auto;
         h2 {
             text-align: center;
         }
@@ -241,7 +241,8 @@ section {
 .contact{
     padding-top: 2em;
     color: $main-color;
-    height: 20rem;
+    // height: 20rem;
+    // padding-bottom: 30px;
 
     .info-wrap {
         height: auto;
@@ -366,28 +367,27 @@ footer {
 @media only screen and (min-width: 400px) {
     p {font-size: 1.7em}
     .contact .row h1 {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
 @media only screen and (min-width: 750px) {
+    .contact .row h1 {
+        font-size: 2em;
+    }
     header {
         nav {
-            padding-right: 2rem;
             width: auto;
             .menu-wrap {
                 position: static;
                 display: inline-flex;
                 flex-direction: row;
-
+                li {
+                    flex: 1 1 auto;
+                }
                 .button {
                     display: inline-flex;
                     flex-direction: column;
-
-                    li {
-                        width: 105px;
-                        align-items: center;
-                    }
                 }
             }
         }
