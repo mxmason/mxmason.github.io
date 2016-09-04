@@ -204,10 +204,9 @@ section {
 }
 
 .advocacy {
-    height: calc(#{$ht-def} - 20rem);
+    height: calc(#{$ht-def} - 5rem);
     .info-wrap {
-        width: 80%;
-        height: auto;
+        height: 100%;
         margin: 0 auto;
         h2 {
             text-align: center;
@@ -232,7 +231,11 @@ section {
 
 .contact{
     color: $main-color;
-    height: 15rem;
+    height: 20rem;
+
+    info-wrap {
+        height: 100%;
+    }
 
     .row{
         text-align: center;

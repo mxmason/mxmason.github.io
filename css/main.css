@@ -208,12 +208,11 @@ section {
 }
 
 .advocacy {
-  height: calc(45em - 20rem);
+  height: calc(45em - 5rem);
 }
 
 .advocacy .info-wrap {
-  width: 80%;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -237,7 +236,11 @@ section {
 
 .contact {
   color: #3d3d3d;
-  height: 15rem;
+  height: 20rem;
+}
+
+.contact info-wrap {
+  height: 100%;
 }
 
 .contact .row {
