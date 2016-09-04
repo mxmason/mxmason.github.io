@@ -177,7 +177,7 @@ section {
         background-color: #eee;
         background-image: url('../img/d3-cover.png');
         background-repeat: no-repeat;
-        background-position: 0 300px;
+        background-position: 0 375px;
         .button-primary {
             background-color: #5D97F1;
             border-color: #4067A4;
@@ -192,6 +192,9 @@ section {
     }
     #flickrMap {
         background-color: darken($header-bg, 3%);
+        background-image: url('../img/flickrMap-cover.png');
+        background-repeat: no-repeat;
+        background-position: center;
         .button-primary {
             background-color: #2A3962;
             border-color: #2A3962;
