@@ -58,11 +58,12 @@ header {
         height: 100%;
 
         .menu-wrap {
+            display: none;
             background-color: $header-bg;
             position: absolute;
             right: 0;
             top: 100%;
-            .button:hover {
+            li:hover {
                 background-color: $nav-hover;
             }
             li {
@@ -71,9 +72,11 @@ header {
                 text-align: right;
             }
         }
-        #menu-btn:hover + .menu-wrap{
-            display: block;
-
+        @media only screen and (max-width: 750px) {
+            #menu-btn:hover + .menu-wrap, .menu-wrap:hover{
+                display: block;
+                z-index: 1;
+            }
         }
     }
 }

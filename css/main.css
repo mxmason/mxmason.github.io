@@ -52,13 +52,14 @@ header nav {
 }
 
 header nav .menu-wrap {
+  display: none;
   background-color: #e6e6e6;
   position: absolute;
   right: 0;
   top: 100%;
 }
 
-header nav .menu-wrap .button:hover {
+header nav .menu-wrap li:hover {
   background-color: #d1d1d1;
 }
 
@@ -68,8 +69,11 @@ header nav .menu-wrap li {
   text-align: right;
 }
 
-header nav #menu-btn:hover + .menu-wrap {
-  display: block;
+@media only screen and (max-width: 750px) {
+  header nav #menu-btn:hover + .menu-wrap, header nav .menu-wrap:hover {
+    display: block;
+    z-index: 1;
+  }
 }
 
 main, footer {
