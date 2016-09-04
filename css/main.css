@@ -222,7 +222,7 @@ section {
 
 .advocacy .info-wrap {
   height: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .advocacy .info-wrap h2 {
@@ -251,7 +251,6 @@ section {
 .contact {
   padding-top: 2em;
   color: #3d3d3d;
-  height: 20rem;
 }
 
 .contact .info-wrap {
@@ -385,13 +384,15 @@ footer .credits-wrap p, footer .credits-wrap ul {
     font-size: 1.7em;
   }
   .contact .row h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
 @media only screen and (min-width: 750px) {
+  .contact .row h1 {
+    font-size: 2em;
+  }
   header nav {
-    padding-right: 2rem;
     width: auto;
   }
   header nav .menu-wrap {
@@ -399,13 +400,12 @@ footer .credits-wrap p, footer .credits-wrap ul {
     display: inline-flex;
     flex-direction: row;
   }
+  header nav .menu-wrap li {
+    flex: 1 1 auto;
+  }
   header nav .menu-wrap .button {
     display: inline-flex;
     flex-direction: column;
-  }
-  header nav .menu-wrap .button li {
-    width: 105px;
-    align-items: center;
   }
   header #menu-btn {
     display: none !important;
