@@ -184,7 +184,7 @@ section {
   background-color: #eee;
   background-image: url("../img/d3-cover.png");
   background-repeat: no-repeat;
-  background-position: 0 375px;
+  background-position: 0 235px;
 }
 
 .code #d3Intro .button-primary {
@@ -206,7 +206,7 @@ section {
   background-color: #a3ccff;
   background-image: url("../img/flickrmap-cover.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 -95px;
 }
 
 .code #flickrMap .button-primary {
