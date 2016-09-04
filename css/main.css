@@ -198,8 +198,9 @@ section {
 .code #flickrMap {
   background-color: #dedede;
   background-image: url("../img/flickrMap-cover.png");
+  background-color: #a3ccff;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 30px;
 }
 
 .code #flickrMap .button-primary {
