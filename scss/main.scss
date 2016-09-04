@@ -286,7 +286,7 @@ footer {
     }
 }
 
-.prefs {
+#prefsModal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -297,14 +297,31 @@ footer {
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
-}
+    .content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+    }
+    form {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        width: auto;
+        fieldset {
+            display: inline-block;
+            padding: 1em;
+            width: auto;
+            background-color: #eee;
+        }
+    }
+    button {
+        display: block;
+        position: relative;
+        z-index: 100;
+    }
 
-.prefs-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
 }
 
 .no-js .btn-open-prefs {
@@ -377,7 +394,7 @@ body.high-contrast {
                 }
             }
         }
-        button {
+        #menu-btn {
             display: none !important;
         }
     }
