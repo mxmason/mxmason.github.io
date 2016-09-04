@@ -193,8 +193,9 @@ section {
     #flickrMap {
         background-color: darken($header-bg, 3%);
         background-image: url('../img/flickrMap-cover.png');
+        background-color: #a3ccff;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 0 30px;
         .button-primary {
             background-color: #2A3962;
             border-color: #2A3962;
