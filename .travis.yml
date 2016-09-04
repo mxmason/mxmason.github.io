@@ -1,7 +1,0 @@
-language: node_js
-node_js:
-    - "6"
-script:
-    - echo "Hello"
-after_success:
-    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://annihilus.dreamhost.com/"
