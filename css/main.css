@@ -297,7 +297,7 @@ footer .credits-wrap p, footer .credits-wrap ul {
   margin: 0;
 }
 
-.prefs {
+#prefsModal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -310,12 +310,32 @@ footer .credits-wrap p, footer .credits-wrap ul {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.prefs-content {
+#prefsModal .content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
+}
+
+#prefsModal form {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: auto;
+}
+
+#prefsModal form fieldset {
+  display: inline-block;
+  padding: 1em;
+  width: auto;
+  background-color: #eee;
+}
+
+#prefsModal button {
+  display: block;
+  position: relative;
+  z-index: 100;
 }
 
 .no-js .btn-open-prefs {
@@ -387,7 +407,7 @@ body.high-contrast main a {
   header nav .menu-wrap .button li {
     width: 105px;
   }
-  header button {
+  header #menu-btn {
     display: none !important;
   }
 }
