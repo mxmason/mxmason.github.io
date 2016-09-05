@@ -51,7 +51,7 @@ $(document).ready(function() {
 
         $(document).click(function(e){
             console.log('clicktest')
-            if (!($menuBtn.is(e.target)) && $menuBtn.is(':visible'))) {
+            if (!($menuBtn.is(e.target)) && $menuBtn.is(':visible')) {
                 $menuWrap.hide();
             }
         });
