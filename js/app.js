@@ -49,12 +49,13 @@ $(document).ready(function() {
         $menuBtn = $('#menu-btn'),
         $menuWrap = $('.menu-wrap');
 
-        $(document).click(function(e){
-            console.log('clicktest')
-            if (!($menuBtn.is(e.target)) && $menuBtn.is(':visible')) {
+        document.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            alert('touch');
+            if (e.target !== $menuBtn) {
                 $menuWrap.hide();
             }
-        });
+        })
 
     $menuBtn.on('click', function(){
         $menuWrap.show();
