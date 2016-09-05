@@ -45,7 +45,16 @@ $(document).ready(function() {
     var $prefsLink = $('#openPrefs'),
         $prefsModal = $('#prefsModal'),
         $prefsForm = $('form'),
-        $prefsInputs = $('#prefsForm input');
+        $prefsInputs = $('#prefsForm input')
+        $menuBtn = $('#menu-btn'),
+        $menuWrap = $('.menu-wrap');
+
+    $menuBtn.on('focus', function(){
+        $menuWrap.show();
+    });
+    $menuBtn.on('blur', function(){
+        $menuWrap.hide();
+    })
 
     $prefsLink.click(function() {
         $prefsModal.show();
