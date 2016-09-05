@@ -49,12 +49,13 @@ $(document).ready(function() {
         $menuBtn = $('#menu-btn'),
         $menuWrap = $('.menu-wrap');
 
-    $menuBtn.on('focus', function(){
+        $('document').click(function(){
+            $menuWrap.hide();
+        });
+
+    $menuBtn.on('click', function(){
         $menuWrap.show();
     });
-    $menuBtn.on('blur', function(){
-        $menuWrap.hide();
-    })
 
     $prefsLink.click(function() {
         $prefsModal.show();
