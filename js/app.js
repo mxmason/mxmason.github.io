@@ -50,13 +50,14 @@ $(document).ready(function() {
         $menuWrap = $('.menu-wrap');
 
     $(document).on('touchstart', function(e){
-        if (e.target === $menuBtn[0]) {
-            $menuWrap.show();
-        }
         if (e.target !== $menuBtn[0] && ($menuWrap.is(':visible') && $menuBtn.is(':visible'))) {
             $menuWrap.hide();
 
         }
+    });
+
+    $menuBtn.click(function(){
+        $menuWrap.show();
     });
 
     $prefsLink.click(function() {
