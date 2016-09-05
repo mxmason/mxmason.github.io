@@ -49,16 +49,17 @@ $(document).ready(function() {
         $menuBtn = $('#menu-btn'),
         $menuWrap = $('.menu-wrap');
 
-        document.addEventListener('touchstart', function(e) {
-            e.preventDefault();
-            alert('touch');
-            if (e.target !== $menuBtn) {
-                $menuWrap.hide();
-            }
-        })
+    $(document).on('touchstart', function(e){
+        e.preventDefault();
+        console.log(e.target)
 
-    $menuBtn.on('click', function(){
-        $menuWrap.show();
+        if (e.target === $menuBtn[0]) {
+            $menuWrap.show();
+        }
+        if (e.target !== $menuBtn[0] && ($menuWrap.is(':visible') && $menuBtn.is(':visible'))) {
+            $menuWrap.hide();
+
+        }
     });
 
     $prefsLink.click(function() {
