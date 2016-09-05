@@ -49,15 +49,11 @@ $(document).ready(function() {
         $menuBtn = $('#menu-btn'),
         $menuWrap = $('.menu-wrap');
 
-    document.addEventListener('touchstart', function(e){
-        if (e.target !== $menuBtn[0] && ($menuWrap.is(':visible') && $menuBtn.is(':visible'))) {
-            $menuWrap.hide();
-
-        }
-    });
-
-    $menuBtn.click(function(){
+    $menuBtn.focus(function(){
         $menuWrap.show();
+    });
+    $menuWrap.focusout(function(){
+        $menuWrap.hide();
     });
 
     $prefsLink.click(function() {
