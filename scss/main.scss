@@ -213,7 +213,7 @@ section {
 }
 
 .advocacy {
-    height: $ht-def;
+    height: calc(#{$ht-def} - 10rem);
     .info-wrap {
         height: 100%;
     }
@@ -222,8 +222,7 @@ section {
         }
 
     article {
-        margin-top: .5em;
-        margin-bottom: .5em;
+        margin: .5em auto;
         h2 {
             margin: auto 1.75em;
         }
@@ -241,13 +240,11 @@ section {
 
 
 .contact{
+    height: 15rem;
     color: $main-color;
-    height: 25rem;
-
     .info-wrap {
-        height: auto;
+        height: 100%;
     }
-
     .row{
         text-align: center;
         h1,p {
