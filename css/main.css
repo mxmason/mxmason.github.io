@@ -219,10 +219,11 @@ section {
 }
 
 .advocacy {
-  height: calc(45em - 10rem);
+  height: calc(45em - 30rem);
 }
 
 .advocacy .info-wrap {
+  padding-top: 0;
   height: 100%;
 }
 
@@ -256,6 +257,7 @@ section {
 }
 
 .contact .info-wrap {
+  padding-top: 0;
   height: 100%;
 }
 
@@ -265,13 +267,8 @@ section {
 
 .contact .row h1, .contact .row p {
   display: inline-block;
-  font-size: 1.8em;
-  margin: 0 auto;
-}
-
-.contact .row p {
   font-size: 1.5em;
-  margin-left: .25em;
+  margin: 0 auto;
 }
 
 .contact .row .sub-two {
