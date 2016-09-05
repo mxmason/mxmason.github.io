@@ -50,7 +50,8 @@ $(document).ready(function() {
         $menuWrap = $('.menu-wrap');
 
         $(document).click(function(e){
-            if (!($menuBtn.is(e.target)) && ($menuWrap.is(':visible') && $menuBtn.is(':visible'))) {
+            console.log('clicktest')
+            if (!($menuBtn.is(e.target)) && $menuBtn.is(':visible'))) {
                 $menuWrap.hide();
             }
         });
