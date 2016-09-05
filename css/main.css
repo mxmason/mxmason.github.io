@@ -231,7 +231,8 @@ section {
 }
 
 .advocacy article {
-  margin: .5em auto;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 .advocacy article h2 {
@@ -246,10 +247,11 @@ section {
 .advocacy article p {
   font-size: 1.2em;
   text-align: justify;
+  width: auto;
 }
 
 .contact {
-  height: 15rem;
+  height: 18rem;
   color: #3d3d3d;
 }
 
