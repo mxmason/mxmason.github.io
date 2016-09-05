@@ -215,7 +215,7 @@ section {
 .advocacy {
     height: calc(#{$ht-def} - 30rem);
     .info-wrap {
-        padding-top: 0;
+        padding-top: 3em;
         height: 100%;
     }
         h2 {
@@ -253,8 +253,12 @@ section {
         text-align: center;
         h1,p {
             display: inline-block;
+        }
+        h1 {
+            font-size: 1.7em;
+        }
+        p {
             font-size: 1.5em;
-            margin: 0 auto;
         }
         .sub-two {
             display: block;

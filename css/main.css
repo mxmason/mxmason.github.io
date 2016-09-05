@@ -223,7 +223,7 @@ section {
 }
 
 .advocacy .info-wrap {
-  padding-top: 0;
+  padding-top: 3em;
   height: 100%;
 }
 
@@ -267,8 +267,14 @@ section {
 
 .contact .row h1, .contact .row p {
   display: inline-block;
+}
+
+.contact .row h1 {
+  font-size: 1.7em;
+}
+
+.contact .row p {
   font-size: 1.5em;
-  margin: 0 auto;
 }
 
 .contact .row .sub-two {
