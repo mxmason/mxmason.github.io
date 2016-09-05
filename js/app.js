@@ -49,7 +49,7 @@ $(document).ready(function() {
         $menuBtn = $('#menu-btn'),
         $menuWrap = $('.menu-wrap');
 
-    document.AddEventListener('touchstart', function(e){
+    document.addEventListener('touchstart', function(e){
         if (e.target !== $menuBtn[0] && ($menuWrap.is(':visible') && $menuBtn.is(':visible'))) {
             $menuWrap.hide();
 
