@@ -6,6 +6,7 @@ $link-color: darken($header-bg, 60%);
 $main-accent: #598C7D;
 $ht-def: 45em;
 
+
 body {
     color: $main-color;
      background-color: $header-bg;
@@ -212,16 +213,14 @@ section {
 }
 
 .advocacy {
-    margin: auto;
-    padding-top: 2em;
-    height: calc(#{$ht-def} - 5rem);
+    height: $ht-def;
     .info-wrap {
         height: 100%;
-        margin: auto;
+    }
         h2 {
             text-align: center;
         }
-    }
+
     article {
         margin-top: .5em;
         margin-bottom: .5em;
@@ -242,10 +241,8 @@ section {
 
 
 .contact{
-    padding-top: 2em;
     color: $main-color;
     height: 25rem;
-    // padding-bottom: 30px;
 
     .info-wrap {
         height: auto;

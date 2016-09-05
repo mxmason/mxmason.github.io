@@ -219,17 +219,14 @@ section {
 }
 
 .advocacy {
-  margin: auto;
-  padding-top: 2em;
-  height: calc(45em - 5rem);
+  height: 45em;
 }
 
 .advocacy .info-wrap {
   height: 100%;
-  margin: auto;
 }
 
-.advocacy .info-wrap h2 {
+.advocacy h2 {
   text-align: center;
 }
 
@@ -253,7 +250,6 @@ section {
 }
 
 .contact {
-  padding-top: 2em;
   color: #3d3d3d;
   height: 25rem;
 }
