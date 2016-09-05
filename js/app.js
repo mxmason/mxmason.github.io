@@ -42,18 +42,21 @@ function updateView() {
 }
 
 $(document).ready(function() {
-    var $prefsLink = $('#openPrefs'),
+    var $window = $('window'),
+        $menuWrap = $('.menu-wrap'),
+        $menuBtn = $('#menu-btn'),
+        $prefsLink = $('#openPrefs'),
         $prefsModal = $('#prefsModal'),
         $prefsForm = $('form'),
         $prefsInputs = $('#prefsForm input')
-        $menuBtn = $('#menu-btn'),
-        $menuWrap = $('.menu-wrap');
 
     $menuBtn.focus(function(){
         $menuWrap.show();
     });
     $menuWrap.focusout(function(){
-        $menuWrap.hide();
+        if ($menuBtn.is(':visible') && $window.width() >= 750) {
+            $menuWrap.hide();
+        }
     });
 
     $prefsLink.click(function() {
