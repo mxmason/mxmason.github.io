@@ -222,7 +222,8 @@ section {
         }
 
     article {
-        margin: .5em auto;
+        margin-top: .5em;
+        margin-bottom: .5em;
         h2 {
             margin: auto 1.75em;
         }
@@ -233,6 +234,7 @@ section {
         p {
             font-size: 1.2em;
             text-align: justify;
+            width: auto;
         }
     }
 
@@ -240,7 +242,7 @@ section {
 
 
 .contact{
-    height: 15rem;
+    height: 18rem;
     color: $main-color;
     .info-wrap {
         height: 100%;
