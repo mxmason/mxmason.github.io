@@ -267,13 +267,8 @@ section {
 
 .contact .row h1, .contact .row p {
   display: inline-block;
-  font-size: 1.8em;
-  margin: 0 auto;
-}
-
-.contact .row p {
   font-size: 1.5em;
-  margin-left: .25em;
+  margin: 0 auto;
 }
 
 .contact .row .sub-two {
