@@ -49,8 +49,10 @@ $(document).ready(function() {
         $menuBtn = $('#menu-btn'),
         $menuWrap = $('.menu-wrap');
 
-        $('document').click(function(){
-            $menuWrap.hide();
+        $(document).click(function(e){
+            if (!($menuBtn.is(e.target)) && ($menuWrap.is(':visible') && $menuBtn.is(':visible'))) {
+                $menuWrap.hide();
+            }
         });
 
     $menuBtn.on('click', function(){
