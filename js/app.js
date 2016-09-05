@@ -50,9 +50,6 @@ $(document).ready(function() {
         $menuWrap = $('.menu-wrap');
 
     $(document).on('touchstart', function(e){
-        e.preventDefault();
-        console.log(e.target)
-
         if (e.target === $menuBtn[0]) {
             $menuWrap.show();
         }
