@@ -262,6 +262,16 @@ section {
   background-image: url("empty.gif");
 }
 
+@media only screen and (max-width: 900px) {
+  .advocacy .column,
+  .advocacy .columns {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+}
+
 .contact {
   height: 18rem;
   color: #3d3d3d;

@@ -249,6 +249,16 @@ section {
             background-image: url('empty.gif');
         }
     }
+    // Override default Skeleton behavior
+    // for specific case of these containers
+    @media only screen and (max-width: 900px) {
+        .column,
+        .columns {
+          width: 100%;
+          float: left;
+          margin-left: 0;
+          box-sizing: border-box; }
+    }
 
 }
 
