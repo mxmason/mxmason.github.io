@@ -219,11 +219,13 @@ section {
 }
 
 .advocacy {
-  height: calc(45em - 30rem);
+  padding-top: 3em;
+  padding-bottom: 3em;
+  height: calc(45em - 15rem);
 }
 
 .advocacy .info-wrap {
-  padding-top: 3em;
+  padding-top: 0;
   height: 100%;
 }
 
@@ -273,8 +275,9 @@ section {
 }
 
 .contact {
-  height: 18rem;
+  height: 38rem;
   color: #3d3d3d;
+  background-color: #e6e6e6;
 }
 
 .contact .info-wrap {

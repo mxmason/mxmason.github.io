@@ -213,9 +213,11 @@ section {
 }
 
 .advocacy {
-    height: calc(#{$ht-def} - 30rem);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    height: calc(#{$ht-def} - 15rem);
     .info-wrap {
-        padding-top: 3em;
+        padding-top: 0;
         height: 100%;
     }
         h2 {
@@ -264,8 +266,9 @@ section {
 
 
 .contact{
-    height: 18rem;
+    height: 38rem;
     color: $main-color;
+    background-color: $header-bg;
     .info-wrap {
         padding-top: 0;
         height: 100%;
