@@ -225,6 +225,10 @@ section {
         }
 
     article {
+        &:hover h3 {
+            color: #1EAEDB;
+            text-decoration: underline;
+        }
         position: relative;
         margin-top: .5em;
         margin-bottom: .5em;
@@ -234,6 +238,7 @@ section {
         h3 {
             font-size: 1.4em;
             margin-bottom: .25em;
+            font-weight: bold;
         }
         p {
             font-size: 1.2em;

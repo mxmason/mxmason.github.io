@@ -239,6 +239,11 @@ section {
   margin-bottom: .5em;
 }
 
+.advocacy article:hover h3 {
+  color: #1EAEDB;
+  text-decoration: underline;
+}
+
 .advocacy article h2 {
   margin: auto 1.75em;
 }
@@ -246,6 +251,7 @@ section {
 .advocacy article h3 {
   font-size: 1.4em;
   margin-bottom: .25em;
+  font-weight: bold;
 }
 
 .advocacy article p {
