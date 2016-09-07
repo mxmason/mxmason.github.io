@@ -219,11 +219,13 @@ section {
 }
 
 .advocacy {
-  height: calc(45em - 30rem);
+  padding-top: 3em;
+  padding-bottom: 3em;
+  height: calc(45em - 15rem);
 }
 
 .advocacy .info-wrap {
-  padding-top: 3em;
+  padding-top: 0;
   height: 100%;
 }
 
@@ -237,6 +239,11 @@ section {
   margin-bottom: .5em;
 }
 
+.advocacy article:hover h3 {
+  color: #1EAEDB;
+  text-decoration: underline;
+}
+
 .advocacy article h2 {
   margin: auto 1.75em;
 }
@@ -244,11 +251,11 @@ section {
 .advocacy article h3 {
   font-size: 1.4em;
   margin-bottom: .25em;
+  font-weight: bold;
 }
 
 .advocacy article p {
   font-size: 1.2em;
-  text-align: justify;
   width: auto;
 }
 
@@ -262,9 +269,20 @@ section {
   background-image: url("empty.gif");
 }
 
+@media only screen and (max-width: 900px) {
+  .advocacy .column,
+  .advocacy .columns {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+}
+
 .contact {
-  height: 18rem;
+  height: 38rem;
   color: #3d3d3d;
+  background-color: #e6e6e6;
 }
 
 .contact .info-wrap {
@@ -335,30 +353,8 @@ section {
   z-index: 100;
 }
 
-.no-js .btn-open-prefs {
+.no-js #openPrefs, .no-localstorage {
   display: none;
-}
-
-.js .btn-open-prefs {
-  display: inline-block;
-  float: right;
-  position: absolute;
-  right: 2rem;
-  top: 3rem;
-}
-
-.btn-close-prefs {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.btn-close-prefs:focus,
-.btn-close-prefs:hover {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 400px) {
