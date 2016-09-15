@@ -61,6 +61,7 @@ $(document).ready(function() {
 
     $prefsLink.click(function() {
         $prefsModal.show();
+        $prefsInputs[0].focus();
     });
 
     $prefsForm.submit(function(e) {
