@@ -48,7 +48,8 @@ $(document).ready(function() {
         $prefsLink = $('#openPrefs'),
         $prefsModal = $('#prefsModal'),
         $prefsForm = $('form'),
-        $prefsInputs = $('#prefsForm input')
+        $prefsInputs = $('#prefsForm input'),
+        $closeBtn = $('form button');
 
     $menuBtn.focus(function(){
         $menuWrap.show();
@@ -73,6 +74,14 @@ $(document).ready(function() {
         e.preventDefault();
         populateStorage(e);
     });
+
+    $prefsModal.on('keydown', 'form button', function(e){
+
+        if (e.keycode === 9 || e.which === 9) {
+            e.preventDefault();
+            $prefsInputs[0].focus();
+        }
+    })
 
     checkStorage();
 
