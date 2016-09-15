@@ -333,6 +333,10 @@ section {
   width: 60%;
 }
 
+#prefsModal .content p {
+  font-size: 1.15em;
+}
+
 #prefsModal form {
   display: block;
   margin: 0 auto;

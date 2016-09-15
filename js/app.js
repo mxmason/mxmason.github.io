@@ -48,7 +48,8 @@ $(document).ready(function() {
         $prefsLink = $('#openPrefs'),
         $prefsModal = $('#prefsModal'),
         $prefsForm = $('form'),
-        $prefsInputs = $('#prefsForm input')
+        $prefsInputs = $('#prefsForm input'),
+        $closeBtn = $('form button');
 
     $menuBtn.focus(function(){
         $menuWrap.show();
@@ -61,16 +62,31 @@ $(document).ready(function() {
 
     $prefsLink.click(function() {
         $prefsModal.show();
-    });
-
-    $prefsForm.submit(function(e) {
-        e.preventDefault();
-        $prefsModal.hide();
+        $prefsModal.attr('aria-hidden', 'false');
+        $prefsInputs[0].focus();
     });
 
     $prefsInputs.change(function(e) {
         e.preventDefault();
         populateStorage(e);
+    });
+
+    $prefsForm.submit(function(e) {
+        e.preventDefault();
+        $prefsModal.hide();
+        $prefsModal.attr('aria-hidden', 'true');
+    });
+
+    $prefsModal.on('keydown', function(e){
+        if ((e.keycode === 9 || e.which === 9) && e.target === $closeBtn[0]) {
+            e.preventDefault();
+            $prefsInputs[0].focus();
+        }
+        if (e.keycode === 27 || e.which === 27) {
+            e.preventDefault();
+            $prefsModal.hide();
+            $prefsModal.attr('aria-hidden', 'true');
+        }
     });
 
     checkStorage();
