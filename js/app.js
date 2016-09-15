@@ -62,12 +62,8 @@ $(document).ready(function() {
 
     $prefsLink.click(function() {
         $prefsModal.show();
+        $prefsModal.attr('aria-hidden', 'false');
         $prefsInputs[0].focus();
-    });
-
-    $prefsForm.submit(function(e) {
-        e.preventDefault();
-        $prefsModal.hide();
     });
 
     $prefsInputs.change(function(e) {
@@ -75,13 +71,23 @@ $(document).ready(function() {
         populateStorage(e);
     });
 
-    $prefsModal.on('keydown', 'form button', function(e){
+    $prefsForm.submit(function(e) {
+        e.preventDefault();
+        $prefsModal.hide();
+        $prefsModal.attr('aria-hidden', 'true');
+    });
 
-        if (e.keycode === 9 || e.which === 9) {
+    $prefsModal.on('keydown', function(e){
+        if ((e.keycode === 9 || e.which === 9) && e.target === $closeBtn[0]) {
             e.preventDefault();
             $prefsInputs[0].focus();
         }
-    })
+        if (e.keycode === 27 || e.which === 27) {
+            e.preventDefault();
+            $prefsModal.hide();
+            $prefsModal.attr('aria-hidden', 'true');
+        }
+    });
 
     checkStorage();
 
