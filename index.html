@@ -25,9 +25,10 @@
                     <li><a href="#user_prefs" role="button" id="openPrefs" class="button" aria-hidden="true">UI Settings</a></li>
                 </ul>
             </nav>
-            <aside id="prefsModal" aria-hidden="true">
-                <div class="content">
-                    <h2>User preferences</h2>
+            <aside id="prefsModal" aria-hidden="true" hidden>
+                <div class="content" role="dialog" aria-labelledby="prefsTitle" aria-describedby="prefsDesc">
+                    <h2 id="prefsTitle">UI settings</h2>
+                    <p id="prefsDesc">Choose from the options below to customize how this website looks.</p>
                     <form action="/userprefs" method="post" role="form" id="prefsForm" class="u-cf">
                         <fieldset class="u-pull-left">
                             <legend>Font options</legend>
@@ -78,16 +79,6 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div id="spacingQuiz" class="project" hidden>
-                    <div class="info-wrap container">
-                        <h2 class="project-name row">Spacing Quiz</h2>
-                        <p class="project-desc row">This React app tests users' knowledge of some German terms. Users log in with their Google IDs and a Mongo database stores our terms, while a simple algorithm decides which term to show the user next.</p>
-                        <ul class="project-links">
-                            <li><a class="button button-primary" role="button"  href="https://spacing-quiz.herokuapp.com/">Live</a></li>
-                            <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/spacing-quiz">Github</a></li>
-                        </ul>
-                    </div>
-                </div> -->
                 <div id="flickrMap" class="project">
                     <div class="info-wrap container">
                         <h2 class="project-name row">Flickr PhotoMap</h2>
