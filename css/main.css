@@ -221,7 +221,6 @@ section {
 .advocacy {
   padding-top: 3em;
   padding-bottom: 3em;
-  height: calc(45em - 15rem);
 }
 
 .advocacy .info-wrap {
@@ -280,7 +279,7 @@ section {
 }
 
 .contact {
-  height: 38rem;
+  padding: 3em;
   color: #3d3d3d;
   background-color: #e6e6e6;
 }
