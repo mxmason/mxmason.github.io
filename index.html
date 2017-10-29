@@ -2,131 +2,25 @@
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
-    <title>Elias Mason</title>
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
-    <meta name="description" content="A web developer experienced in project management, react, node and mongodb. Passionate about accessibility.">
-    <link href="css/normalize.css" rel="stylesheet" media="screen">
-    <link href="css/skeleton.css" rel="stylesheet" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" media="screen">
-    <link href="css/main.css" rel="stylesheet" media="screen">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <title>Elias Mason</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <meta name="description" content="A web developer experienced in project management, react, node and mongodb. Passionate about accessibility.">
+  <link href="css/normalize.css" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" media="screen">
+  <link href="css/main.css" rel="stylesheet" media="screen">
 </head>
+
 <body>
-    <header role="banner" class="u-full-width">
-            <p id="name" class="button u-pull-left">Elias Mason</p>
-            <nav role="navigation" class="u-pull-right">
-                <button id="menu-btn" class="button" role="button">Menu</button>
-                <ul class="menu-wrap upull-right" hidden>
-                    <li><a href="/" role="button" class="button">Home</a></li>
-                    <li><a href="#projects" role="button" class="button">Code</a></li>
-                    <li><a href="#advocacy" role="button" class="button">Advocacy</a></li>
-                    <li><a href="#contact" role="button" class="button">Contact</a></li>
-                    <li><a href="#user_prefs" role="button" id="openPrefs" class="button" aria-hidden="true">UI Settings</a></li>
-                </ul>
-            </nav>
-            <aside id="prefsModal" aria-hidden="true" hidden>
-                <div class="content" role="dialog" aria-labelledby="prefsTitle" aria-describedby="prefsDesc">
-                    <h2 id="prefsTitle">UI settings</h2>
-                    <p id="prefsDesc">Choose from the options below to customize how this website looks.</p>
-                    <form action="/userprefs" method="post" role="form" id="prefsForm" class="u-cf">
-                        <fieldset class="u-pull-left">
-                            <legend>Font options</legend>
-                            <label>
-                                <input class="font-control" type="radio" name="userFont" value="dyslexiaFriendly"> Dyslexia-friendly</label>
-                            <label>
-                                <input class="font-control" type="radio" name="userFont" value="standard"> Standard</label>
-                        </fieldset>
-                        <button class="button-primary u-cf" type="submit">Close</button>
-                    </form>
-                </div>
-            </aside>
-
-    </header>
-    <main role="main" class="u-full-width">
-        <section class="introduction container">
-            <div class="u-cvert">
-                <div class="row">
-                    <h1>Hello!</h1><p class="sub-one"> I'm Elias Mason. Call me E.J.</p>
-                </div>
-                <div class="row">
-                    <p class="sub-two">I'm a developer, educator, and disability advocate. I've built some cool stuff, taught some cool people, and given some cool talks, but I love bringing all three of these things together. And sci-fi. I love that.</p>
-                    <p>How are you?</p>
-                </div>
-            </div>
-        </section>
-        <section class="code">
-            <div class="row u-offscreen">
-                <h1 id="projects">Some of my projects</h1>
-            </div>
-                <div id="cozyFi" class="project">
-                    <div class="info-wrap container">
-                        <h2 class="project-name row">CozyFi</h2>
-                        <p class="project-desc row">Built with a dev community in mind, this app uses Google's Maps API in a React frontend powered by Google's Firebase to help users find and save information about great places to work.</p>
-                        <ul class="project-links">
-                            <li><a class="button button-primary" role="button"  href="http://cozyfi-963e1.firebaseapp.com">Live</a></li>
-                            <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/cozyfi">Github</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="d3Intro" class="project">
-                    <div class="info-wrap container">
-                        <h2 class="project-name ">D3 Intro</h2>
-                        <p class="project-desc ">This app is a companion to a brief presentation on D3, the data visualization library for JavaScript. Huge thanks to <a href="https://github.com/curran">Curran Kelleher</a> for the inspiration.</p>
-                        <ul class="project-links">
-                            <li><a class="button button-primary" role="button"  href="http://ejmason.com/d3-intro">Live</a></li>
-                            <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/d3-intro">Github</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="flickrMap" class="project">
-                    <div class="info-wrap container">
-                        <h2 class="project-name row">Flickr PhotoMap</h2>
-                        <p class="project-desc row">This is a simple, fun mashup of the Flickr and Google Maps APIs which displays Flickr images on a Google Maps canvas. RequireJS ensures the right dependencies are loaded.</p>
-                        <ul class="project-links">
-                            <li><a class="button button-primary" role="button"  href="http://ejmason.com/flickr-map">Live</a></li>
-                            <li><a class="button button-primary" role="button"  href="https://github.com/dengeist/flickr-map">Github</a></li>
-                        </ul>
-                    </div>
-                </div>
-        </section>
-        <section class="advocacy u-cf container">
-            <div class="info-wrap">
-
-                    <div class="row">
-                        <h2 id="advocacy">Some of my advocacy work</h2>
-                    </div>
-                    <div class="row">
-                        <article class="project four columns">
-                            <h3 id="thinkful-podcast">Thinkful Podcast #3063</h3>
-                            <p> A podcast I led with Thinkful staff concerning the realities of disabled people in the American workforce and how technology can and should include disabled workers. <a href="https://www.youtube.com/watch?v=vMfYg87izjI" name="Thinkful Podcast #3063">More<span></span></a></p>
-                        </article>
-                        <article class="project four columns">
-                            <h3 id="accessibility-with-webstorage" name="accessibility-with-webstorage">Accessibility With WebStorage</h3>
-                            <p>A brief write-up on how to use the WebStorage API to give users the ability to customize how your website looks. <a href="http://output.jsbin.com/vavajor/">More<span></span></a></p>
-                        </article>
-                        <article class="project four columns">
-                            <h3 id="web-guidelines">Web Guidelines</h3>
-                            <p>A collaborative open-source document outlining the how and why of accessibility best-practices for the web. <a href="https://github.com/jpdevries/webguidelines" name="Web guidelines">More<span></span></a></p>
-                        </article>
-                    </div>
-
-            </div>
-        </section>
-        <section class="contact u-full-width">
-                <div class="info-wrap container">
-                    <div class="row">
-                        <h1 id="contact">Let's get in touch.</h1>
-                    </div>
-                    <div class="row"><p><a href="mailto:eliasjmason@gmail.com">Email me!</a><span class="sub-two">Check out my <a href="http://www.github.com/dengeist">GitHub</a> and <a href="https://www.linkedin.com/in/elias-mason-aa8729102">LinkedIn</a>.</span></p>
-                    </div>
-                </div>
-        </section>
-    </main>
-
-    <script src="js/vendor/modernizr.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
-    <script type="text/javascript">window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js">\x3C/script>')</script>
-    <script src="js/app.js"></script>
+  <div class="greeting">
+    <h1>Hey there!</h1>
+    <p>I'm Elias Mason. You can call me E.J.</p>
+    <p>It looks like you caught me in the middle of some renovations! Sorry about that. Feel free to
+      <a href="mailto:eliasjmason@gmail.com"
+        target="_blank" rel="noopener noreferrer">email me</a> or
+      <a href="https://www.twitter.com/codeability" target="_blank" rel="noopener noreferrer">say hi on Twitter</a>.</p>
+  </div>
 </body>
+
 </html>
