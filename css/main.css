@@ -40,6 +40,32 @@ body {
   margin: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  *:focus {
+    outline-color: #369add;
+  }
+  body {
+    color: #fff;
+    background-color: #30363a;
+  }
+
+  a {
+    color: #ffebcd;
+  }
+}
+
+.dark-mode *:focus {
+  outline-color: #369add;
+}
+.dark-mode body {
+  color: #fff;
+  background-color: #30363a;
+}
+
+.dark-mode a {
+  color: #ffebcd;
+}
+
 .greeting {
   width: 95%;
   max-width: 600px;
