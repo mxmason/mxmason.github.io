@@ -2,6 +2,7 @@
 	font-family: "Cooper Hewitt";
 	font-style: normal;
 	font-weight: 400;
+  font-display: swap;
 	src: local(""),
 			url("../fonts/CooperHewitt-Medium.woff") format("woff"); 
 }
@@ -9,6 +10,7 @@
 	font-family: "Cooper Hewitt";
 	font-style: italic;
 	font-weight: 400;
+  font-display: swap;
 	src: local(""),
 			url("../fonts/CooperHewitt-Italic.woff") format("woff");
  
@@ -17,6 +19,7 @@
 	font-family: "Cooper Hewitt";
 	font-style: normal;
 	font-weight: 700;
+  font-display: swap;
 	src: local(""),
 			url("../fonts/CooperHewitt-Bold.woff") format("woff"); 
 }
@@ -24,6 +27,7 @@
 	font-family: "Cooper Hewitt";
 	font-style: italic;
 	font-weight: 700;
+  font-display: swap;
 	src: local(""),
 			url("../fonts/CooperHewitt-BoldItalic.woff") format("woff"); 
 }
