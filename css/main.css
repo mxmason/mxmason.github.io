@@ -1,3 +1,34 @@
+@font-face {
+	font-family: "Cooper Hewitt";
+	font-style: normal;
+	font-weight: 400;
+	src: local(""),
+			url("../fonts/CooperHewitt-Medium.woff") format("woff"); 
+}
+@font-face {
+	font-family: "Cooper Hewitt";
+	font-style: italic;
+	font-weight: 400;
+	src: local(""),
+			url("../fonts/CooperHewitt-Italic.woff") format("woff");
+ 
+}
+@font-face {
+	font-family: "Cooper Hewitt";
+	font-style: normal;
+	font-weight: 700;
+	src: local(""),
+			url("../fonts/CooperHewitt-Bold.woff") format("woff"); 
+}
+@font-face {
+	font-family: "Cooper Hewitt";
+	font-style: italic;
+	font-weight: 700;
+	src: local(""),
+			url("../fonts/CooperHewitt-BoldItalic.woff") format("woff"); 
+}
+
+
 :root {
 	--color-cobalt-blue: #0047ab;
 	--color-purple: #3c128f;
@@ -23,7 +54,7 @@
 * {
 	max-width: 500px;
 	max-width: 55rem;
-	max-width: 72ch;
+	max-width: 65ch;
 }
 
 html,
@@ -39,7 +70,8 @@ footer {
 html {
 	font-size: 62.5%;
 	line-height: 1.15;
-	font-family: "Open Sans", "Calibri", "Tahoma", sans-serif;
+	font-family: "Cooper Hewitt", "Calibri", "Tahoma", sans-serif;
+
 }
 
 body {
@@ -57,9 +89,8 @@ a {
 }
 
 .greeting {
-	width: 95%;
-	max-width: 600px;
-	max-width: 60rem;
+	width: 100rem;
+	max-width: 95%;
 	margin: 0 auto;
 }
 
@@ -78,6 +109,9 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
+	html {
+		-webkit-font-smoothing: antialiased;
+	}
 	*:focus {
 		outline-color: #369add;
 	}
