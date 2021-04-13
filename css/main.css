@@ -1,3 +1,14 @@
+:root {
+  --color-cobalt-blue: #0047ab;
+  --color-purple: #3c128f;
+
+  --color-outline: var(--color-purple);
+
+  --measurement-3px: 3px;
+  --measurement-outline-width: var(--measurement-3px);
+  --measurement-outline-offset: var(--measurement-3px);
+}
+
 *,
 *::before,
 *::after {
@@ -5,14 +16,14 @@
 }
 
 *:focus {
-  outline: 2px dashed #0047ab;
-  outline-offset: 2px;
+  outline: 3px dashed var(--color-outline);
+  outline-offset: 3px;
 }
 
 * {
   max-width: 500px;
   max-width: 55rem;
-  max-width: 60ch;
+  max-width: 72ch;
 }
 
 html,
@@ -33,15 +44,16 @@ html {
 
 body {
   font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 1.25;
+  font-size: 1.6em;
+  font-size: calc(1.6em + 0.5vw);
+  line-height: 1.5;
   color: #2e2f3e;
   background-color: #fdfdfd;
   margin: 0;
 }
 
 a {
-  color: #0066cc;
+  color: #03488e;
 }
 
 .greeting {
