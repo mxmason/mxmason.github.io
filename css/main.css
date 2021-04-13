@@ -1,29 +1,29 @@
 :root {
-  --color-cobalt-blue: #0047ab;
-  --color-purple: #3c128f;
+	--color-cobalt-blue: #0047ab;
+	--color-purple: #3c128f;
 
-  --color-outline: var(--color-purple);
+	--color-outline: var(--color-purple);
 
-  --measurement-3px: 3px;
-  --measurement-outline-width: var(--measurement-3px);
-  --measurement-outline-offset: var(--measurement-3px);
+	--measurement-3px: 3px;
+	--measurement-outline-width: var(--measurement-3px);
+	--measurement-outline-offset: var(--measurement-3px);
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *:focus {
-  outline: 3px dashed var(--color-outline);
-  outline-offset: 3px;
+	outline: 3px dashed var(--color-outline);
+	outline-offset: 3px;
 }
 
 * {
-  max-width: 500px;
-  max-width: 55rem;
-  max-width: 72ch;
+	max-width: 500px;
+	max-width: 55rem;
+	max-width: 72ch;
 }
 
 html,
@@ -33,94 +33,94 @@ header,
 nav,
 main,
 footer {
-  max-width: none;
+	max-width: none;
 }
 
 html {
-  font-size: 62.5%;
-  line-height: 1.15;
-  font-family: "Open Sans", "Calibri", "Tahoma", sans-serif;
+	font-size: 62.5%;
+	line-height: 1.15;
+	font-family: "Open Sans", "Calibri", "Tahoma", sans-serif;
 }
 
 body {
-  font-size: 16px;
-  font-size: 1.6em;
-  font-size: calc(1.6em + 0.5vw);
-  line-height: 1.5;
-  color: #2e2f3e;
-  background-color: #fdfdfd;
-  margin: 0;
+	font-size: 16px;
+	font-size: 1.6em;
+	font-size: calc(1.6em + 0.5vw);
+	line-height: 1.5;
+	color: #2e2f3e;
+	background-color: #fdfdfd;
+	margin: 0;
 }
 
 a {
-  color: #03488e;
+	color: #03488e;
 }
 
 .greeting {
-  width: 95%;
-  max-width: 600px;
-  max-width: 60rem;
-  margin: 0 auto;
+	width: 95%;
+	max-width: 600px;
+	max-width: 60rem;
+	margin: 0 auto;
 }
 
 /* ALTERNATE STYLES */
 
 .dark-mode *:focus {
-  outline-color: #369add;
+	outline-color: #369add;
 }
 .dark-mode body {
-  color: #fff;
-  background-color: #30363a;
+	color: #fff;
+	background-color: #30363a;
 }
 
 .dark-mode a {
-  color: #ffebcd;
+	color: #ffebcd;
 }
 
 @media (prefers-color-scheme: dark) {
-  *:focus {
-    outline-color: #369add;
-  }
-  body {
-    color: #fff;
-    background-color: #30363a;
-  }
+	*:focus {
+		outline-color: #369add;
+	}
+	body {
+		color: #fff;
+		background-color: #30363a;
+	}
 
-  a {
-    color: #ffebcd;
-  }
+	a {
+		color: #ffebcd;
+	}
 }
 
 @media screen and (-ms-high-contrast: active) {
-  *:focus {
-    outline-width: 3px;
-  }
-  body {
-    color: windowText;
-    background-color: window;
-  }
-  a {
-    color: windowText;
-    text-decoration: underline;
-  }
+	*:focus {
+		outline-width: 3px;
+	}
+	body {
+		color: windowText;
+		background-color: window;
+	}
+	a {
+		color: windowText;
+		text-decoration: underline;
+	}
 }
 
 @media screen and (-ms-high-contrast: white-on-black) {
-  *:focus {
-    outline-color: gold;
-  }
+	*:focus {
+		outline-color: gold;
+	}
 
-  a {
-    color: gold;
-  }
+	a {
+		color: gold;
+	}
 }
 
 @media screen and (-ms-high-contrast: black-on-white) {
-  *:focus {
-    outline-color: blue;
-  }
+	*:focus {
+		outline-color: blue;
+	}
 
-  a {
-    color: blue;
-  }
+	a {
+		color: blue;
+	}
 }
