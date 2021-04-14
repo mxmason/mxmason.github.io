@@ -60,7 +60,7 @@ body {
 	color: var(--theme-color-text);
 	background-color: #fdfdfd;
 	background-color: var(--theme-color-bg);
-	width: max-content;
+	width: fit-content;
 	margin: 0 auto;
 }
 
