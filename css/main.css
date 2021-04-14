@@ -41,6 +41,14 @@
 	box-sizing: border-box;
 }
 
+* + * {
+	margin-top: 0.75em;
+}
+
+li + li {
+	margin-top: initial;
+}
+
 
 html {
 	min-height: 0vw;
@@ -82,17 +90,34 @@ body > :first-child {
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, serif;
 	font-weight: 400;
-	margin: 0 0 1.5rem;
+	margin: 0;
 }
+
 
 h1, .h1 {
 	font-size: 2.5rem;
 	line-height: 1.15;
 }
 
+h1 + *, h2 + * {
+	margin-top: 0.5em;
+}
+
 h2, .h2 {
 	font-size: 1.75rem;
 	line-height: 1.2;
+}
+
+* + h2 {
+	margin-top: 0.75em;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+p + ul {
+	margin-top: 0.25em;
 }
 
 b {
