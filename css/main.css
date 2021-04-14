@@ -81,6 +81,7 @@ body > :first-child {
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, serif;
+	font-weight: 400;
 	margin: 0 0 1.5rem;
 }
 
@@ -92,6 +93,10 @@ h1, .h1 {
 h2, .h2 {
 	font-size: 1.75rem;
 	line-height: 1.2;
+}
+
+b {
+	font-weight: 600;
 }
 
 a {
