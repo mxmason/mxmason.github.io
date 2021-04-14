@@ -59,7 +59,7 @@ body {
 }
 
 body > * {
-	max-width: 800px;
+	max-width: 800;
 	max-width: 65ch;
 	padding: 0 0.75em;
 	margin: 0 auto;
@@ -72,7 +72,7 @@ body > :first-child {
 
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 420) {
 	body {
 		line-height: 1.5;
 	}
@@ -100,11 +100,11 @@ a {
 }
 
 a:focus {
-	outline: 3px solid transparent;
 	background: var(--theme-color-link);
 	color: var(--theme-color-bg);
 	text-decoration: none;
-	box-shadow: 0 0 0 4px var(--theme-color-link);
+	outline: 3px solid transparent;
+	box-shadow: 0 0 0 4px var(--theme-color-link), 0 -2px 0 4px var(--theme-color-link);
 }
 
 a:focus:hover {
