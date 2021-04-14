@@ -12,9 +12,9 @@
 	--color-bg-dark: #30363a;
 	--color-bg-light: #fdfdfd;
 
-	--theme-color-outline: var(--color-purple);
-	--theme-color-text: var(--color-text-dark);
 	--theme-color-link: var(--color-link-dark);
+	--theme-color-outline: var(--theme-color-link);
+	--theme-color-text: var(--color-text-dark);
 	--theme-color-bg: var(--color-bg-light);
 	--theme-color-notice-bg: #fffdd9;
 	--theme-color-notice-border: #e1dd8b;
@@ -27,7 +27,6 @@
 		--theme-color-bg: var(--color-bg-dark);
 		--theme-color-text: var(--color-text-light);
 		--theme-color-link: var(--color-link-light);
-		--theme-color-outline: var(--color-pastelblue);
 	}
 	html {
 		-webkit-font-smoothing: antialiased;
@@ -42,12 +41,6 @@
 	box-sizing: border-box;
 }
 
-*:focus {
-	outline-width: 3px;
-	outline-style: dashed;
-	outline-color: var(--theme-color-outline);
-	outline-offset: 3px;
-}
 
 html {
 	min-height: 0vw;
@@ -68,7 +61,7 @@ body {
 body > * {
 	max-width: 800px;
 	max-width: 65ch;
-	padding: 0 0.5em;
+	padding: 0 0.75em;
 	margin: 0 auto;
 	margin-top: 1.2em;
 
@@ -102,7 +95,20 @@ h2, .h2 {
 }
 
 a {
+	color: #03488e;
 	color: var(--theme-color-link);
+}
+
+a:focus {
+	outline: 3px solid transparent;
+	background: var(--theme-color-link);
+	color: var(--theme-color-bg);
+	text-decoration: none;
+	box-shadow: 0 0 0 4px var(--theme-color-link);
+}
+
+a:focus:hover {
+	text-decoration: underline;	
 }
 
 @media screen and (-ms-high-contrast: active) {
