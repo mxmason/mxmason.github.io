@@ -50,6 +50,7 @@
 }
 
 html {
+	min-height: 0vw;
 	font-size: calc(1em + 0.5vw);
 }
 
