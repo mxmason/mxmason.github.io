@@ -100,6 +100,7 @@ a {
 }
 
 a:focus {
+	position: relative;
 	background: var(--theme-color-link);
 	color: var(--theme-color-bg);
 	text-decoration: none;
