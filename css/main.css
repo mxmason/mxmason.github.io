@@ -3,30 +3,29 @@
 	--color-purple: #3c128f;
 	--color-pastelblue: #369add;
 	
-	--color-text-dark: #2e2f3e;
-	--color-text-light: #fff;
+	--body-text: #2e2f3e;
+	--body-text-inverted: #fff;
 	
-	--color-link-dark: #03488e;
-	--color-link-light: #ffebcd;
+	--link-text: #03488e;
+	--link-text-inverted: #ffebcd;
 
-	--color-bg-dark: #30363a;
-	--color-bg-light: #fdfdfd;
+	--background: #30363a;
+	--background-inverted: #fdfdfd;
 
-	--theme-color-link: var(--color-link-dark);
-	--theme-color-outline: var(--theme-color-link);
-	--theme-color-text: var(--color-text-dark);
-	--theme-color-bg: var(--color-bg-light);
-	--theme-color-notice-bg: #fffdd9;
-	--theme-color-notice-border: #e1dd8b;
+	--focus-indicator: var(--link-text);
+	--theme-color-text: var(--body-text);
+	--theme-color-bg: var(--background-inverted);
+	--notice-bg: #fffdd9;
+	--notice-border: #e1dd8b;
 	
 }
 
 @media (prefers-color-scheme: dark) {
 
 	:root {
-		--theme-color-bg: var(--color-bg-dark);
-		--theme-color-text: var(--color-text-light);
-		--theme-color-link: var(--color-link-light);
+		--theme-color-bg: var(--background);
+		--theme-color-text: var(--body-text-inverted);
+		--link-text: var(--link-text-inverted);
 	}
 	html {
 		-webkit-font-smoothing: antialiased;
@@ -126,16 +125,16 @@ b {
 
 a {
 	color: #03488e;
-	color: var(--theme-color-link);
+	color: var(--link-text);
 }
 
 a:focus {
 	position: relative;
-	background: var(--theme-color-link);
+	background: var(--link-text);
 	color: var(--theme-color-bg);
 	text-decoration: none;
 	outline: 3px solid transparent;
-	box-shadow: 0 0 0 4px var(--theme-color-link), 0 -2px 0 4px var(--theme-color-link);
+	box-shadow: 0 0 0 4px var(--link-text), 0 -2px 0 4px var(--link-text);
 }
 
 a:focus:hover {
@@ -179,9 +178,9 @@ a:focus:hover {
 .notice {
 	margin-top: 1.2em;
 	padding: 1.25em;
-	color: var(--color-text-dark);
-	background-color: var(--theme-color-notice-bg);
-	border: 2px solid var(--theme-color-notice-border);
+	color: var(--body-text);
+	background-color: var(--notice-bg);
+	border: 2px solid var(--notice-border);
 	max-width: unset;
 
 
