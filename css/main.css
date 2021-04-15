@@ -12,6 +12,8 @@
 	--background: #30363a;
 	--background-inverted: #fdfdfd;
 
+	--line-height: 1.6;
+
 	--focus-indicator: var(--link-text);
 	--theme-color-text: var(--body-text);
 	--theme-color-bg: var(--background-inverted);
@@ -55,7 +57,8 @@ html {
 }
 
 body {
-	line-height: 1.6;
+	line-height: 1.5;
+	line-height: var(--line-height);
 	font-family: "Cooper Hewitt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	color: #2e2f3e;
 	color: var(--theme-color-text);
@@ -80,8 +83,8 @@ body > :first-child {
 }
 
 @media only screen and (min-width: 420) {
-	body {
-		line-height: 1.5;
+	:root {
+		--line-height: 1.5;
 	}
 }
 
