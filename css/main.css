@@ -1,31 +1,34 @@
 :root {
-	--color-cobaltblue: #0047ab;
+	--color-deepseablue: #0047ab;
 	--color-purple: #3c128f;
 	--color-pastelblue: #369add;
 	
-	--body-text: #2e2f3e;
-	--body-text-inverted: #fff;
-	
-	--link-text: #03488e;
-	--link-text-inverted: #ffebcd;
+	--color-gold: #f7c331;
+	--color-gold-light: #fad776;
+	--color-gold-faded: #ffebcd;
 
-	--background: #30363a;
-	--background-inverted: #fdfdfd;
+	--color-offwhite: #fdfdfd;
+	--color-lightgrey: rgb(216, 216, 216);
+	--color-darkgrey: #6f6f6f;
+	--color-onyx: #30363a;
 
-	--focus-indicator: var(--link-text);
-	--theme-color-text: var(--body-text);
-	--theme-color-bg: var(--background-inverted);
-	--notice-bg: #fffdd9;
-	--notice-border: #e1dd8b;
+	--body-text: var(--color-black); 
+	--link-text: var(--color-deepseablue);
+	--background: var(--color-offwhite);
+
+	--notification-border: var(--color-lightgrey);
+	--notification-accent: var(--accent-info);
 	
 }
 
 @media (prefers-color-scheme: dark) {
 
 	:root {
-		--theme-color-bg: var(--background);
-		--theme-color-text: var(--body-text-inverted);
-		--link-text: var(--link-text-inverted);
+		--body-text: var(--color-offwhite);
+		--background: var(--color-onyx);
+		--link-text: var(--color-gold-light);
+		--notification-border: var(--color-darkgrey);
+		--accent-info: var(--color-darkgrey);
 	}
 	html {
 		-webkit-font-smoothing: antialiased;
@@ -54,9 +57,9 @@ html {
 
 body {
 	color: #2e2f3e;
-	color: var(--theme-color-text);
+	color: var(--body-text);
 	background-color: #fdfdfd;
-	background-color: var(--theme-color-bg);
+	background-color: var(--background);
 	margin: 0 auto;
 	padding-bottom: 1.75em;
 }
@@ -120,7 +123,7 @@ a {
 a:focus {
 	position: relative;
 	background: var(--link-text);
-	color: var(--theme-color-bg);
+	color: var(--background);
 	text-decoration: none;
 	outline: 3px solid transparent;
 	box-shadow: 0 0 0 4px var(--link-text), 0 -2px 0 4px var(--link-text);
@@ -164,20 +167,25 @@ a:focus:hover {
 	}
 }
 
-.notice {
-	margin-top: 1.2em;
-	padding: 1.2em;
-	color: var(--body-text);
-	background-color: var(--notice-bg);
-	border: 2px solid var(--notice-border);
-	max-width: unset;
+.notification {
+	padding: 0.6em 0.6em 0.4em 0.8em;
+	border: 1px solid;
+	border-color: #ccc;
+	border-color: var(--notification-border);
+	border-left-color: var(--notification-accent);
+	border-left-width: 0.35em;
+	border-radius: 0.125em;
 
+	max-width: unset;
 	-webkit-font-smoothing: auto;
 	-moz-osx-font-smoothing: auto;
 	font-smooth: auto;
-	align-self: stretch;
 }
 
-.notice > p {
+.notification > p {
 	margin: 0;
+}
+
+.notification.warn {
+	--notification-accent: #fad776;
 }
