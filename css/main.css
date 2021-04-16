@@ -79,7 +79,7 @@ ul {
 }
 
 li + li {
-	margin-top: 0.25em
+	margin-top: 0;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
