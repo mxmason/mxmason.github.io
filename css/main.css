@@ -1,18 +1,20 @@
 :root {
+	--color-pastelkirby: #E7B1D0;
 	--color-pacificblue: #0352A0;
+	
 	--color-stardust: #fad776;
 
 	--color-offwhite: #fdfdfd;
-	--color-lightgrey: #d8d8d8;
-	--color-darkgrey: #6f6f6f;
-	--color-onyx: #30363a;
+	--color-lightgrey: #D6D6D6;
+	--color-ewwdavid: #525252;
+	--color-charcoal: #252525;
 
 	--accent-neutral: var(--color-lightgrey);
 	--accent-primary: var(--color-pacificblue);
 	--accent-warn: var(--color-stardust);
 
-	--body-text: var(--color-onyx); 
-	--link-text: var(--color-pacificblue);
+	--body-text: var(--color-charcoal); 
+	--link-text: var(--accent-primary);	
 	--background: var(--color-offwhite);
 
 	--callout-border: var(--accent-neutral);
@@ -23,11 +25,10 @@
 
 	:root {
 		--body-text: var(--color-offwhite);
-		--background: var(--color-onyx);
-		--link-text: var(--color-stardust);
+		--background: var(--color-charcoal);
 
-		--accent-primary: var(--color-offwhite);
-		--accent-neutral: var(--color-darkgrey);
+		--accent-primary: var(--color-pastelkirby);
+		--accent-neutral: var(--color-ewwdavid);
 	}
 	html {
 		-webkit-font-smoothing: antialiased;
