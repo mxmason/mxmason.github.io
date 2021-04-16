@@ -68,13 +68,6 @@ body > * {
 	margin: 0 auto;
 }
 
-
-@media only screen and (min-width: 420px) {
-	:root {
-		--line-height: 1.5;
-	}
-}
-
 p {
 	margin: 0;
 	margin-top: 1em;
