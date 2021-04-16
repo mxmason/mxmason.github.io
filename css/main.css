@@ -1,5 +1,5 @@
 :root {
-	--color-deepseablue: #03488e;
+	--color-pacificblue: #0352A0;
 	--color-stardust: #fad776;
 
 	--color-offwhite: #fdfdfd;
@@ -7,13 +7,16 @@
 	--color-darkgrey: #6f6f6f;
 	--color-onyx: #30363a;
 
+	--accent-neutral: var(--color-lightgrey);
+	--accent-primary: var(--color-pacificblue);
+	--accent-warn: var(--color-stardust);
+
 	--body-text: var(--color-onyx); 
-	--link-text: var(--color-deepseablue);
+	--link-text: var(--color-pacificblue);
 	--background: var(--color-offwhite);
 
-	--callout-border: var(--color-lightgrey);
-	--callout-accent: var(--callout-border);
-	
+	--callout-border: var(--accent-neutral);
+	--callout-accent: var(--accent-neutral);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +25,9 @@
 		--body-text: var(--color-offwhite);
 		--background: var(--color-onyx);
 		--link-text: var(--color-stardust);
-		--callout-border: var(--color-darkgrey);
+
+		--accent-primary: var(--color-offwhite);
+		--accent-neutral: var(--color-darkgrey);
 	}
 	html {
 		-webkit-font-smoothing: antialiased;
@@ -38,7 +43,7 @@
 }
 
 * + * {
-	margin-top: 1.2em;
+	margin-top: 1.6em;
 }
 
 html {
@@ -104,7 +109,7 @@ h2, .h2 {
 .text--small {
 	font-size: 0.82em;
 	font-size: clamp(0.7em, calc(0.8em + 0.5vw), 0.8em);
-	line-height: 1.7;
+	line-height: 1.8;
 }
 
 b {
@@ -112,15 +117,15 @@ b {
 }
 
 a {
-	color: #03488e;
+	color: #0352A0;
 	color: var(--link-text);
 }
 
 a:focus {
 	position: relative;
-	background: #03488e;
+	background: #0352A0;
 	color: #fdfdfd;
-	outline: 5px solid #03488e;
+	outline: 5px solid #0352A0;
 	text-decoration: none;
 }
 
@@ -177,10 +182,9 @@ a:focus:hover {
 	border-color: #d8d8d8;
 	border-color: var(--callout-border);
 	border-left-color: var(--callout-accent);
-	border-left-width: 0.35em;
+	border-left-width: 0.4em;
 	border-radius: 0.125em;
 
-	max-width: unset;
 	-webkit-font-smoothing: auto;
 	-moz-osx-font-smoothing: auto;
 	font-smooth: auto;
@@ -188,12 +192,20 @@ a:focus:hover {
 
 .callout > p {
 	margin-top: 0.6em;
+	max-width: 73ch;
+
 }
 
 .callout > :first-child {
 	margin-top: 0;
 }
 
+.callout.primary {
+	border-left-color: #03488e;
+	border-left-color: var(--accent-primary);
+}
+
 .callout.warn {
-	--callout-accent: var(--color-stardust);
+	border-left-color: #fad776;
+	border-left-color: var(--accent-warn);
 }
