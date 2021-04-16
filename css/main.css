@@ -11,8 +11,8 @@
 	--link-text: var(--color-deepseablue);
 	--background: var(--color-offwhite);
 
-	--notification-border: var(--color-lightgrey);
-	--notification-accent: var(--notification-border);
+	--callout-border: var(--color-lightgrey);
+	--callout-accent: var(--callout-border);
 	
 }
 
@@ -22,7 +22,7 @@
 		--body-text: var(--color-offwhite);
 		--background: var(--color-onyx);
 		--link-text: var(--color-stardust);
-		--notification-border: var(--color-darkgrey);
+		--callout-border: var(--color-darkgrey);
 	}
 	html {
 		-webkit-font-smoothing: antialiased;
@@ -170,12 +170,12 @@ a:focus:hover {
 	}
 }
 
-.notification {
+.callout {
 	padding: 0.6em 0.6em 0.4em 0.8em;
 	border: 1px solid;
 	border-color: #d8d8d8;
-	border-color: var(--notification-border);
-	border-left-color: var(--notification-accent);
+	border-color: var(--callout-border);
+	border-left-color: var(--callout-accent);
 	border-left-width: 0.35em;
 	border-radius: 0.125em;
 
@@ -185,14 +185,14 @@ a:focus:hover {
 	font-smooth: auto;
 }
 
-.notification > p {
+.callout > p {
 	margin-top: 0.6em;
 }
 
-.notification > :first-child {
+.callout > :first-child {
 	margin-top: 0;
 }
 
-.notification.warn {
-	--notification-accent: var(--color-stardust);
+.callout.warn {
+	--callout-accent: var(--color-stardust);
 }
