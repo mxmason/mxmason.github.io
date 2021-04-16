@@ -63,7 +63,7 @@ body {
 
 body > * {
 	max-width: 800px;
-	max-width: 68ch;
+	max-width: 66ch;
 	padding: 0 0.75em;
 	margin: 0 auto;
 }
