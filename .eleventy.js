@@ -10,14 +10,14 @@ module.exports = function (config) {
     summary: true,
   });
 
-  config.addLayoutAlias('base', 'src/layouts/base.njk');
-  config.addLayoutAlias('page', 'src/layouts/page.njk');
+  config.addLayoutAlias('base', 'source/layouts/base.njk');
+  config.addLayoutAlias('page', 'source/layouts/page.njk');
 
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
 	
-	config.addPassthroughCopy('src/fonts/');
-  config.addPassthroughCopy('src/css/');
+	config.addPassthroughCopy('source/fonts/');
+  config.addPassthroughCopy('source/styles/');
 
 
   /* Markdown Plugins */
@@ -33,7 +33,7 @@ module.exports = function (config) {
   config.setLibrary('md', markdownIt(options).use(markdownItAnchor, opts));
 
   let nunjucksEnvironment = new Nunjucks.Environment(
-    new Nunjucks.FileSystemLoader('src/layouts')
+    new Nunjucks.FileSystemLoader('source/layouts')
   );
 
   config.setLibrary('njk', nunjucksEnvironment);
@@ -55,9 +55,9 @@ module.exports = function (config) {
 
   return {
     dir: {
-      input: 'src',
-      output: 'dist',
-      includes: 'assets',
+      input: 'source',
+      output: 'publish',
+      includes: 'partials',
       layouts: 'layouts',
     },
     templateFormats: ['njk', 'md'],
