@@ -30,8 +30,9 @@
 </head>
 <body>
   <main class="main">
-    <h1>{{ title or 'Hey there!' }}</h1>
-    {{ content | safe }}
+    <h1>{{ heading or 'Hey there!' }}</h1>
+    {% block content %}
+    {% endblock %}
   </main>
 </body>
 </html>
