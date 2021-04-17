@@ -15,9 +15,10 @@ module.exports = function (config) {
 
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
-
-  config.addPassthroughCopy('src/fonts/');
+	
+	config.addPassthroughCopy('src/fonts/');
   config.addPassthroughCopy('src/css/');
+
 
   /* Markdown Plugins */
   const options = {
@@ -36,6 +37,21 @@ module.exports = function (config) {
   );
 
   config.setLibrary('njk', nunjucksEnvironment);
+
+	const contentPath = '/content';
+	const nestedIndexPath = contentPath + '/index';
+
+	config.addFilter("dropNestedContentPaths", function (path) {
+		if (path.indexOf(contentPath) === 0) {
+			path = path.slice(contentPath.length);
+		}
+
+		if (path.indexOf(nestedIndexPath) === 0) {
+			path = path.slice(nestedIndexPath.length);
+		}
+		
+		return path
+	});
 
   return {
     dir: {
