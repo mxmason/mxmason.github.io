@@ -1,21 +1,20 @@
 :root {
-	--color-pastelkirby: #E7B1D0;
-	--color-pacificblue: #0352A0;
+	--color-pastelkirby: hsla(326, 53%, 80%, 1);
+	--color-pacificblue: hsla(210, 96%, 32%, 1);
+
+	--color-overcastsky: hsla(0, 0%, 96%, 1);
+	--color-oncomingstorm: hsla(0, 0%, 84%, 1);
 	
-	--color-stardust: #fad776;
+	--color-ewwdavid: hsla(0, 0%, 8%, 1);
+	--color-petrichor: hsla(0, 0%, 22%, 1);
 
-	--color-offwhite: #fdfdfd;
-	--color-lightgrey: #D6D6D6;
-	--color-ewwdavid: #525252;
-	--color-charcoal: #252525;
-
-	--accent-neutral: var(--color-lightgrey);
+	--accent-neutral: var(--color-oncomingstorm);
 	--accent-primary: var(--color-pacificblue);
 	--accent-warn: var(--color-stardust);
 
-	--body-text: var(--color-charcoal); 
+	--body-text: var(--color-ewwdavid); 
 	--link-text: var(--accent-primary);	
-	--background: var(--color-offwhite);
+	--background: var(--color-overcastsky);
 
 	--callout-border: var(--accent-neutral);
 	--callout-accent: var(--accent-neutral);
@@ -24,11 +23,11 @@
 @media (prefers-color-scheme: dark) {
 
 	:root {
-		--body-text: var(--color-offwhite);
-		--background: var(--color-charcoal);
+		--body-text: var(--color-overcastsky);
+		--background: var(--color-ewwdavid);
 
 		--accent-primary: var(--color-pastelkirby);
-		--accent-neutral: var(--color-ewwdavid);
+		--accent-neutral: var(--color-petrichor);
 	}
 	html {
 		-webkit-font-smoothing: antialiased;
@@ -178,7 +177,8 @@ a:focus:hover {
 }
 
 .callout {
-	padding: 0.6em 0.6em 0.4em 0.8em;
+	padding: 0.6em;
+	padding-left: 0.8em;
 	border: 1px solid;
 	border-color: #d8d8d8;
 	border-color: var(--callout-border);
