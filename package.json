@@ -1,0 +1,33 @@
+{
+	"name": "mxmason-site",
+	"version": "1.0.0",
+	"description": "Personal website of EJ Mason Higley",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:mxmason/mxmason.github.io.git"
+	},
+	"author": {
+		"name": "EJ Mason",
+		"url": "https:ejmason.com/"
+	},
+	"scripts": {
+		"build": "eleventy",
+		"compile": "npm run sass && eleventy",
+		"serve": "eleventy --serve",
+		"start": "concurrently 'npm run sass -- --watch' 'npm run serve'",
+		"watch": "eleventy --watch",
+		"dev": "npm run serve"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^0.12.1",
+		"@11ty/eleventy-plugin-rss": "^1.1.1",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+		"concurrently": "^6.0.2",
+		"markdown-it": "^12.0.6",
+		"markdown-it-anchor": "^7.1.0"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"normalize.css": "^8.0.1"
+	}
+}
