@@ -113,6 +113,12 @@ h2, .h2 {
 	line-height: 1.8;
 }
 
+.text--lede {
+	font-kerning: none;
+	font-size: 1.15em;
+	line-height: 1.4;
+}
+
 b {
 	font-weight: 600;
 }
