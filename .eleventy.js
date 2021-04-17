@@ -42,12 +42,12 @@ module.exports = function (config) {
 	const nestedIndexPath = contentPath + '/index';
 
 	config.addFilter("dropNestedContentPaths", function (path) {
-		if (path.indexOf(contentPath) === 0) {
-			path = path.slice(contentPath.length);
+		if (path.indexOf(nestedIndexPath) === 0) {
+			return path.slice(nestedIndexPath.length);
 		}
 
-		if (path.indexOf(nestedIndexPath) === 0) {
-			path = path.slice(nestedIndexPath.length);
+		if (path.indexOf(contentPath) === 0) {
+			return path.slice(contentPath.length);
 		}
 		
 		return path
