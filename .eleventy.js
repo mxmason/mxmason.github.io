@@ -1,3 +1,5 @@
+let Nunjucks = require("nunjucks");
+
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const markdownIt = require('markdown-it');
@@ -7,6 +9,10 @@ module.exports = function (config) {
 	config.setFrontMatterParsingOptions({
 		summary: true,
 	});
+
+	config.addLayoutAlias('base', 'src/layouts/base.njk');
+	config.addLayoutAlias('page', 'src/layouts/page.njk');
+
 
 	config.addPlugin(rssPlugin);
 	config.addPlugin(syntaxHighlight);
@@ -25,6 +31,12 @@ module.exports = function (config) {
 		permalink: false,
 	};
 	config.setLibrary('md', markdownIt(options).use(markdownItAnchor, opts));
+
+	let nunjucksEnvironment = new Nunjucks.Environment(
+    new Nunjucks.FileSystemLoader("src/layouts")
+  );
+
+	config.setLibrary("njk", nunjucksEnvironment);
 
 	return {
 		dir: {
