@@ -1,6 +1,8 @@
 :root {
 	--color-pacificblue: hsla(210, 96%, 32%, 1);
+	--color-indigodye: hsla(349, 53%, 50%, 1);
 	--color-pastelkirby: hsla(350, 53%, 80%, 1);
+	
 	--color-warpstar: #fad776;
 
 	--color-overcastsky: hsla(0, 0%, 96%, 1);
@@ -11,6 +13,8 @@
 
 	--accent-neutral: var(--color-oncomingstorm);
 	--accent-primary: var(--color-pacificblue);
+	--accent-secondary: var(--color-warpstar);
+
 	--accent-warn: var(--color-warpstar);
 
 	--body-text: var(--color-ewwdavid); 
@@ -35,6 +39,10 @@
 		-moz-osx-font-smoothing: antialiased;
 		font-smooth: antialiased;
 	}
+}
+
+::selection {
+  background: var(--accent-secondary11);
 }
 
 *,
@@ -63,6 +71,18 @@ body {
 	background-color: var(--background);
 	margin: 0 auto;
 	padding-bottom: 1.75em;
+}
+
+@media screen and (min-width: 420px) {
+	html {
+		line-height: 1.51;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	html {
+		line-height: 1.4;
+	}
 }
 
 body > * {
@@ -120,7 +140,6 @@ h3 {
 }
 
 .text--lede {
-
 	font-size: 1.15em;
 	line-height: 1.4;
 }
@@ -153,6 +172,10 @@ a:focus {
 
 a:focus:hover {
 	text-decoration: underline;	
+}
+
+code {
+	color: var(--color-indigodye)
 }
 
 @media screen and (-ms-high-contrast: active) {
