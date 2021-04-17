@@ -1,6 +1,7 @@
 :root {
-	--color-pastelkirby: hsla(350, 53%, 80%, 1);
 	--color-pacificblue: hsla(210, 96%, 32%, 1);
+	--color-pastelkirby: hsla(350, 53%, 80%, 1);
+	--color-warpstar: #fad776;
 
 	--color-overcastsky: hsla(0, 0%, 96%, 1);
 	--color-oncomingstorm: hsla(0, 0%, 78%, 1);
@@ -10,7 +11,7 @@
 
 	--accent-neutral: var(--color-oncomingstorm);
 	--accent-primary: var(--color-pacificblue);
-	--accent-warn: var(--color-stardust);
+	--accent-warn: var(--color-warpstar);
 
 	--body-text: var(--color-ewwdavid); 
 	--link-text: var(--accent-primary);	
