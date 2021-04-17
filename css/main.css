@@ -44,13 +44,13 @@
 }
 
 * + * {
-	margin-top: 1.6em;
+	margin-top: 1.125em;
 }
 
 html {
 	min-height: 0vw;
 	font-size: 1.125em;
-	font-size: calc(1em + 0.35vw);
+	font-size: calc(1em + 0.25vw);
 	font-size: clamp(1em, calc(1em + 0.5vw), 1.25em);
 	line-height: 1.6;
 	font-family: "Cooper Hewitt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -78,43 +78,49 @@ p {
 }
 
 ul {
+	padding-left: 2.2em;
 	margin: 0;
 	margin-top: 0.4em;
 }
 
 li + li {
-	margin-top: 0;
+	margin: 0;
+	margin-top: 0.15625em;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, serif;
 	font-weight: 600;
-	line-height: 1.15;
+	line-height: 1.265625;
 	margin: 0;
 }
 
 h1 + * , h2 + * {
-	margin-top: 1.25em;
+	margin-top: 0.88888888em;
 }
  
 h1, .h1 {
-	font-size: 2.4em;
-	margin-top: 0.75em;
+	font-size: 1.601806641em;
+	margin-top: 1.601806641em;
 }
 
 h2, .h2 {
-	font-size: 2.074em;
-	margin-top: 0.9375em;
+	font-size: 1.423828125em;
+	margin-top: 1.601806641em;
+}
+
+h3 {
+	font-size: 1.125em;
+	margin-top: 1.423828125em;
 }
 
 .text--small {
-	font-size: 0.82em;
-	font-size: clamp(0.7em, calc(0.8em + 0.5vw), 0.8em);
-	line-height: 1.8;
+	font-size: 0.8em;
+	line-height: 1.728;
 }
 
 .text--lede {
-	font-kerning: none;
+
 	font-size: 1.15em;
 	line-height: 1.4;
 }
@@ -192,6 +198,8 @@ a:focus:hover {
 	border-left-color: var(--callout-accent);
 	border-left-width: 0.4em;
 	border-radius: 0.125em;
+
+	margin-top: 1.802032471rem;
 
 	-webkit-font-smoothing: auto;
 	-moz-osx-font-smoothing: auto;
