@@ -16,7 +16,8 @@
 		"serve": "eleventy --serve",
 		"start": "concurrently 'npm run sass -- --watch' 'npm run serve'",
 		"watch": "eleventy --watch",
-		"dev": "npm run serve"
+		"dev": "npm run serve",
+		"debug": "DEBUG=Eleventy* npx @11ty/eleventy"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^0.12.1",
@@ -28,6 +29,7 @@
 	},
 	"license": "MIT",
 	"dependencies": {
+		"clean-css": "^5.1.2",
 		"normalize.css": "^8.0.1"
 	}
 }

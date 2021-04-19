@@ -4,6 +4,7 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
+const CleanCSS = require("clean-css");
 
 const formatDate = require('./source/utils/format-date.js');
 
