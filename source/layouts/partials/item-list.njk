@@ -3,7 +3,12 @@
     {% for item in items | reverse %}
       <li class="item">
         <a href="{{ item.url }}" class="h3">{{ item.data.title }}</a>
-        <span class="meta">{{ item.data.date | formatDate }}</span>
+        <div class="meta">
+          <span class="date">{{ item.data.date | formatDate }}</span>
+          {% if item.data.categosry %}
+          <span class="category">{{ item.data.category }}</span>
+          {% endif %}
+        </div>
         <p class="summary">{{ item.data.summary }}</p>
       </li>
     {% endfor %}
