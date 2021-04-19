@@ -9,6 +9,8 @@ const htmlmin = require("html-minifier");
 const formatDate = require('./source/utils/format-date.js');
 
 module.exports = function (config) {
+  config.setUseGitIgnore(false);
+
   config.setFrontMatterParsingOptions({
     summary: true,
   });
