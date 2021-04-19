@@ -2,6 +2,7 @@
 node_modules/
 dist/
 publish/
+source/assets/styles/
 
 # Local Netlify folder
 .netlify

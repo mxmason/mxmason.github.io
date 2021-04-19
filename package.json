@@ -12,8 +12,8 @@
 	},
 	"scripts": {
 		"clean": "rm -rf dist publish",
-		"build:scss": "sass source/styles/main.scss source/assets/styles/main.css --style=compressed --no-source-map",
-		"build": "npm run build:scss && eleventy",
+		"build:scss": "sass source/scss/main.scss source/assets/styles/main.css --style=compressed --no-source-map",
+		"build": "rm -rf dist publush && npm run build:scss && eleventy",
 		"serve": "npm run clean && eleventy --serve",
 		"watch": "eleventy --watch",
 		"dev": "npm run clean && concurrently 'npm run build:scss --watch' 'npm run serve'",
