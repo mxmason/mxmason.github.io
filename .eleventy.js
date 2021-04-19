@@ -19,10 +19,13 @@ module.exports = function (config) {
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
 	
-	// config.addPassthroughCopy('source/fonts/');
-  config.addPassthroughCopy('source/styles/');
+  config.addPassthroughCopy('source/assets/');
 
   config.addFilter('formatDate', formatDate);
+
+  config.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
 
   /* Markdown Plugins */
@@ -38,7 +41,7 @@ module.exports = function (config) {
   config.setLibrary('md', markdownIt(options).use(markdownItAnchor, opts));
 
   let nunjucksEnvironment = new Nunjucks.Environment(
-    new Nunjucks.FileSystemLoader('source/layouts')
+    new Nunjucks.FileSystemLoader(['source/layouts', 'source/assets'])
   );
 
   config.setLibrary('njk', nunjucksEnvironment);
@@ -62,9 +65,9 @@ module.exports = function (config) {
     dir: {
       input: 'source',
       output: 'publish',
-      includes: 'partials',
+      includes: 'assets',
       layouts: 'layouts',
     },
-    templateFormats: ['njk', 'md'],
+    // templateFormats: ['njk', 'md'],
   };
 };
