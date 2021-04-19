@@ -24,12 +24,10 @@
 		"@11ty/eleventy-plugin-rss": "^1.1.1",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
 		"concurrently": "^6.0.2",
+		"html-minifier": "^4.0.0",
 		"markdown-it": "^12.0.6",
 		"markdown-it-anchor": "^7.1.0",
 		"sass": "^1.32.10"
 	},
-	"license": "MIT",
-	"dependencies": {
-		"normalize.css": "^8.0.1"
-	}
+	"license": "MIT"
 }

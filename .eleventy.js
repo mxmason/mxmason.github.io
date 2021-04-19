@@ -4,6 +4,7 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
+const htmlmin = require("html-minifier");
 
 const formatDate = require('./source/utils/format-date.js');
 
@@ -21,6 +22,20 @@ module.exports = function (config) {
   config.addPassthroughCopy('source/assets/');
 
   config.addFilter('formatDate', formatDate);
+
+  config.addTransform("htmlmin", function(content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if( outputPath && outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
 
   /* Markdown Plugins */
   const options = {
