@@ -30,6 +30,14 @@
   {% block pageStyles %}{% endblock %}
 </head>
 <body>
+  <nav>
+    <div class="flex-row">
+      <a href="/">Home</a>
+      <a href="/services">Services</a>
+      <a href="/writing">Writing</a>
+    </div>
+  </nav>
+    </div>
   <main class="main">
     <h1>{{ heading or 'Hey there!' }}</h1>
     {% block content %}

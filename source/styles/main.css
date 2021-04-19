@@ -161,6 +161,33 @@ a:focus:hover {
 	text-decoration: underline;	
 }
 
+nav {
+	padding-top: 1.75em;
+}
+
+nav a {
+	font-size: 1.2em;
+}
+
+.flex-row {
+	/* display: flex;
+	flex-wrap: wrap;
+	margin-left: 0;
+	width: 62ch;
+	width: 46%;
+	justify-content: space-between; */
+}
+
+.flex-row > * {
+	flex: 0 0 auto;
+	margin-top: 0;
+}
+
+.flex-row > * {
+	margin-right: 1.75em;
+	margin-right: calc(1em + 0.5vw);
+}
+
 code {
 	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 	color: var(--color-indigodye)
