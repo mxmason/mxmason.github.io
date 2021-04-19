@@ -8,7 +8,7 @@
 	},
 	"author": {
 		"name": "EJ Mason",
-		"url": "https:ejmason.com/"
+		"url": "https://www.ejmason.com/"
 	},
 	"scripts": {
 		"clean": "rm -rf dist publish",
