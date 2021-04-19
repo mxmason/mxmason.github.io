@@ -1,3 +1,148 @@
+/* TYPOGRAPHY SCALE */
+/* Generated at utopia.fyi */
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1280,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1280;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+:root {
+  --f--2-min: 11.11;
+  --f--2-max: 12.80;
+  --step--2: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f--1-min: 13.33;
+  --f--1-max: 16.00;
+  --step--1: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-0-min: 16.00;
+  --f-0-max: 20.00;
+  --step-0: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-1-min: 19.20;
+  --f-1-max: 25.00;
+  --step-1: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-2-min: 23.04;
+  --f-2-max: 31.25;
+  --step-2: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-3-min: 27.65;
+  --f-3-max: 39.06;
+  --step-3: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-4-min: 33.18;
+  --f-4-max: 48.83;
+  --step-4: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-5-min: 39.81;
+  --f-5-max: 61.04;
+  --step-5: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+}
+/* END TYPOGRAPHY SCALE */
+
+* + * {
+	margin-top: 1.125em;
+}
+
+html {
+	min-height: 0vw;
+	font-size: 1.125em;
+	font-size: var(--step-0);
+	line-height: 1.5;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, serif;
+	font-weight: 600;
+	line-height: 1.265625;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	margin-top: 1em;
+}
+
+b {
+	font-weight: 600;
+}
+
+code {
+	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	color: var(--color-indigodye)
+}
+
+h1 + * , h2 + * {
+	margin-top: 0.88888888em;
+}
+ 
+h1, .h1 {
+	font-size: 1.601806641em;
+	font-size: var(--step-3);
+	margin-top: 1.601806641em;
+}
+
+h2, .h2 {
+	font-size: 1.423828125em;
+	font-size: var(--step-2);
+	margin: 0.83em 0;
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+	font-size: var(--step-1);
+	margin-top: 1.423828125em;
+}
+.text--small {
+	font-size: var(--step--1);
+	line-height: 1.6;
+}
+
+.text--lede {
+	font-size: 1.15em;
+	line-height: 1.5;
+}
+
+/* COLORS */
 :root {
 	--color-pacificblue: hsla(210, 96%, 32%, 1);
 	--color-indigodye: hsla(349, 53%, 50%, 1);
@@ -26,7 +171,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
 	:root {
 		--body-text: var(--color-overcastsky);
 		--background: var(--color-ewwdavid);
@@ -40,10 +184,7 @@
 		font-smooth: antialiased;
 	}
 }
-
-::selection {
-  background: var(--accent-secondary11);
-}
+	/* END COLORS */
 
 *,
 *::before,
@@ -51,18 +192,6 @@
 	box-sizing: border-box;
 }
 
-* + * {
-	margin-top: 1.125em;
-}
-
-html {
-	min-height: 0vw;
-	font-size: 1.125em;
-	font-size: calc(1em + 0.25vw);
-	font-size: clamp(1em, calc(1em + 0.25vw), 1.25em);
-	line-height: 1.75;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
 
 body {
 	color: #2e2f3e;
@@ -80,11 +209,9 @@ body > * {
 	margin: 0 auto;
 }
 
-p {
-	margin: 0;
-	margin-top: 1em;
-}
+/* COMPONENTS */
 
+/* RESETS */
 ul {
 	padding-left: 2.2em;
 	margin: 0;
@@ -94,50 +221,17 @@ ul {
 li + li {
 	margin: 0;
 }
+/* END RESETS */
 
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-	font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, serif;
-	font-weight: 600;
-	line-height: 1.265625;
-	margin: 0;
-}
-
-h1 + * , h2 + * {
-	margin-top: 0.88888888em;
-}
- 
-h1, .h1 {
-	font-size: 1.601806641em;
-	margin-top: 1.601806641em;
-}
-
-h2, .h2 {
-	font-size: 1.423828125em;
-	margin: 0.83em 0;
-}
-
-h3 {
-	font-size: 1.125em;
-	margin-top: 1.423828125em;
-}
-
-.text--small {
-	font-size: 0.8em;
-	line-height: 1.8;
-}
-
-.text--lede {
-	font-size: 1.15em;
-	line-height: 1.5;
-}
-
-b {
-	font-weight: 600;
-}
-
+/* LINKS */
 a {
 	color: #0352A0;
 	color: var(--link-text);
+}
+
+.nav-link {
+	font-size: var(--step-1);
+	margin-right: 0.75em;
 }
 
 a:focus {
@@ -160,37 +254,10 @@ a:focus {
 a:focus:hover {
 	text-decoration: underline;	
 }
+/* END LINKS */
 
 nav {
 	padding-top: 1.75em;
-}
-
-nav a {
-	font-size: 1.2em;
-}
-
-.flex-row {
-	/* display: flex;
-	flex-wrap: wrap;
-	margin-left: 0;
-	width: 62ch;
-	width: 46%;
-	justify-content: space-between; */
-}
-
-.flex-row > * {
-	flex: 0 0 auto;
-	margin-top: 0;
-}
-
-.flex-row > * {
-	margin-right: 1.75em;
-	margin-right: calc(1em + 0.5vw);
-}
-
-code {
-	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-	color: var(--color-indigodye)
 }
 
 @media screen and (-ms-high-contrast: active) {
@@ -262,4 +329,20 @@ code {
 .callout.warn {
 	border-left-color: #fad776;
 	border-left-color: var(--accent-warn);
+}
+
+.item {
+	line-height: 1.4;
+}
+
+.item > * {
+	margin-top: 0;
+}
+
+.item > .meta {
+	display: block;
+}
+
+.item > .summary {
+	margin-top: 0.125em;
 }
