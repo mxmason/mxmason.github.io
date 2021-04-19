@@ -3,7 +3,7 @@ layout: page.njk
 title: 'Aphantasia'
 ---
 
-Your face is different every time I tell this story. 
+Your face looks different every time I tell this story.
 
 You know the one: we’re in your studio; we’re on your bed; you have a guitar. You’re singing. If I turn my head toward you at all, I can smell your cologne, so I don’t. You do these things like they’re okay, and I’m the one who lets you. I keep thinking about your hands. You make the transition from one chord to the next look so easy, and I’d take your version of Let It Be over Paul McCartney’s any day. You have your knees folded up under yourself. Your leg is touching my leg. My hand is on my thigh. Just a few centimeters to the left and I could touch you. I could. But I don’t. Anyway: your face.
 
