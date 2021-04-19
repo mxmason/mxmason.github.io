@@ -4,7 +4,7 @@
 	"description": "Personal website of EJ Mason",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:mxmason/mxmason.github.io.git"
+		"url": "git@github.com:mxmason/personal-site.git"
 	},
 	"author": {
 		"name": "EJ Mason",
