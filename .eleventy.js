@@ -16,7 +16,7 @@ module.exports = function (config) {
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
 	
-	config.addPassthroughCopy('source/fonts/');
+	// config.addPassthroughCopy('source/fonts/');
   config.addPassthroughCopy('source/styles/');
 
 
