@@ -1,0 +1,8 @@
+{% extends 'base.njk' %}
+
+{% set heading = title %}
+{% set items = collections.post %}
+
+{% block content %}
+  {% include 'partials/item-list.njk' %}
+{% endblock %}
