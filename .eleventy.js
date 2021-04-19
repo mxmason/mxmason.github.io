@@ -4,7 +4,6 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
-const CleanCSS = require("clean-css");
 
 const formatDate = require('./source/utils/format-date.js');
 
@@ -22,11 +21,6 @@ module.exports = function (config) {
   config.addPassthroughCopy('source/assets/');
 
   config.addFilter('formatDate', formatDate);
-
-  config.addFilter("cssmin", function(code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
-
 
   /* Markdown Plugins */
   const options = {
