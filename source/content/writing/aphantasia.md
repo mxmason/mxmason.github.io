@@ -1,7 +1,10 @@
 ---
 layout: page.njk
 title: 'Aphantasia'
-tags: post
+tags:
+ - writing
+ - prose
+category: prose
 date: 2021-04-18
 summary: Your face is different every time I tell this story.
 ---
