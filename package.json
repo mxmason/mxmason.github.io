@@ -11,23 +11,19 @@
 		"url": "https://www.ejmason.com/"
 	},
 	"scripts": {
-		"clean": "rm -rf dist publish",
-		"build:scss": "sass source/scss/main.scss source/assets/styles/main.css --style=compressed --no-source-map",
-		"build": "rm -rf dist publush && npm run build:scss && eleventy",
-		"serve": "npm run clean && eleventy --serve",
+		"build": "eleventy",
+		"serve": "eleventy --serve",
 		"watch": "eleventy --watch",
-		"dev": "npm run clean && concurrently 'npm run build:scss --watch' 'npm run serve'",
-		"debug": "DEBUG=Eleventy* npx @11ty/eleventy"
+		"debug": "DEBUG=Eleventy* eleventy"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^0.12.1",
-		"@11ty/eleventy-plugin-rss": "^1.1.1",
-		"@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
-		"concurrently": "^6.2.0",
+		"@11ty/eleventy-plugin-rss": "^1.1.2",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
+		"concurrently": "^6.3.0",
 		"html-minifier": "^4.0.0",
-		"markdown-it": "^12.0.6",
-		"markdown-it-anchor": "^8.0.3",
-		"sass": "^1.35.1"
+		"markdown-it": "^12.2.0",
+		"markdown-it-anchor": "^8.3.1"
 	},
 	"license": "MIT"
 }
