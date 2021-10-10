@@ -50,7 +50,7 @@ module.exports = function (config) {
 	config.setLibrary("md", markdownIt(options).use(markdownItAnchor, opts));
 
 	let nunjucksEnvironment = new Nunjucks.Environment(
-		new Nunjucks.FileSystemLoader(["source/layouts", "source/assets"])
+		new Nunjucks.FileSystemLoader(["source/layouts", "source/css"])
 	);
 
 	config.setLibrary("njk", nunjucksEnvironment);
