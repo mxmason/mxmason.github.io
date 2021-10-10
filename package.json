@@ -11,6 +11,7 @@
 		"url": "https://www.ejmason.com/"
 	},
 	"scripts": {
+		"start": "npm run serve",
 		"build": "eleventy",
 		"serve": "eleventy --serve",
 		"watch": "eleventy --watch",
