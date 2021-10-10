@@ -18,8 +18,8 @@ module.exports = function (config) {
 
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
-	
-  config.addPassthroughCopy('source/assets/');
+
+  config.addPassthroughCopy('source/css/');
 
   config.addFilter('formatDate', formatDate);
 
@@ -66,7 +66,7 @@ module.exports = function (config) {
 		if (path.indexOf(contentPath) === 0) {
 			return path.slice(contentPath.length);
 		}
-		
+
 		return path
 	});
 
