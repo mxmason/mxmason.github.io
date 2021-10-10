@@ -3,78 +3,78 @@
 /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1280,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 
 :root {
-  --fluid-min-width: 320;
-  --fluid-max-width: 1280;
+	--fluid-min-width: 320;
+	--fluid-max-width: 1280;
 
-  --fluid-screen: 100vw;
-  --fluid-bp: calc(
-    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
-      (var(--fluid-max-width) - var(--fluid-min-width))
-  );
+	--fluid-screen: 100vw;
+	--fluid-bp: calc(
+		(var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+		(var(--fluid-max-width) - var(--fluid-min-width))
+	);
 }
 
 @media screen and (min-width: 1280px) {
-  :root {
-    --fluid-screen: calc(var(--fluid-max-width) * 1px);
-  }
+	:root {
+		--fluid-screen: calc(var(--fluid-max-width) * 1px);
+	}
 }
 
 :root {
-  --f--2-min: 11.11;
-  --f--2-max: 12.80;
-  --step--2: calc(
-    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
-      var(--fluid-bp)
-  );
+	--f--2-min: 11.11;
+	--f--2-max: 12.80;
+	--step--2: calc(
+		((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+		var(--fluid-bp)
+	);
 
-  --f--1-min: 13.33;
-  --f--1-max: 16.00;
-  --step--1: calc(
-    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
-      var(--fluid-bp)
-  );
+	--f--1-min: 13.33;
+	--f--1-max: 16.00;
+	--step--1: calc(
+		((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+		var(--fluid-bp)
+	);
 
-  --f-0-min: 16.00;
-  --f-0-max: 20.00;
-  --step-0: calc(
-    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
-      var(--fluid-bp)
-  );
+	--f-0-min: 16.00;
+	--f-0-max: 20.00;
+	--step-0: calc(
+		((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+		var(--fluid-bp)
+	);
 
-  --f-1-min: 19.20;
-  --f-1-max: 25.00;
-  --step-1: calc(
-    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
-      var(--fluid-bp)
-  );
+	--f-1-min: 19.20;
+	--f-1-max: 25.00;
+	--step-1: calc(
+		((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+		var(--fluid-bp)
+	);
 
-  --f-2-min: 23.04;
-  --f-2-max: 31.25;
-  --step-2: calc(
-    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
-      var(--fluid-bp)
-  );
+	--f-2-min: 23.04;
+	--f-2-max: 31.25;
+	--step-2: calc(
+		((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+		var(--fluid-bp)
+	);
 
-  --f-3-min: 27.65;
-  --f-3-max: 39.06;
-  --step-3: calc(
-    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
-      var(--fluid-bp)
-  );
+	--f-3-min: 27.65;
+	--f-3-max: 39.06;
+	--step-3: calc(
+		((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+		var(--fluid-bp)
+	);
 
-  --f-4-min: 33.18;
-  --f-4-max: 48.83;
-  --step-4: calc(
-    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
-      var(--fluid-bp)
-  );
+	--f-4-min: 33.18;
+	--f-4-max: 48.83;
+	--step-4: calc(
+		((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+		var(--fluid-bp)
+	);
 
-  --f-5-min: 39.81;
-  --f-5-max: 61.04;
-  --step-5: calc(
-    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
-      var(--fluid-bp)
-  );
+	--f-5-min: 39.81;
+	--f-5-max: 61.04;
+	--step-5: calc(
+		((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+		var(--fluid-bp)
+	);
 }
 /* END TYPOGRAPHY SCALE */
 
@@ -114,7 +114,7 @@ code {
 h1 + * , h2 + * {
 	margin-top: 0.88888888em;
 }
- 
+
 h1, .h1 {
 	font-size: 1.601806641em;
 	font-size: var(--step-3);
@@ -147,12 +147,12 @@ h3, .h3 {
 	--color-pacificblue: hsla(210, 96%, 32%, 1);
 	--color-indigodye: hsla(349, 53%, 50%, 1);
 	--color-pastelkirby: hsla(350, 53%, 80%, 1);
-	
+
 	--color-warpstar: #fad776;
 
 	--color-overcastsky: hsla(0, 0%, 96%, 1);
 	--color-oncomingstorm: hsla(0, 0%, 78%, 1);
-	
+
 	--color-ewwdavid: hsla(0, 0%, 8%, 1);
 	--color-petrichor: hsla(0, 0%, 22%, 1);
 
@@ -162,8 +162,8 @@ h3, .h3 {
 
 	--accent-warn: var(--color-warpstar);
 
-	--body-text: var(--color-ewwdavid); 
-	--link-text: var(--accent-primary);	
+	--body-text: var(--color-ewwdavid);
+	--link-text: var(--accent-primary);
 	--background: var(--color-overcastsky);
 
 	--callout-border: var(--accent-neutral);
@@ -184,7 +184,7 @@ h3, .h3 {
 		font-smooth: antialiased;
 	}
 }
-	/* END COLORS */
+/* END COLORS */
 
 *,
 *::before,
@@ -245,14 +245,14 @@ a:focus {
 @supports (--a: 0) {
 	a:focus {
 		background: var(--link-text);
-		color: var(--background);	
+		color: var(--background);
 		outline: 3px solid transparent;
 		box-shadow: 0 0 0 4px var(--link-text);
 	}
 }
 
 a:focus:hover {
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 /* END LINKS */
 
