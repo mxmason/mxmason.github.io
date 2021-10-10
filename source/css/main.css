@@ -78,70 +78,6 @@
 }
 /* END TYPOGRAPHY SCALE */
 
-* + * {
-	margin-top: 1.125em;
-}
-
-html {
-	min-height: 0vw;
-	font-size: 1.125em;
-	font-size: var(--step-0);
-	line-height: 1.5;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-	font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, serif;
-	font-weight: 600;
-	line-height: 1.265625;
-	margin: 0;
-}
-
-p {
-	margin: 0;
-	margin-top: 1em;
-}
-
-b {
-	font-weight: 600;
-}
-
-code {
-	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-	color: var(--color-indigodye)
-}
-
-h1 + * , h2 + * {
-	margin-top: 0.88888888em;
-}
-
-h1, .h1 {
-	font-size: 1.601806641em;
-	font-size: var(--step-3);
-	margin-top: 1.601806641em;
-}
-
-h2, .h2 {
-	font-size: 1.423828125em;
-	font-size: var(--step-2);
-	margin: 0.83em 0;
-}
-
-h3, .h3 {
-	font-size: 1.125em;
-	font-size: var(--step-1);
-	margin-top: 1.423828125em;
-}
-.text--small {
-	font-size: var(--step--1);
-	line-height: 1.6;
-}
-
-.text--lede {
-	font-size: 1.15em;
-	line-height: 1.5;
-}
-
 /* COLORS */
 :root {
 	--color-pacificblue: hsla(210, 96%, 32%, 1);
@@ -184,14 +120,27 @@ h3, .h3 {
 		font-smooth: antialiased;
 	}
 }
+
 /* END COLORS */
 
+/* RESETS */
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
 
+* + * {
+	margin-top: 1.125em;
+}
+
+html {
+	min-height: 0vw;
+	font-size: 1.125em;
+	font-size: var(--step-0);
+	line-height: 1.5;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
 body {
 	color: #2e2f3e;
@@ -209,29 +158,9 @@ body > * {
 	margin: 0 auto;
 }
 
-/* COMPONENTS */
-
-/* RESETS */
-ul {
-	padding-left: 2.2em;
-	margin: 0;
-	margin-top: 0.4em;
-}
-
-li + li {
-	margin: 0;
-}
-/* END RESETS */
-
-/* LINKS */
 a {
 	color: #0352A0;
 	color: var(--link-text);
-}
-
-.nav-link {
-	font-size: var(--step-1);
-	margin-right: 0.75em;
 }
 
 a:focus {
@@ -253,11 +182,6 @@ a:focus {
 
 a:focus:hover {
 	text-decoration: underline;
-}
-/* END LINKS */
-
-nav {
-	padding-top: 1.75em;
 }
 
 @media screen and (-ms-high-contrast: active) {
@@ -292,6 +216,82 @@ nav {
 	a {
 		color: blue;
 	}
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, serif;
+	font-weight: 600;
+	line-height: 1.265625;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	margin-top: 1em;
+}
+
+b {
+	font-weight: 600;
+}
+
+code {
+	font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	color: var(--color-indigodye)
+}
+
+h1 + * , h2 + * {
+	margin-top: 0.88888888em;
+}
+
+h1, .h1 {
+	font-size: 1.601806641em;
+	font-size: var(--step-3);
+	margin-top: 1.601806641em;
+}
+
+h2, .h2 {
+	font-size: 1.423828125em;
+	font-size: var(--step-2);
+	margin: 0.83em 0;
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+	font-size: var(--step-1);
+	margin-top: 1.423828125em;
+}
+
+ul {
+	padding-left: 2.2em;
+	margin: 0;
+	margin-top: 0.4em;
+}
+
+li + li {
+	margin: 0;
+}
+/* END RESETS */
+
+/* COMPONENTS */
+
+.text--small {
+	font-size: var(--step--1);
+	line-height: 1.6;
+}
+
+.text--lede {
+	font-size: 1.15em;
+	line-height: 1.5;
+}
+
+.nav {
+	padding-top: 1.75em;
+}
+
+.nav-link {
+	font-size: var(--step-1);
+	margin-right: 0.75em;
 }
 
 .callout {
