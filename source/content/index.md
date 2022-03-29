@@ -2,6 +2,6 @@
 layout: page.njk
 ---
 
-I’m EJ Mason. I’m a software engineer, web accessibility specialist, writer, and speaker. This website is a work-in-progress. Are you looking to hire me as a consultant? Please check out <a href="./services">my services</a>.
+I’m EJ Mason. I’m a software engineer, web accessibility specialist, writer, and speaker. This website is a work-in-progress. Enjoy whatever you find here!
 
-If you need to contact me for something else, please [say hi on Twitter](https://www.twitter.com/codeability) or <a href="mailto:hey@ejmason.com" rel="noopener noreferrer">email me</a>!
+Currently, I'm doing front-end stuff at Netlify, and I also volunteer with [The A11Y Project](https://www.a11yproject.com/) and [The Collab Lab](https://the-collab-lab.codes). If you want to say hi, you can [find me on Twitter](https://www.twitter.com/codeability) or [email me](mailto:hey@ejmason.com)!

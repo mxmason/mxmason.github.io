@@ -346,3 +346,24 @@ li + li {
 .item > .summary {
 	margin-top: 0.125em;
 }
+
+.meta {
+	display: flex;
+}
+
+.tags-list {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	margin-left: 0.24em;
+	padding: 0;
+}
+
+.tags-list > .tag-token {
+	border: 1px solid hsl(0deg 0% 65%);
+	color: hsl(0deg 0% 25%);
+	border-radius: 4px;
+	font-size: 0.8rem;
+	padding: 0.15em;
+	display: inline-block;
+}

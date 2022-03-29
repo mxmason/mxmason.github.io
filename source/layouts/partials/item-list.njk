@@ -1,9 +1,18 @@
 {% if items.length %}
   <ul class="item-list">
     {% for item in items | reverse %}
+		{% set tagTokens %}
+			{% for tag in item.data.tags %} {% if tag !== 'post' %}
+			<li class="tag-token">{{ tag }}</li>
+			{% endif %} {% endfor %}
+		{% endset %}
       <li class="item">
         <a href="{{ item.url }}" class="h3">{{ item.data.title }}</a>
-        <span class="meta">{{ item.data.date | formatDate }}</span>
+        <div class="meta">
+					<span>{{ item.data.date | formatDate }}</span> •
+					<span>Filed under:<span>
+					<ul class="tags-list">{{ tagTokens | safe }}</ul>
+				</div>
         <p class="summary">{{ item.data.summary }}</p>
       </li>
     {% endfor %}

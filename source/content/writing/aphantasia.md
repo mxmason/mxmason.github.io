@@ -2,9 +2,8 @@
 layout: page.njk
 title: 'Aphantasia'
 tags:
- - writing
+ - post
  - prose
-category: prose
 date: 2021-04-18
 summary: Your face is different every time I tell this story.
 ---
@@ -21,7 +20,7 @@ You brush against me again as you pull away; then you pat my chest and say, “N
 
 I never did ask you what that meant. It’s easy to make meaning out of the middle from all the way over here at the end, isn’t it?
 
-You texted me once at eleven-something at night, out of nowhere. Just because. 
+You texted me once at eleven-something at night, out of nowhere. Just because.
 
 <code style="font-size: 0.9em; color: inherit;">Can I come over?</code>
 
@@ -47,7 +46,7 @@ Did you know there are people who can’t picture faces at all?
 
 I saw a man on YouTube talk about how he can only say what his coffee table looks like because he knows all the words that make up a coffee table – *brown* and oak and *polished* – but there’s no table in his head. It’s called “aphantasia”. An absence of fantasy. Imagine that: not being able to imagine.
 
-I have a different problem, I guess. I can see just enough of your face to miss the rest. I can get all of those pieces together, but I couldn’t tell you where they go. 
+I have a different problem, I guess. I can see just enough of your face to miss the rest. I can get all of those pieces together, but I couldn’t tell you where they go.
 
 You don’t have to tell me, because I know: I know I am making myself the victim in this story. Boys like you don’t like boys like me. They don’t like boys at all. I signed that contract. I spent time with you anyway. I was never brave enough to ask you why, if we agreed to these rules, I was on your bed at midnight, letting you point your voice right at my heart.
 
@@ -55,9 +54,9 @@ You remember what happens next: you take me home; you thank me for hanging out; 
 
 Anyway, I have a better idea. You wanna hear?
 
-Let’s say you’re telling me to let it be and let’s say I don’t. Let’s say, for the sake of argument, that I break our contract. I put my hand on your leg and I can feel your muscles under my palm. You put your hand on my hand and it is all the right things: *warm* and *soft* and *gently calloused* from how much you play. 
+Let’s say you’re telling me to let it be and let’s say I don’t. Let’s say, for the sake of argument, that I break our contract. I put my hand on your leg and I can feel your muscles under my palm. You put your hand on my hand and it is all the right things: *warm* and *soft* and *gently calloused* from how much you play.
 
-You can imagine the rest for yourself. You can imagine that all I want is a version of this story where I learn to say it out loud. A version of the story where you kiss me, perhaps. You feel my beard; you laugh and pull away. 
+You can imagine the rest for yourself. You can imagine that all I want is a version of this story where I learn to say it out loud. A version of the story where you kiss me, perhaps. You feel my beard; you laugh and pull away.
 
 “It’s different,” you say. You say that every time. “But I like it.”
 
