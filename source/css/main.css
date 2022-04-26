@@ -1,84 +1,3 @@
-/* TYPOGRAPHY SCALE */
-/* Generated at utopia.fyi */
-/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1280,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
-
-:root {
-	--fluid-min-width: 320;
-	--fluid-max-width: 1280;
-
-	--fluid-screen: 100vw;
-	--fluid-bp: calc(
-		(var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
-		(var(--fluid-max-width) - var(--fluid-min-width))
-	);
-}
-
-@media screen and (min-width: 1280px) {
-	:root {
-		--fluid-screen: calc(var(--fluid-max-width) * 1px);
-	}
-}
-
-:root {
-	--f--2-min: 11.11;
-	--f--2-max: 12.80;
-	--step--2: calc(
-		((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
-		var(--fluid-bp)
-	);
-
-	--f--1-min: 13.33;
-	--f--1-max: 16.00;
-	--step--1: calc(
-		((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
-		var(--fluid-bp)
-	);
-
-	--f-0-min: 16.00;
-	--f-0-max: 20.00;
-	--step-0: calc(
-		((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
-		var(--fluid-bp)
-	);
-
-	--f-1-min: 19.20;
-	--f-1-max: 25.00;
-	--step-1: calc(
-		((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
-		var(--fluid-bp)
-	);
-
-	--f-2-min: 23.04;
-	--f-2-max: 31.25;
-	--step-2: calc(
-		((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
-		var(--fluid-bp)
-	);
-
-	--f-3-min: 27.65;
-	--f-3-max: 39.06;
-	--step-3: calc(
-		((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
-		var(--fluid-bp)
-	);
-
-	--f-4-min: 33.18;
-	--f-4-max: 48.83;
-	--step-4: calc(
-		((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
-		var(--fluid-bp)
-	);
-
-	--f-5-min: 39.81;
-	--f-5-max: 61.04;
-	--step-5: calc(
-		((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
-		var(--fluid-bp)
-	);
-}
-/* END TYPOGRAPHY SCALE */
-
-/* COLORS */
 :root {
 	--color-pacificblue: hsla(210, 96%, 32%, 1);
 	--color-indigodye: hsla(349, 53%, 50%, 1);
@@ -136,8 +55,7 @@
 
 html {
 	min-height: 0vw;
-	font-size: 1.125em;
-	font-size: var(--step-0);
+	font-size: 62.5%;
 	line-height: 1.5;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -145,17 +63,14 @@ html {
 body {
 	color: #2e2f3e;
 	color: var(--body-text);
+	font-size: 1.6rem;
+	font-size: calc(1.4em + 0.5vw);
+	font-size: clamp(1.4rem, calc(1.4em + 0.5vw), 2.4rem);
+	line-height: 1.5;
 	background-color: #fdfdfd;
 	background-color: var(--background);
 	margin: 0 auto;
 	padding-bottom: 1.75em;
-}
-
-body > * {
-	max-width: 800px;
-	max-width: 62ch;
-	padding: 0 0.75em;
-	margin: 0 auto;
 }
 
 a {
@@ -231,6 +146,11 @@ p {
 	margin-top: 1em;
 }
 
+h1 + p,
+h2 + p {
+	margin-top: 0.8em;
+}
+
 b {
 	font-weight: 600;
 }
@@ -240,43 +160,22 @@ code {
 	color: var(--color-indigodye)
 }
 
-h1 + * , h2 + * {
-	margin-top: 0.88888888em;
-}
-
-h1, .h1 {
-	font-size: 1.601806641em;
-	font-size: var(--step-3);
-	margin-top: 1.601806641em;
-}
-
-h2, .h2 {
-	font-size: 1.423828125em;
-	font-size: var(--step-2);
-	margin: 0.83em 0;
-}
-
-h3, .h3 {
-	font-size: 1.125em;
-	font-size: var(--step-1);
-	margin-top: 1.423828125em;
-}
-
-ul {
-	padding-left: 2.2em;
-	margin: 0;
-	margin-top: 0.4em;
-}
-
 li + li {
 	margin: 0;
 }
 /* END RESETS */
 
+.o-container {
+	max-width: 800px;
+	max-width: 62ch;
+	padding: 0 0.75em;
+	margin: 0 auto;
+}
+
 /* COMPONENTS */
 
 .text--small {
-	font-size: var(--step--1);
+	font-size: 0.8em;
 	line-height: 1.6;
 }
 
@@ -286,12 +185,14 @@ li + li {
 }
 
 .nav {
-	padding-top: 1.75em;
+	padding-bottom: 1.5em;
+	padding-top: 1em;
 }
 
 .nav-link {
-	font-size: var(--step-1);
-	margin-right: 0.75em;
+	font-size: 1.4em;
+	font-size: clamp(1rem, calc(1em + 1vw), 2.4rem);
+	margin-right: 0.75rem;
 }
 
 .callout {
