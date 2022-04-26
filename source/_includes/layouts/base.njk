@@ -1,0 +1,46 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
+	<title>{{ title or 'Home' }} | EJ Mason</title>
+	<link rel="canonical" href="{{ site.url + page.url }}" />
+
+	<meta property="og:site_name" content="EJ Mason" />
+	<meta property="og:title" content="{{ title or 'Home' }} | EJ Mason" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ site.url + page.url }}" />
+	<meta name="twitter:creator" content="@codeability" />
+	<meta property="og:image" content="{{ site.url }}/assets/avatar.png" />
+	<meta name="twitter:image" content="{{ site.url }}/assets/avatar.png" />
+	<meta property="og:image:alt" content="Illustrated avatar of EJ" />
+	<meta name="twitter:image:alt" content="Illustrated avatar of EJ" />
+
+	{% if summary %}
+		<meta name="description" content="{{ summary }}" />
+		<meta name="twitter:description" content="{{ summary }}" />
+		<meta property="og:description" content="{{ summary }}" />
+	{% endif %}
+	<link rel="stylesheet" href="{{'/css/main.css' | url}}" />
+	{% block pageStyles %}{% endblock %}
+</head>
+<body>
+	<header>
+		<div class="o-container">
+			<nav class="nav">
+				<a href="/"class="nav-link">Home</a>
+				{# <a href="/services"class="nav-link">Services</a> #}
+				<a href="/writing"class="nav-link">Writisng</a>
+		</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="o-container">
+			<h1>{{ heading or 'Hey there!' }}</h1>
+		{% block content %}
+		{% endblock %}
+		</div>
+	</main>
+</body>
+</html>

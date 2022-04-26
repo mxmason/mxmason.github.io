@@ -13,8 +13,8 @@ module.exports = function (config) {
 		summary: true,
 	});
 
-	config.addLayoutAlias("base", "source/layouts/base.njk");
-	config.addLayoutAlias("page", "source/layouts/page.njk");
+	config.addLayoutAlias("base", "layouts/base.njk");
+	config.addLayoutAlias("page", "layouts/page.njk");
 
 	config.addPlugin(rssPlugin);
 	config.addPlugin(syntaxHighlight);
@@ -74,9 +74,7 @@ module.exports = function (config) {
 		dir: {
 			input: "source",
 			output: "publish",
-			includes: "assets",
-			layouts: "layouts",
 		},
-		// templateFormats: ['njk', 'md'],
+		templateFormats: ['njk', 'md'],
 	};
 };

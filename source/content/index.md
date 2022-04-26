@@ -1,5 +1,5 @@
 ---
-layout: page.njk
+layout: layouts/page.njk
 ---
 
 I’m EJ Mason. I’m a software engineer, web accessibility specialist, writer, and speaker. This website is a work-in-progress. Enjoy whatever you find here!
