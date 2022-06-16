@@ -9,6 +9,10 @@ date: 2022-06-16
 summary: Your face is different every time I tell this story.
 ---
 
+**Hey.** Just so you know post discusses uncomfortable medical procedures and instances of illness, including vomiting. Proceed with care.
+
+<hr>
+
 Earlier this year, I got a bacterial infection. I’m accustomed to things in my body going wrong, so I didn’t think much of it. It took me several days to get medical care because I couldn’t walk well, for unrelated reasons. After six hours of waiting and blood-testing and x-raying, I finally saw a doctor. He was a balding, gravely serious man who looked me directly in the face as he said, “You’re lucky you came in when you did. You could have died.” I didn’t know how to explain to this man that I’m familiar with this particular flavor of *almost.* I said, “okay.” He seemed rather nonplussed.
 
 I stayed another two hours that night to get an intravenous infusion of antibiotics. They tasted like metal and drain cleaner, but that was familiar, too. The nurse and and I agreed that it would be best if I kept the IV port in my arm. I returned every day for a full week for more IV therapies, and I took oral antibiotics at home all the while. It was miserable, the getting up, the being in the car, the taste of metal, the feeling of the port in my arm every time I moved, the not sleeping, the not keeping food down. I got better. Then it happened again. This one wasn’t as interesting. No blood work; no x-rays. Just a shot and some pills to take at home. Ten more days of not keeping food down, and then the infection was gone.
