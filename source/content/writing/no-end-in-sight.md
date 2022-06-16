@@ -6,7 +6,7 @@ tags:
  - health
  - disability
 date: 2022-06-16
-summary: Your face is different every time I tell this story.
+summary: Sometimes, things just get worse.
 ---
 
 **Hey.** Just so you know post discusses uncomfortable medical procedures and instances of illness, including vomiting. Proceed with care.
