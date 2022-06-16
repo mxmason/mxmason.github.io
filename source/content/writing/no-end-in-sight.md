@@ -1,3 +1,13 @@
+---
+layout: page.njk
+title: 'No end in sight'
+tags:
+ - post
+ - health
+ - disability
+date: 2022-06-16
+summary: Your face is different every time I tell this story.
+---
 # No end in sight
 
 Earlier this year, I got a bacterial infection. I’m accustomed to things in my body going wrong, so I didn’t think much of it. It took me several days to get medical care because I couldn’t walk well, for unrelated reasons. After six hours of waiting and blood-testing and x-raying, I finally saw a doctor. He was a balding, gravely serious man who looked me directly in the face as he said, “You’re lucky you came in when you did. You could have died.” I didn’t know how to explain to this man that I’m familiar with this particular flavor of *almost.* I said, “okay.” He seemed rather nonplussed.
