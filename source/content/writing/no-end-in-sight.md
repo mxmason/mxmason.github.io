@@ -9,7 +9,7 @@ date: 2022-06-16
 summary: Sometimes, things just get worse.
 ---
 
-**Hey.** Just so you know post discusses uncomfortable medical procedures and instances of illness, including vomiting. Proceed with care.
+**Hey.** This post discusses uncomfortable medical procedures and instances of illness, including vomiting. Proceed with care.
 
 <hr>
 
