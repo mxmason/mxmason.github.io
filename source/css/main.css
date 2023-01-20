@@ -163,6 +163,11 @@ a {
 	color: var(--link-text);
 }
 
+a:hover {
+	text0-decoration-line: underline;
+	text-decoration-thickness: 3px;
+}
+
 a:focus {
 	position: relative;
 	background: #0352A0;
