@@ -1,13 +1,16 @@
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
+		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
+		Courier, monospace;
 }
 
 /* Theme colors */
 :root {
 	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
+	--color-gray-50: #c0c0c0;
 	--color-gray-90: #333;
 
 	--background-color: #fff;
@@ -15,7 +18,7 @@
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
 	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link-visited: #17050f;
 
 	--syntax-tab-size: 2;
 }
@@ -23,7 +26,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
+		--color-gray-50: #c0c0c0;
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
@@ -34,7 +37,6 @@
 		--background-color: #15202b;
 	}
 }
-
 
 /* Global stylesheet */
 * {
@@ -47,17 +49,20 @@
 
 html,
 body {
-	padding: 0;
-	margin: 0 auto;
-	font-family: var(--font-family);
-	color: var(--text-color);
 	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: var(--font-family);
+	height: 100dvh;
+	margin: 0 auto;
+	padding: 0;
 }
 html {
-	overflow-y: scroll;
+	font-size: 62.5%;
+	overflow-y: auto;
 }
 body {
-	max-width: 40em;
+	font-size: 1.6rem;
+	max-width: 64rem;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -105,7 +110,7 @@ header {
 	border-bottom: 1px dashed var(--color-gray-20);
 }
 header:after {
-	content: "";
+	content: '';
 	display: table;
 	clear: both;
 }
@@ -113,10 +118,10 @@ header:after {
 .links-nextprev {
 	display: flex;
 	justify-content: space-between;
-	gap: .5em 1em;
-	list-style: "";
+	gap: 8px 16px;
+	list-style: '';
 	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
+	padding: 16px 0;
 }
 .links-nextprev > * {
 	flex-grow: 1;
@@ -126,19 +131,19 @@ header:after {
 }
 
 table {
-	margin: 1em 0;
+	margin: 16px 0;
 }
 table td,
 table th {
-	padding-right: 1em;
+	padding-right: 16px;
 }
 
 pre,
 code {
 	font-family: var(--font-family-monospace);
 }
-pre:not([class*="language-"]) {
-	margin: .5em 0;
+pre:not([class*='language-']) {
+	margin: 8px 0;
 	line-height: 1.375; /* 22px /16 */
 	-moz-tab-size: var(--syntax-tab-size);
 	-o-tab-size: var(--syntax-tab-size);
@@ -160,15 +165,15 @@ code {
 /* Header */
 header {
 	display: flex;
-	gap: 1em .5em;
+	gap: 16px 8px;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 1em;
+	padding: 16px;
 }
 .home-link {
 	font-size: 1em; /* 16px /16 */
 	font-weight: 700;
-	margin-right: 2em;
+	margin-right: 32px;
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
@@ -183,12 +188,12 @@ header {
 }
 .nav-item {
 	display: inline-block;
-	margin-right: 1em;
+	margin-right: 16px;
 }
 .nav-item a[href]:not(:hover) {
 	text-decoration: none;
 }
-.nav a[href][aria-current="page"] {
+.nav a[href][aria-current='page'] {
 	text-decoration: underline;
 }
 
@@ -196,22 +201,22 @@ header {
 .postlist {
 	list-style: none;
 	padding: 0;
-	padding-left: 1.5rem;
+	padding-left: 24px;
 }
 .postlist-item {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
 	counter-increment: start-from -1;
-	margin-bottom: 1em;
+	margin-bottom: 16px;
 }
 .postlist-item:before {
 	display: inline-block;
 	pointer-events: none;
-	content: "" counter(start-from, decimal-leading-zero) ". ";
+	content: '' counter(start-from, decimal-leading-zero) '. ';
 	line-height: 100%;
 	text-align: right;
-	margin-left: -1.5rem;
+	margin-left: -24px;
 }
 .postlist-date,
 .postlist-item:before {
@@ -225,8 +230,8 @@ header {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
-	padding-left: .25em;
-	padding-right: .5em;
+	padding-left: 4px;
+	padding-right: 8px;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
@@ -251,12 +256,11 @@ header {
 .post-metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: 8px;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 .post-metadata time {
-	margin-right: 1em;
+	margin-right: 16px;
 }
-
