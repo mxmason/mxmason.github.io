@@ -1,5 +1,4 @@
 ---
-layout: page.njk
 title: 'No end in sight'
 tags:
  - post
