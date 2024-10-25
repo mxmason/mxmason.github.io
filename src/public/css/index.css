@@ -116,11 +116,11 @@ header:after {
 }
 
 .links-nextprev {
-	display: flex;
-	justify-content: space-between;
-	gap: 8px 16px;
-	list-style: '';
 	border-top: 1px dashed var(--color-gray-20);
+	display: flex;
+	gap: 8px 16px;
+	justify-content: space-between;
+	list-style: '';
 	padding: 16px 0;
 }
 .links-nextprev > * {
@@ -143,20 +143,18 @@ code {
 	font-family: var(--font-family-monospace);
 }
 pre:not([class*='language-']) {
-	margin: 8px 0;
-	line-height: 1.375; /* 22px /16 */
-	-moz-tab-size: var(--syntax-tab-size);
-	-o-tab-size: var(--syntax-tab-size);
-	tab-size: var(--syntax-tab-size);
-	-webkit-hyphens: none;
 	-ms-hyphens: none;
-	hyphens: none;
+	-webkit-hyphens: none;
 	direction: ltr;
+	hyphens: none;
+	line-height: 1.375; /* 22px /16 */
+	margin: 8px 0;
+	overflow-x: auto;
+	tab-size: var(--syntax-tab-size);
 	text-align: left;
 	white-space: pre;
-	word-spacing: normal;
 	word-break: normal;
-	overflow-x: auto;
+	word-spacing: normal;
 }
 code {
 	word-break: break-all;
@@ -164,10 +162,10 @@ code {
 
 /* Header */
 header {
-	display: flex;
-	gap: 16px 8px;
-	flex-wrap: wrap;
 	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px 8px;
 	padding: 16px;
 }
 .home-link {
@@ -182,9 +180,9 @@ header {
 /* Nav */
 .nav {
 	display: flex;
-	padding: 0;
-	margin: 0;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 .nav-item {
 	display: inline-block;
@@ -204,37 +202,37 @@ header {
 	padding-left: 24px;
 }
 .postlist-item {
-	display: flex;
-	flex-wrap: wrap;
 	align-items: baseline;
 	counter-increment: start-from -1;
+	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 16px;
 }
 .postlist-item:before {
-	display: inline-block;
-	pointer-events: none;
 	content: '' counter(start-from, decimal-leading-zero) '. ';
+	display: inline-block;
 	line-height: 100%;
-	text-align: right;
 	margin-left: -24px;
+	pointer-events: none;
+	text-align: right;
 }
 .postlist-date,
 .postlist-item:before {
-	font-size: 0.8125em; /* 13px /16 */
 	color: var(--color-gray-90);
+	font-size: 1.3em; /* 13px /16 */
 }
 .postlist-date {
 	word-spacing: -0.5px;
 }
 .postlist-link {
-	font-size: 1.1875em; /* 19px /16 */
-	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
+	font-size: 1.9em; /* 19px /16 */
+	font-weight: 700;
 	padding-left: 4px;
 	padding-right: 8px;
-	text-underline-position: from-font;
-	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
+	text-underline-offset: 0;
+	text-underline-position: from-font;
 }
 .postlist-item-active .postlist-link {
 	font-weight: bold;
@@ -242,11 +240,11 @@ header {
 
 /* Tags */
 .post-tag {
-	display: inline-flex;
 	align-items: center;
+	display: inline-flex;
+	font-style: italic;
 	justify-content: center;
 	text-transform: capitalize;
-	font-style: italic;
 }
 .postlist-item > .post-tag {
 	align-self: center;
@@ -258,8 +256,8 @@ header {
 	flex-wrap: wrap;
 	gap: 8px;
 	list-style: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 .post-metadata time {
 	margin-right: 16px;
