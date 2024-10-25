@@ -19,14 +19,10 @@
 		3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
 		#}
 
-		{#- Add an arbitrary string to the bundle #}
-		{# {%- css %}/* This is an arbitrary CSS string added to the bundle */{% endcss %} #}
 		{#- Add the contents of a file to the bundle #}
 		{%- css %}{% include "src/public/css/index.css" %}{% endcss %}
-		{#- Or you can add from node_modules #}
-		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
-		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
+
 		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
@@ -35,7 +31,6 @@
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
-
 		<header>
 			<a href="/" class="home-link">{{ metadata.title }}</a>
 
@@ -49,6 +44,15 @@
 				</ul>
 			</nav>
 		</header>
+
+		{%- if title == "Home" %}
+		<div class="c-notice">
+			<b>FYI</b>
+			<span>
+				I&apos;m in the middle of redesigning this site, so things may look a little weird. We&apos;re all just gonna have to be cool with that.
+			</span>
+		</div>
+		{%- endif %}
 
 		<main id="skip">
 			<heading-anchors prefix="Jump to section">
