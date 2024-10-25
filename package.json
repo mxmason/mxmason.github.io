@@ -11,9 +11,6 @@
 		"name": "EJ Mason",
 		"url": "https://www.ejmason.com/"
 	},
-	"engines": {
-		"node": ">=18"
-	},
 	"scripts": {
 		"build": "eleventy",
 		"start": "eleventy --serve --quiet",
@@ -22,14 +19,17 @@
 		"benchmark": "DEBUG=Eleventy:Benchmark* eleventy"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0",
-		"@11ty/eleventy-img": "^5.0.0",
-		"@11ty/eleventy-navigation": "^0.3.5",
-		"@11ty/eleventy-plugin-rss": "^2.0.2",
-		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-		"luxon": "^3.5.0",
-		"zod": "^3.23.8",
-		"zod-validation-error": "^3.4.0"
+		"@11ty/eleventy": "~3.0.0",
+		"@11ty/eleventy-img": "~5.0.0",
+		"@11ty/eleventy-navigation": "~0.3.5",
+		"@11ty/eleventy-plugin-rss": "~2.0.2",
+		"@11ty/eleventy-plugin-syntaxhighlight": "~5.0.0",
+		"luxon": "~3.5.0",
+		"zod": "~3.23.8",
+		"zod-validation-error": "~3.4.0"
+	},
+	"overrides": {
+		"@11ty/eleventy-fetch": ">=5.0.0-beta.3"
 	},
 	"license": "MIT"
 }
