@@ -5,7 +5,7 @@ tags:
  - health
  - disability
 date: 2022-06-16
-summary: Sometimes, things just get worse.
+description: Sometimes, things just get worse.
 ---
 
 **Hey.** This post discusses uncomfortable medical procedures and instances of illness, including vomiting. Proceed with care.

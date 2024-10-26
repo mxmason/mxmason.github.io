@@ -4,7 +4,7 @@ tags:
  - post
  - prose
 date: 2024-10-25
-summary: What do you care about these?
+description: What do you care about these?
 ---
 
 I thought I’d already said everything I needed to say to you, but here we are.
