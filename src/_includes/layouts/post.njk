@@ -4,7 +4,7 @@ layout: layouts/base.njk
 {# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "src/public/css/prism-diff.css" %}{%- endcss %}
-<h1 style="margin-bottom: 4px;">{{ title }}</h1>
+<h1 style="margin-bottom: 4px;" {%- if 'prose' in tags | filterTagList %} exclude {%- endif %}>{{ title }}</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
