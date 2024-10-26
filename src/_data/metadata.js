@@ -2,7 +2,7 @@ export default {
 	title: 'EJ Mason',
 	url: 'https://ejmason.com/',
 	language: 'en',
-	description: 'I am writing about my experiences as a naval navel-gazer.',
+	description: 'EJ Mason is a web developer, web accessibility specialist, ux designer, writer, and speaker.',
 	author: {
 		name: 'EJ Mason',
 		// email: "youremailaddress@example.com",
